@@ -1,0 +1,21 @@
+name = "openmath"
+defaultTargets = ["Openmath"]
+
+# Mirror formal-conjectures' options so our files see the same linters their CI runs.
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+weak.linter.style.copyright.formalConjectures = true
+weak.linter.style.namespace = true
+weak.linter.style.stubs = true
+weak.linter.style.openClassical = true
+
+# The reviewed statement source. Pinned; bump deliberately and record the bump in log.md.
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "137aec5c7abd3aa61f7a73138a97279acfc79e93"
+
+[[lean_lib]]
+name = "Openmath"
