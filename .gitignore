@@ -3,3 +3,8 @@
 *.ilean
 *.trace
 __pycache__/
+*.pyc
+computations/585-verify.md
+computations/585-n9.md
+computations/*.out.md
+computations/*state*.json
