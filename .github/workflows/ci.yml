@@ -1,0 +1,52 @@
+name: Lean checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      LEAN_NUM_THREADS: "2"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865 # v1.6.1
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - run: timeout 900 lake exe cache get
+      - run: timeout 1800 lake build
+      - name: Replay every module through the kernel
+        run: |
+          n=0
+          for f in $(git ls-files 'Openmath/*.lean'); do
+            m="${f%.lean}"; m="${m//\//.}"
+            echo "leanchecker $m"
+            timeout 600 lake env leanchecker "$m"
+            n=$((n + 1))
+          done
+          test "$n" -eq "$(grep -c '^import ' Openmath.lean)"
+      - run: timeout 240 python3 scripts/check_axioms.py
+      - name: Check theorem results
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          for item in json.loads(Path('scripts/headline-theorems.json').read_text()):
+              if item['oracle']:
+                  subprocess.run(['timeout', '240', 'bash', 'check.sh',
+                                  item['module'].replace('.', '/') + '.lean',
+                                  item['declaration']], check=True)
+          PY
+      - name: Check tracked files unchanged
+        if: always()
+        run: git diff --exit-code HEAD -- .

@@ -1,0 +1,128 @@
+[
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.maxEdges_eq_choose_two_of_le_four",
+    "oracle": true,
+    "type": "∀ n ≤ 4, Erdos585.maxEdges n = n.choose 2"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.maxEdges_five",
+    "oracle": true,
+    "type": "Erdos585.maxEdges 5 = 9"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.maxEdges_six",
+    "oracle": true,
+    "type": "Erdos585.maxEdges 6 = 12"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.maxEdges_seven",
+    "oracle": true,
+    "type": "Erdos585.maxEdges 7 = 16"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.three_mul_sub_six_le_maxEdges",
+    "oracle": true,
+    "type": "∀ (n : ℕ), 5 ≤ n → 3 * n - 6 ≤ Erdos585.maxEdges n"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.three_mul_sub_five_le_maxEdges",
+    "oracle": true,
+    "type": "∀ (n : ℕ), 7 ≤ n → 3 * n - 5 ≤ Erdos585.maxEdges n"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.three_mul_sub_four_le_maxEdges",
+    "oracle": true,
+    "type": "∀ (n : ℕ), 9 ≤ n → 3 * n - 4 ≤ Erdos585.maxEdges n"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.maxEdges_succ_ge",
+    "oracle": true,
+    "type": "∀ (n : ℕ), 3 ≤ n → Erdos585.maxEdges n + 3 ≤ Erdos585.maxEdges (n + 1)"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.four_mul_sub_thirteen_le_maxEdges",
+    "oracle": true,
+    "type": "∀ (n : ℕ), 10 ≤ n → 4 * n - 13 ≤ Erdos585.maxEdges n"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.thirty_one_le_maxEdges_eleven",
+    "oracle": true,
+    "type": "31 ≤ Erdos585.maxEdges 11"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.thirty_six_le_maxEdges_twelve",
+    "oracle": true,
+    "type": "36 ≤ Erdos585.maxEdges 12"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.complete_matching_subdivision_lower_bound",
+    "oracle": true,
+    "type": "∀ (k : ℕ), 8 * k ^ 2 - 3 * k + 1 ≤ Erdos585.maxEdges (2 * k ^ 2 + 2)"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.latin_incidence_lower_bound",
+    "oracle": true,
+    "type": "∀ (m : ℕ), 5 * m ^ 2 ≤ Erdos585.maxEdges (m ^ 2 + 3 * m + 2)"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.five_mul_sub_sqrt_le_maxEdges",
+    "oracle": true,
+    "type": "∀ (n : ℕ), 16 ≤ n → 5 * n - 15 * n.sqrt - 10 ≤ Erdos585.maxEdges n"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.doubleWheel_not_hasTwoEdgeDisjointCyclesSameVertexSet",
+    "oracle": true,
+    "type": "∀ (k : ℕ), 2 ≤ k → ¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet (Erdos585.doubleWheel (k + 3))"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.thetaWheel_not_hasTwoEdgeDisjointCyclesSameVertexSet",
+    "oracle": true,
+    "type": "¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet Erdos585.thetaWheel"
+  },
+  {
+    "module": "Openmath.Proofs.Final",
+    "declaration": "Erdos585.matchingSubdivision_not_hasTwoEdgeDisjointCyclesSameVertexSet",
+    "oracle": true,
+    "type": "∀ {V : Type u_1} [inst : Fintype V] [inst_1 : DecidableEq V] (H M : SimpleGraph V) [inst_2 : DecidableRel H.Adj] [inst_3 : DecidableRel M.Adj], (∀ (v : V), M.degree v ≤ 1) → ¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet (Erdos585.MatchingSubdivision.ofBase H M)"
+  },
+  {
+    "module": "Openmath.Proofs.RegularFive",
+    "declaration": "Erdos585.RegularFive.exists_five_regular_pairfree",
+    "oracle": true,
+    "type": "∃ G, (∀ (v : Fin 32), (G.neighborSet v).ncard = 5) ∧ ¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet G"
+  },
+  {
+    "module": "Openmath.Proofs.BipartiteFive",
+    "declaration": "Erdos585.BipartiteFive.exists_bipartite_five_regular_pairfree",
+    "oracle": true,
+    "type": "∃ G, (∀ (v : Fin 104), (G.neighborSet v).ncard = 5) ∧ G.Colorable 2 ∧ ¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet G"
+  },
+  {
+    "module": "Openmath.Proofs.TopFive",
+    "declaration": "Erdos585.hasPair_top_five",
+    "oracle": true,
+    "type": "Erdos585.HasPairF Erdos585.K5"
+  },
+  {
+    "module": "Openmath.Target",
+    "declaration": "Erdos585.hasTwoEdgeDisjointCyclesSameVertexSet_top_five",
+    "oracle": false,
+    "type": "Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet ⊤"
+  }
+]

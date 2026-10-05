@@ -1,0 +1,13 @@
+Erdős Problem 585
+
+Openmath/Target.lean is the problem statement as submitted to
+google-deepmind/formal-conjectures, unchanged, and keeps its notice:
+Copyright 2026 The Formal Conjectures Authors.
+Apache License, Version 2.0.
+
+All other files: Copyright 2026 Robert Huynh.
+Apache License, Version 2.0.
+
+Pinned dependency: google-deepmind/formal-conjectures
+https://github.com/google-deepmind/formal-conjectures
+Revision: 137aec5c7abd3aa61f7a73138a97279acfc79e93

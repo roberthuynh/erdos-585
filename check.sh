@@ -1,10 +1,14 @@
 #!/bin/bash
-# The only oracle for "result". Usage: ./check.sh [Openmath/Target.lean] [target]
+# Checks one declaration. Usage: ./check.sh <file.lean> <declaration>
 # PASS requires: lake build exit 0, zero `sorry` in the file (comments ignored), axioms within the allowlist.
 set -u -o pipefail
-cd "$(dirname "$0")/openmath" || exit 2
-FILE="${1:-Openmath/Target.lean}"
-DECL="${2:-target}"
+cd "$(dirname "$0")" || exit 2
+if [ "$#" -ne 2 ]; then
+  echo "usage: ./check.sh <file.lean> <declaration>, e.g. ./check.sh Openmath/Proofs/Final.lean Erdos585.maxEdges_seven" >&2
+  exit 2
+fi
+FILE="$1"
+DECL="$2"
 ALLOW='^(propext|Classical\.choice|Quot\.sound)$'
 
 MODNAME="${FILE%.lean}"; MODNAME="${MODNAME//\//.}"
@@ -13,14 +17,14 @@ if lake build "$MODNAME" 2>&1 | grep -v -E '^(✔|⚠) \[' | tail -n 25; then BU
 
 SORRIES=missing
 if [ -f "$FILE" ]; then
-  python3 - "$FILE" > /tmp/openmath-sorry-count <<'PY'
+  SORRIES=$(python3 - "$FILE" <<'PY'
 import re, sys
 s = open(sys.argv[1], encoding="utf-8").read()
 s = re.sub(r"/-.*?-/", "", s, flags=re.S)   # block comments and docstrings
 s = re.sub(r"--[^\n]*", "", s)              # line comments
 print(len(re.findall(r"\bsorry\b", s)))
 PY
-  SORRIES=$(cat /tmp/openmath-sorry-count)
+  )
   echo "== sorry in $FILE, comments ignored: $SORRIES"
 else
   echo "== $FILE missing"

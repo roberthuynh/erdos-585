@@ -1,0 +1,19 @@
+name = "openmath"
+defaultTargets = ["Openmath"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+weak.linter.style.copyright.formalConjectures = false
+weak.linter.style.namespace = true
+weak.linter.style.stubs = true
+weak.linter.style.openClassical = true
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "137aec5c7abd3aa61f7a73138a97279acfc79e93"
+
+[[lean_lib]]
+name = "Openmath"
