@@ -1,0 +1,4 @@
+>SP35 prune calls 14047398 sparsity-rejects 4985 q4-rejects 9936873
+real 57.68
+user 57.03
+sys 0.23

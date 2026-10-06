@@ -1,0 +1,90 @@
+{
+  "status": "independent finite replay complete; no Lean or project PASS",
+  "parity_control": {
+    "B_shore_size": 8,
+    "Gamma_vertices": 15,
+    "Gamma_edges": 42,
+    "ports": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "direct_exhaustive_row_count": 84577,
+    "direct_nodes": 614386,
+    "independent_column_polynomial_DP_count": 84577,
+    "odd": true,
+    "quartic_edges": 28,
+    "quartic_support_left": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "quartic_support_right": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "fixed_matching": {
+    "pair_valid": true,
+    "fixed": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "actual": [
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "mismatch": true,
+    "scope": "one valid pair does not follow a prescribed admissible matching; not a W1 refutation"
+  },
+  "controls": [
+    {
+      "graph": "K3,3",
+      "expected": 1,
+      "direct": 1,
+      "column_dp": 1
+    },
+    {
+      "graph": "K4,4",
+      "expected": 24,
+      "direct": 24,
+      "column_dp": 24
+    },
+    {
+      "graph": "one isolated vertex on a 3-by-3 bipartite graph",
+      "expected": 0
+    }
+  ],
+  "input_sha256": {
+    "scout-gadget/parity-control-certificate.json": "7c2205092aeabb080ba5a2f3f7d990ba5ea2087d145ef12b581e3842aab2c2ba",
+    "certificates/FIXED-MATCHING.json": "aaf4a9e2c0c2b4a64a4e7c9865f669bee17c893d1d98996ac3ff9273e14bbf5f"
+  },
+  "review_sources_sha256": {
+    "count_direct.c": "5fd2921af6e3c5b54eb6ad724d4a6c7334785657568a36457e7ae437c7bfb131",
+    "replay.py": "32cdc4522c33bc4e31c74a2c370b5f333503423e6df1b0fbce53857347685d79"
+  }
+}

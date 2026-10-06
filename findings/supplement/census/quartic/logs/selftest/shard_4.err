@@ -1,0 +1,6 @@
+>A [local path] -bX0x400d4D6 n=14 e=30-42 class=4/8
+>Q4 prune calls 17392 rejects 1172
+>Z 0 graphs generated in 0.03 sec
+real 0.03
+user 0.02
+sys 0.00

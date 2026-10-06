@@ -1,0 +1,4 @@
+K_{4,6}: 1650 cycles, 15 minimal pair masks
+np=4 nq=6 e=24 labelled=1 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=1 pairfree_with_K44=0 iso_classes=1 iso_pairfree=0
+np=4 nq=6 e=23 labelled=24 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=24 pairfree_with_K44=0 iso_classes=1 iso_pairfree=0
+np=4 nq=6 e=22 labelled=276 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=276 pairfree_with_K44=0 iso_classes=3 iso_pairfree=0

@@ -1,0 +1,7 @@
+H24 genbg 60 s:     2218 graphs
+H24 ptool H on first 200k: 13 s; mode=H graphs=2219 hits=1805 aux1=0 aux2=0 
+>A [local path] n=10+10 e=60:60 d=6:6 D=6:6 
+>Z 121790 graphs generated in 29.62 sec
+B6 N=20 genbg -u: 45 s
+B6 N=20 graphs   121790, pairc f: 144 s, pair-free        0; 
+B6 N=22 genbg 60 s:    75925 graphs

@@ -1,0 +1,6 @@
+{"c": 4, "t": 8, "eps": 0, "variant": "y55", "min_g": 10, "bad": 2, "bad_def": 2, "distinct_petals": 1} 2s
+{"c": 6, "t": 8, "eps": 0, "variant": "y55", "min_g": 10, "bad": 2, "bad_def": 2, "distinct_petals": 1} 8s
+{"c": 5, "t": 8, "eps": 1, "variant": "e1", "min_g": 10, "bad": 1, "bad_def": 1, "distinct_petals": 1} 13s
+{"c": 6, "t": 8, "eps": 0, "variant": "y4", "min_g": 10, "bad": 1, "bad_def": 2, "distinct_petals": 1} 19s
+RESULT PASS 4 4
+exit 0

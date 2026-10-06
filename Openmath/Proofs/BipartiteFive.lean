@@ -156,7 +156,7 @@ theorem graph_edge_count : graph.edgeFinset.card = 260 := by
     smul_eq_mul] at h
   omega
 
-/-- A two-colouring: within a block the vertices `3,4,5,7,9,11,12` form one side; blocks with an
+/-- A two-coloring: within a block the vertices `3,4,5,7,9,11,12` form one side; blocks with an
 odd index are flipped. -/
 def side (v : Fin 104) : Fin 2 :=
   if (v.val % 13 ∈ ([3,4,5,7,9,11,12] : List ℕ)) ↔ ((v.val / 13) % 2 = 1) then 0 else 1

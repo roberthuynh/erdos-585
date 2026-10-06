@@ -1,0 +1,5 @@
+>L n=13 calls=78560 rej_pair=35 rej_count=0
+>L n=14 calls=1043678 rej_pair=13285 rej_count=0
+>L n=15 calls=2086118 rej_pair=2085935 rej_count=0
+>L n=16 calls=10 rej_pair=10 rej_count=0
+>Z 0 graphs generated in 9.82 sec

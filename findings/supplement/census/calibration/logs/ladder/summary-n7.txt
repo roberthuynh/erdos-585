@@ -1,0 +1,4 @@
+n=7 e=17 level=-0.5 shards=1 graphs=1 with_pair=1 pair_free=0 user_s=0.0 wall_s=0
+n=7 e=16 level=-1.5 shards=1 graphs=5 with_pair=5 pair_free=0 user_s=0.0 wall_s=0
+n=7 e=15 level=-2.5 shards=1 graphs=14 with_pair=6 pair_free=8 user_s=0.0 wall_s=0
+n=7 FIRST pair-free at e=15 level=-2.5 count=8

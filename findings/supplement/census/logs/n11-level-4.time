@@ -1,0 +1,1 @@
+( timeout 1500 $G -q -d4 -D6 11 29:33 | ./pairc f >  2> ; )  13.74s user 0.05s system 113% cpu 12.197 total

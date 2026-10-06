@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Erdos problem 585, small n (standard library only).
 
-f(n) = max edges of a simple graph on n labelled vertices containing no two
+f(n) = max edges of a simple graph on n labeled vertices containing no two
 edge-disjoint cycles (simple, >= 3 vertices) with the same vertex set.
 
 Search: branch and bound over the edges in lexicographic order, adding an edge
 only if the graph stays good ("good" is closed under edge deletion).
 Safe symmetry breaking: vertex 0 has maximum degree d, N(0) = {1..d}, degrees
-are non-increasing on 1..d and on d+1..n-1 (every graph has such a labelling).
+are non-increasing on 1..d and on d+1..n-1 (every graph has such a labeling).
 Bound: current + min(undecided edges, sum_v min(cap_v - deg_v, undecided at v)/2).
 
 Incremental test: after adding e = uv to a good G, a bad pair must be
@@ -17,7 +17,7 @@ Hamiltonian cycle of G[S] edge-disjoint from P.
 
 Independent checks: every extremal class is re-tested from scratch (all cycles,
 grouped by vertex set, all pairs); for n <= brute_max a brute-force pass over
-all 2^C(n,2) labelled graphs with that from-scratch test.
+all 2^C(n,2) labeled graphs with that from-scratch test.
 """
 import argparse, math, random, sys, time
 
@@ -320,7 +320,7 @@ def brute(n):
 
 
 def brute_top(n, F):
-    """From-scratch test on every labelled graph with exactly F+1 edges (all must be
+    """From-scratch test on every labeled graph with exactly F+1 edges (all must be
     bad; good is closed under deletion, so this bounds f(n) <= F) and every graph
     with exactly F edges (count the good ones)."""
     from itertools import combinations
@@ -427,7 +427,7 @@ def main():
     if args.fresh:
         with open(args.md, 'w') as fh:
             fh.write('# Erdos 585, small n: exact f(n)\n\n'
-                     'f(n) = max edges of a simple graph on n labelled vertices with no two '
+                     'f(n) = max edges of a simple graph on n labeled vertices with no two '
                      'edge-disjoint cycles (>= 3 vertices) on the same vertex set.\n'
                      'Produced by `computations/erdos585_small.py` (Python 3, stdlib only); each '
                      'section is appended as soon as that n finishes.\n\n')
@@ -463,13 +463,13 @@ def main():
         for cf in classes:
             if not is_good_full(n, adj_from_mask(n, cf, edges), E):
                 raise SystemExit(f"n={n}: extremal class fails the from-scratch test; bug")
-        labelled = sum(math.factorial(n) // a for a in classes.values())
+        labeled = sum(math.factorial(n) // a for a in classes.values())
         reps = sorted(classes)
         rep = reps[0]
         degs = [bc(x) for x in adj_from_mask(n, rep, edges)]
         m = n * (n - 1) // 2
         mode = 'value only (<= pruning; classes listed are only those met)' if args.value_only else 'all extremal graphs enumerated'
-        log(f"n={n}: f={f} C(n,2)={m} classes={len(classes)} labelled={labelled} "
+        log(f"n={n}: f={f} C(n,2)={m} classes={len(classes)} labeled={labeled} "
             f"({mode}) nodes={nodes} checks={checks} {dt:.1f}s")
         md(f"## n = {n}\n")
         md(f"- f({n}) = **{f}** (C({n},2) = {m}, gap {m - f}); search: {mode}; "
@@ -477,7 +477,7 @@ def main():
         md(f"- extremal graph (edge list): {mask_edges(rep, edges)}; degrees {degs}")
         if not args.value_only:
             md(f"- extremal graphs: {len(classes)} isomorphism classes (deduplicated by canonical form), "
-               f"{labelled} labelled graphs (sum of n!/|Aut|); {len(masks)} labelled representatives met under symmetry breaking")
+               f"{labeled} labeled graphs (sum of n!/|Aut|); {len(masks)} labeled representatives met under symmetry breaking")
             if len(classes) <= 12:
                 for cf in reps:
                     md(f"  - |Aut| = {classes[cf]}: {mask_edges(cf, edges)}")
@@ -485,18 +485,18 @@ def main():
             t1 = time.perf_counter()
             bf, bcnt, bex = brute(n)
             dtb = time.perf_counter() - t1
-            ok = (bf == f) and (args.value_only or bcnt == labelled)
-            log(f"  brute n={n}: f={bf} labelled extremal={bcnt} {dtb:.1f}s match={ok}")
-            md(f"- brute force over all 2^{m} labelled graphs (from-scratch test): f = {bf}, "
-               f"{bcnt} labelled extremal graphs, {dtb:.2f} s; "
+            ok = (bf == f) and (args.value_only or bcnt == labeled)
+            log(f"  brute n={n}: f={bf} labeled extremal={bcnt} {dtb:.1f}s match={ok}")
+            md(f"- brute force over all 2^{m} labeled graphs (from-scratch test): f = {bf}, "
+               f"{bcnt} labeled extremal graphs, {dtb:.2f} s; "
                f"{'MATCHES' if ok else 'MISMATCH'} the backtracking")
         if args.brute_max < n <= args.brute_top:
             t1 = time.perf_counter()
             gt, gf = brute_top(n, f)
             dtb = time.perf_counter() - t1
-            ok = gt == 0 and (args.value_only or gf == labelled)
+            ok = gt == 0 and (args.value_only or gf == labeled)
             log(f"  brute-top n={n}: good graphs with {f+1} edges={gt}, with {f} edges={gf} {dtb:.1f}s match={ok}")
-            md(f"- top-level brute force (from-scratch test on all C({m},{f+1}) + C({m},{f}) labelled graphs): "
+            md(f"- top-level brute force (from-scratch test on all C({m},{f+1}) + C({m},{f}) labeled graphs): "
                f"{gt} good graphs with {f+1} edges, {gf} good graphs with {f} edges, {dtb:.2f} s; "
                f"{'MATCHES' if ok else 'MISMATCH'} the backtracking")
         if n <= args.levelwise:
@@ -504,10 +504,10 @@ def main():
             lf, lclasses, sizes = levelwise(n, log)
             dtl = time.perf_counter() - t1
             llab = sum(math.factorial(n) // a for a in lclasses.values())
-            ok = lf == f and (args.value_only or (set(lclasses) == set(classes) and llab == labelled))
-            log(f"  levelwise n={n}: f={lf} classes={len(lclasses)} labelled={llab} {dtl:.1f}s match={ok}")
+            ok = lf == f and (args.value_only or (set(lclasses) == set(classes) and llab == labeled))
+            log(f"  levelwise n={n}: f={lf} classes={len(lclasses)} labeled={llab} {dtl:.1f}s match={ok}")
             md(f"- level-wise check (good graphs up to isomorphism, one edge at a time, from-scratch test, "
-               f"no symmetry breaking or bound): f = {lf}, {len(lclasses)} extremal classes, {llab} labelled, "
+               f"no symmetry breaking or bound): f = {lf}, {len(lclasses)} extremal classes, {llab} labeled, "
                f"{dtl:.2f} s; good classes per edge count {sizes}; {'MATCHES' if ok else 'MISMATCH'} the backtracking")
         md("")
         fprev = f

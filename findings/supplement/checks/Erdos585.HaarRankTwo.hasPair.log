@@ -1,0 +1,10 @@
+== lake build Openmath.Proofs.HaarRankTwo (leanprover/lean4:v4.33.1)
+warning: Openmath/Target.lean:62:8: declaration uses `sorry`
+warning: Openmath/Target.lean:70:8: declaration uses `sorry`
+warning: Openmath/Target.lean:81:8: declaration uses `sorry`
+warning: Openmath/Target.lean:97:8: declaration uses `sorry`
+Build completed successfully (8948 jobs).
+== sorry in Openmath/Proofs/HaarRankTwo.lean, comments ignored: 0
+== axioms
+'Erdos585.HaarRankTwo.hasPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

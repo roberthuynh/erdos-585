@@ -1,0 +1,8 @@
+L??FfR[nBw^_~? ports=5 good=5 sp=5 list=6:1:1,7:1:1,8:1:1,9:1:1,10:1:1
+L??FeYw^Fw^_~? ports=4 good=4 sp=4 list=6:1:1,7:1:1,8:1:1,9:1:1
+L??FeW{}Fw^_~? ports=4 good=4 sp=4 list=6:1:1,7:1:1,8:1:1,9:1:1
+L??FeY{^Fo^_~? ports=5 good=5 sp=5 list=6:1:1,7:1:1,8:1:1,9:1:1,10:1:1
+L??FeY{^Dw^_~? ports=5 good=5 sp=5 list=6:1:1,7:1:1,8:1:1,9:1:1,10:1:1
+L??FfZ[nBw^?~? ports=6 good=6 sp=6 list=6:1:1,7:1:1,8:1:1,9:1:1,10:1:1,11:1:1
+L??FfZ[nBw\_~? ports=6 good=6 sp=6 list=6:1:1,7:1:1,8:1:1,9:1:1,10:1:1,11:1:1
+L??FvjkvDwN_}? ports=7 good=7 sp=7 list=6:1:1,7:1:1,8:1:1,9:1:1,10:1:1,11:1:1,12:1:1

@@ -1,0 +1,4 @@
+rcore 42 exit 0
+rcore 41 exit 0
+rcore 44 exit 0
+rcore 43 exit 0

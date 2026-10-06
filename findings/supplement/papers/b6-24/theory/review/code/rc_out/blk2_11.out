@@ -1,0 +1,2 @@
+file inst/blk2_11.g6 graphs 40 skipped 0 no4factor 0 graphs_with_Ex 18 | balancedT 1015220 rigid 56 (A 56, B-only 0) | fail L1.1 0 C2.2i 0 C2.2ii(E0) 0 C2.2ii(E1) 0 complement/(1) 0 | T2.1 tests 0 fail 0 weak 0 formula 0
+exit 0

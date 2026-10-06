@@ -1,0 +1,1 @@
+timeout 240 ./prop51 $cc < blocks_c$cc.g6  1.95s user 0.01s system 98% cpu 1.987 total

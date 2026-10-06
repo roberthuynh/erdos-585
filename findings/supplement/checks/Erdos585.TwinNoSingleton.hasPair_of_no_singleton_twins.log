@@ -1,0 +1,30 @@
+== lake build Openmath.Proofs.TwinNoSingleton (leanprover/lean4:v4.33.1)
+  [apply] simp [hx, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Openmath/Proofs/HaarCompositeDefs.lean:93:48: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hx, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Openmath/Proofs/HaarCompositeDefs.lean:99:57: This simp argument is unused:
+  map_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hx, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Openmath/Proofs/HaarCompositeDefs.lean:101:48: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hx, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (8963 jobs).
+== sorry in Openmath/Proofs/TwinNoSingleton.lean, comments ignored: 0
+== axioms
+'Erdos585.TwinNoSingleton.hasPair_of_no_singleton_twins' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

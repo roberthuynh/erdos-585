@@ -78,7 +78,7 @@ def parse_checks(output, names):
 def main():
     if hashlib.sha256((ROOT / "Openmath/Target.lean").read_bytes()).hexdigest() != STATEMENT_SHA256:
         raise ValueError("Statement differs from the frozen submitted file")
-    sources = sorted((ROOT / "Openmath/Proofs").glob("*.lean")) + [ROOT / "Openmath.lean", ROOT / "Axioms.lean"]
+    sources = sorted((ROOT / "Openmath/Proofs").rglob("*.lean")) + [ROOT / "Openmath.lean", ROOT / "Axioms.lean"]
     for path in sources:
         if re.search(DISALLOWED, lean_code(path.read_text())):
             raise ValueError(f"Disallowed proof token in {path.relative_to(ROOT)}")

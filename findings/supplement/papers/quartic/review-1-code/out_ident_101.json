@@ -1,0 +1,41 @@
+{
+ "seed": 101,
+ "c1_instances": 199,
+ "e4_instances": 50,
+ "e4_violations": 2,
+ "checks": {
+  "I1.1 D^S(S_U)=6|S_U|-e(S)": 69700,
+  "I1.1 D^S(S_W)=6|S_W|-e(S)": 69700,
+  "I1.1 g=2D^S(S_W)+6kappa=2D^S(S_U)-6kappa": 69700,
+  "I1.1 g=2d+6j, larger side d+6j": 69700,
+  "I1.3 g(S-v)=g(S)-6+2deg_S(v)": 208242,
+  "I1.2 g(AuB)+g(AnB)=g(A)+g(B)-2e(A-B,B-A)": 69700,
+  "basic e=6s-D_U": 199,
+  "basic D_W=6+D_U": 199,
+  "basic g(V)=6+2D_U": 199,
+  "basic g(V-w)=2D_U+2deg(w)": 1505,
+  "L1.4 slack=2k-D_A+eps (eps as in L3.1)": 2988752,
+  "L3.1 eps=D(C)+e(C,W-A) equals eps in G-y": 2988752,
+  "L3.1 g(Q)=6+2D_U+2k+2sig-2D(C)": 2988752,
+  "L3.1 kappa(Q)=k-1": 2988752,
+  "L1.4 min slack over all cuts = maxflow(G-y) - 4s": 470,
+  "L1.4 4-factor iff min slack >= 0": 470,
+  "L3.2 violation has k>=1 and D_A>=2k+1+eps": 66,
+  "L3.2 D_A<=6 so k<=2": 66,
+  "L3.2 g(Q)>=10 => DU=1,k=2,sig=-1,u1 notin C,D_A=5+eps,g(Q)=10,kappa=1": 10,
+  "L2.1 g<=8 => (j,d) in {(0,<=4),(1,<=1)}": 9,
+  "L1.5 violation: k=1, eps<=1, D_A>=3+eps": 2,
+  "L1.5 piece1 side C in-piece deficiency = eps": 2,
+  "L1.5 piece2 side P-A in-piece deficiency <= 1": 2,
+  "L1.5 sizes |C| + |P-A| = a-1": 2
+ },
+ "failures": 0,
+ "violation_profile(k,sigma,gQ,DC)": {
+  "(1, -1, 6, 0)": 18,
+  "(1, -1, 8, 0)": 33,
+  "(2, -1, 10, 0)": 10,
+  "(1, -2, 6, 0)": 2,
+  "(2, -1, 8, 0)": 3
+ },
+ "seconds": 20.7
+}

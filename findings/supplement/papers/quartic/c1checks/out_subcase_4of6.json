@@ -1,0 +1,35 @@
+{
+ "instances": 7,
+ "maxflow_4s-1": 7,
+ "S6_checked": 124,
+ "S8_plus_a": 51,
+ "S8_minus_x": 57,
+ "bad_ports_total": 10,
+ "S10_tight_petals": 10,
+ "S11_tested": 1,
+ "S11_min_g_10": 1,
+ "S11_sparse": 1,
+ "S11_examples": [
+  {
+   "c": 5,
+   "t": 8,
+   "eps": 0,
+   "variant": "y4",
+   "min_g": 10,
+   "witness_size": 2,
+   "bad_ports": 1,
+   "bad_def": 2
+  }
+ ],
+ "S10_pairs": 3,
+ "S5_signed_solved": 2,
+ "S5_signed_solution_(5,1)": 1,
+ "S5_beta_used_SAT": 2,
+ "S7_checked": 7,
+ "S7_adjacent_skipped": 7,
+ "S5_signed_solution_(4,0)": 1,
+ "seconds": 5.8,
+ "n_failures": 0,
+ "failures": [],
+ "RESULT": "PASS"
+}

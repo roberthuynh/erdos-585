@@ -1,0 +1,4 @@
+n=10 e=25 level=0.0 shards=1 graphs=60 with_pair=60 pair_free=0 user_s=0.0 wall_s=0
+n=10 e=24 level=-1.0 shards=1 graphs=1188 with_pair=1188 pair_free=0 user_s=0.0 wall_s=0
+n=10 e=23 level=-2.0 shards=1 graphs=8435 with_pair=6670 pair_free=1765 user_s=0.1 wall_s=0
+n=10 FIRST pair-free at e=23 level=-2.0 count=1765

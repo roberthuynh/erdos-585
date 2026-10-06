@@ -1,0 +1,22 @@
+>A code/geng_fast -X0x1000000d5D5 n=16 e=40 class=14253/20000
+>S outputs=0 cpu=12.90 sets=2079508 matchsets=2079508
+>L n=1 calls=1 rej_pair=0 rej_count=0
+>L n=2 calls=1 rej_pair=0 rej_count=0
+>L n=3 calls=1 rej_pair=0 rej_count=0
+>L n=4 calls=2 rej_pair=0 rej_count=0
+>L n=5 calls=3 rej_pair=0 rej_count=0
+>L n=6 calls=8 rej_pair=0 rej_count=0
+>L n=7 calls=25 rej_pair=0 rej_count=0
+>L n=8 calls=150 rej_pair=0 rej_count=0
+>L n=9 calls=1386 rej_pair=0 rej_count=0
+>L n=10 calls=29226 rej_pair=10 rej_count=0
+>L n=11 calls=694749 rej_pair=217 rej_count=0
+>L n=12 calls=1773 rej_pair=0 rej_count=0
+>L n=13 calls=74694 rej_pair=25 rej_count=0
+>L n=14 calls=1010348 rej_pair=13754 rej_count=0
+>L n=15 calls=2044101 rej_pair=2043881 rej_count=0
+>L n=16 calls=25 rej_pair=25 rej_count=0
+>Z 0 graphs generated in 12.90 sec
+real 14.20
+user 12.87
+sys 0.02

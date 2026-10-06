@@ -1,0 +1,17 @@
+block 0: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 1: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 2: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 3: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 4: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 5: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 6: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+block 7: 13 vertices, 30 internal + 5 boundary edges, 923041 local colourings, 21 boundary colourings, 21 signatures
+graph bip5-avoider-104.edges, 8 blocks of 13
+local colourings per block: [923041, 923041, 923041, 923041, 923041, 923041, 923041, 923041]
+boundary colourings per block: [21, 21, 21, 21, 21, 21, 21, 21]
+signatures per block before the sound filter: [237, 237, 237, 237, 237, 237, 237, 237]
+signatures per block after the sound filter: [21, 21, 21, 21, 21, 21, 21, 21]
+boundary-consistent assignments reached: 417
+signature combinations checked: 417
+combine time 0.0s
+RESULT: NO PAIR (exhaustive)

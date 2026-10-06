@@ -1,0 +1,5 @@
+>A [local path] n=10+10 e=54:54 d=5:5 D=6:6  class=100/200
+>Z 0 graphs generated in 28.98 sec
+real 29.17
+user 28.87
+sys 0.10

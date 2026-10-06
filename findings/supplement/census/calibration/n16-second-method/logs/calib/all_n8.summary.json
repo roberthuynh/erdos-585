@@ -1,0 +1,25 @@
+{
+ "S_size_hist": {
+  "5": 600,
+  "6": 579,
+  "7": 421,
+  "8": 234
+ },
+ "clauses_per_n": {
+  "8": 1909
+ },
+ "cpu_seconds": 0.68,
+ "decode_mismatch": 0,
+ "degree_mismatch": 0,
+ "graphs": 12346,
+ "input": "[local scratch folder]",
+ "n_hist": {
+  "8": 12346
+ },
+ "nopair": 10512,
+ "pair": 1834,
+ "phase_x": false,
+ "seconds": 0.65,
+ "solver": "m22",
+ "verify_fail": 0
+}

@@ -1,0 +1,19 @@
+>A [local path] -bd4D6 n=13 e=28-31
+>H nout=124 cpu=0.03 nodes=4263
+>H level 1: prune calls 1, cut 0
+>H level 2: prune calls 1, cut 0
+>H level 3: prune calls 1, cut 0
+>H level 4: prune calls 2, cut 0
+>H level 5: prune calls 6, cut 0
+>H level 6: prune calls 16, cut 0
+>H level 7: prune calls 50, cut 0
+>H level 8: prune calls 196, cut 0
+>H level 9: prune calls 858, cut 0
+>H level 10: prune calls 3399, cut 0
+>H level 11: prune calls 4854, cut 4
+>H level 12: prune calls 3246, cut 51
+>H level 13: prune calls 424, cut 300
+>Z 124 graphs generated in 0.03 sec
+real 0.04
+user 0.03
+sys 0.00

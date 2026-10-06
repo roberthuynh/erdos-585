@@ -1,0 +1,40 @@
+{
+ "seed": 1,
+ "stats": {
+  "built": 40,
+  "planted_ok": 40,
+  "sparse": 21,
+  "P_hist": {
+   "2": 19,
+   "3": 2
+  },
+  "pairs": 25,
+  "comparable_pairs": 25,
+  "incomparable_pairs": 0,
+  "brute_crosscheck": 0,
+  "truncated": 0,
+  "by_shape": {
+   "c5_p6_t7_v1": 7,
+   "c5_p6_t6_v0": 4,
+   "c5_p6_t7_v0": 9,
+   "c5_p5_t7_v0": 1
+  }
+ },
+ "checks": {
+  "chain: both planted sets have g = 10, kappa = 1, contain u1": 40,
+  "chain: enumerated cut has slack -1": 536,
+  "chain sparse: no W-vertex with maxflow(G - w) <= 4s - 2": 21,
+  "chain sparse: both planted petals found in P": 21,
+  "chain L4.1(1) |Q|>=3": 44,
+  "chain L4.1(2) D^Q(Q_W)=2, D(Q_W)<=2": 44,
+  "chain L4.1(3) deg_Q(u1)>=3": 44,
+  "chain L4.2(a) |QnQ'|>=2": 25,
+  "chain L4.2(b) QuQ' != V": 25,
+  "chain L4.2(c) QnQ', QuQ' in P": 25,
+  "chain: union of P in P": 21,
+  "chain L4.4: bad ports = ports in a member of P": 21,
+  "chain L4.4: bad-port deficiency <= 2": 21
+ },
+ "failures": 0,
+ "seconds": 60.6
+}

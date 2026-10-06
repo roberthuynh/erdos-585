@@ -1,0 +1,23 @@
+{
+ "S_size_hist": {
+  "14": 23,
+  "16": 18
+ },
+ "clauses_per_n": {
+  "16": 24105
+ },
+ "cpu_seconds": 0.14,
+ "decode_mismatch": 0,
+ "degree_mismatch": 0,
+ "graphs": 41,
+ "input": "bipartite_gengb.g6",
+ "n_hist": {
+  "16": 41
+ },
+ "nopair": 0,
+ "pair": 41,
+ "phase_x": false,
+ "seconds": 0.05,
+ "solver": "m22",
+ "verify_fail": 0
+}

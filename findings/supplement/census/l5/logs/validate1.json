@@ -1,0 +1,81 @@
+{
+ "bad": 0,
+ "brute_files": {},
+ "named": {
+  "K33": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K4": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K44": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  },
+  "K44-e": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K5": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  },
+  "Petersen": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "octahedron": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  }
+ },
+ "pairfree_files": {
+  "../../../585-fable/data/frontier-n10-level-5.g6": {
+   "graphs": 11,
+   "sat_free": 11,
+   "sat_pair": 0
+  },
+  "../../../585-fable/data/frontier-n7-level-5.g6": {
+   "graphs": 1,
+   "sat_free": 1,
+   "sat_pair": 0
+  },
+  "../../../585-fable/data/frontier-n8-level-5.g6": {
+   "graphs": 2,
+   "sat_free": 2,
+   "sat_pair": 0
+  },
+  "../../../585-fable/data/frontier-n9-level-5.g6": {
+   "graphs": 3,
+   "sat_free": 3,
+   "sat_pair": 0
+  },
+  "../../wave3/pairs/data/t1_Z.g6": {
+   "graphs": 5625,
+   "sat_free": 5625,
+   "sat_pair": 0
+  }
+ },
+ "random": {
+  "disagree": 0,
+  "free": 2377,
+  "pair": 623,
+  "tested": 3000
+ }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "n": 12,
+  "edges": 36,
+  "minimum_degree": 5,
+  "partitions": 32,
+  "outputs": 1,
+  "cpu_seconds_sum": 534.5,
+  "counts": {
+    "1": [
+      32,
+      0
+    ],
+    "2": [
+      32,
+      0
+    ],
+    "3": [
+      64,
+      0
+    ],
+    "4": [
+      128,
+      0
+    ],
+    "5": [
+      416,
+      0
+    ],
+    "6": [
+      1920,
+      0
+    ],
+    "7": [
+      14432,
+      0
+    ],
+    "8": [
+      54760,
+      22
+    ],
+    "9": [
+      80295,
+      1185
+    ],
+    "10": [
+      1560110,
+      303302
+    ],
+    "11": [
+      31837694,
+      30395998
+    ],
+    "12": [
+      7573429,
+      7573428
+    ]
+  },
+  "conclusion": "one exhaustive method gives f(12)=36 and one extremal isomorphism class, using computational f(11)<=31 and the completed 37-edge exclusion",
+  "limitation": "independent upper-bound method still running; no Lean upper-bound theorem"
+}

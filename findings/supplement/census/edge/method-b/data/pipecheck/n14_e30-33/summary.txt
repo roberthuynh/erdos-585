@@ -1,0 +1,2 @@
+pruned run: >Z 290 graphs generated in 0.24 sec real 0.25 user 0.24 
+n14_e30-33 | geng -b -d4 -D6 14 30:33 | pruned 290 | plain+h4filt 290 | same set: yes | dup canon in pruned: 0 | plain: >Z 8261 graphs generated in 0.23 sec; >T total 8261 with_H 7971 without_H 290 nonbip 0 nodes 42131 | SAT on plain output: SAT4 290 graphs: with H 0, without 290 (solver minisat22) expect-none: OK | reference 290, same set: yes

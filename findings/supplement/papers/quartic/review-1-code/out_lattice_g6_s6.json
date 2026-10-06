@@ -1,0 +1,22 @@
+{
+ "tag": "g6_s6",
+ "summary": {
+  "instances": 8,
+  "sparse": 8,
+  "sparse_DU1": 8,
+  "sparse_DU0": 0,
+  "sparse_with_P_ge2": 0,
+  "max_P": 0,
+  "sparse_with_bad": 0,
+  "pairs_tested": 0
+ },
+ "checks": {
+  "brute min proper g agrees with flow-based min_proper_g (capped at 10)": 8,
+  "sparse C1 => W-degrees >= 4": 8,
+  "L4.4 bad ports = ports lying in a member of P": 8,
+  "L4.4 bad-port deficiency <= 2": 8
+ },
+ "failures": 0,
+ "examples": {},
+ "seconds": 0.3
+}

@@ -1,0 +1,37 @@
+2026-10-05 22:50:45 collect
+collect_exit=0
+shards_done=2000/2000 missing=[]
+totals geng=2806490 graphs=2806490 H=2806335 C=155 X=0 E=0 swap=30388 swapC=74 cutN=155 cutL=0 cutH=0 cutSkip=0 bruteMismatch=0 verifyFail=0 nodesH=38735260 nodesC=15876
+maxima maxNodesH=125 maxNodesC=276
+geng_total=2806490 uncolored_U=2806490 swap_S=30388 colour_preserving_2U-S=5582592
+cut_graphs_C=155 swapC=74 colour_preserving_2C-swapC=236
+HD=2806335 colour_preserving_HD=5582356 X=0 E=0
+shard_wall_sum_s=46973
+2026-10-05 22:50:45 files=    2000
+2026-10-05 22:50:45 verify_certs (4 parallel parts)
+data/final/files.part.ad verify_exit=0
+data/final/files.part.ac verify_exit=0
+data/final/files.part.aa verify_exit=0
+data/final/files.part.ab verify_exit=0
+swapC=74 swapH=30314 C=155 E=0 H=2806335 lines=2806490 X=0 failures=0 
+0
+2026-10-05 22:51:21 extract C / X / E lines, all g6
+2026-10-05 22:51:36 lines= 2806490 C=     155 XE=       0 Hsample=    2807
+2026-10-05 22:51:46 distinct g6 strings:  2806490
+2026-10-05 22:51:46 SAT on cut graphs
+sat_exit=0
+sat_hd graphs=155 HD=0 NOT_HD=155 BADCERT=0
+2026-10-05 22:51:46 SAT on 1-in-1000 sample of HD graphs
+sat_exit=0
+sat_hd graphs=2807 HD=2807 NOT_HD=0 BADCERT=0
+2026-10-05 22:51:48 labelg: uncoloured canonical forms of all graphs (duplicate check)
+labelg_exit=0
+2026-10-05 22:53:10 canonical lines= 2806490 distinct= 2806490
+2026-10-05 22:53:10 labelg: cut graphs vs original 236 non-HD
+2026-10-05 22:53:10 mine distinct=     155 original lines=     236 original distinct=     155 identical=yes
+2026-10-05 22:53:10 swap flags vs labelg 2-coloured canonical forms, all graphs
+labelg_swap mine_swap: 0 0 2776102
+labelg_swap mine_swap: 1 1 30388
+2026-10-05 22:57:15 geng CPU seconds (sum of >Z lines)
+shards=2000 geng_cpu_s=31933.6 geng_cpu_h=8.87
+2026-10-05 22:57:15 FINAL CHECKS DONE

@@ -1,0 +1,5 @@
+start Mon Oct  5 00:31:59 EDT 2026
+cmd: [local path] -X-2 -d4:4 -D6:6 9 9 48:49 r/24 (r = 0..23)
+a29067acd4d5a611fb56321f5eed7910bf90fc6db7712d0261eec4ebbd84404c  [local path]
+end Mon Oct  5 00:33:29 EDT 2026
+TAG=f1_n18 MOD=24 finished=24/24 graphs=0 found_lines=0 user_cpu_s=1021.23

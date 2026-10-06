@@ -1,0 +1,2 @@
+pruned run: >Z 4 graphs generated in 0.01 sec real 0.01 user 0.00 
+n12_all | geng -b -d4 -D6 12 | pruned 4 | plain+h4filt 4 | same set: yes | dup canon in pruned: 0 | plain: >Z 143 graphs generated in 0.01 sec; >T total 143 with_H 139 without_H 4 nonbip 0 nodes 549 | SAT on plain output: SAT4 4 graphs: with H 0, without 4 (solver minisat22) expect-none: OK | reference 4, same set: yes

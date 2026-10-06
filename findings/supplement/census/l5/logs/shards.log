@@ -1,0 +1,187 @@
+2026-10-05 21:39:38 EDT start n=10 0/1
+2026-10-05 21:39:38 EDT done n=10 0/1 wall=0s
+2026-10-05 21:39:38 EDT start n=12 0/1
+2026-10-05 21:39:39 EDT done n=12 0/1 wall=1s
+2026-10-05 21:39:39 EDT start n=14 0/1
+2026-10-05 21:39:42 EDT done n=14 0/1 wall=2s
+2026-10-05 21:40:06 EDT driver start pid=79156 jobs=6
+2026-10-05 21:40:06 EDT start n=17 2/64
+2026-10-05 21:40:06 EDT start n=17 1/64
+2026-10-05 21:40:06 EDT start n=17 4/64
+2026-10-05 21:40:06 EDT start n=17 0/64
+2026-10-05 21:40:06 EDT start n=17 3/64
+2026-10-05 21:40:06 EDT start n=17 5/64
+2026-10-05 21:41:06 EDT done n=17 1/64 wall=60s
+2026-10-05 21:41:06 EDT start n=17 6/64
+2026-10-05 21:41:22 EDT done n=17 4/64 wall=76s
+2026-10-05 21:41:22 EDT start n=17 7/64
+2026-10-05 21:41:22 EDT done n=17 2/64 wall=76s
+2026-10-05 21:41:22 EDT start n=17 8/64
+2026-10-05 21:41:24 EDT done n=17 5/64 wall=78s
+2026-10-05 21:41:24 EDT start n=17 9/64
+2026-10-05 21:41:26 EDT done n=17 0/64 wall=80s
+2026-10-05 21:41:27 EDT start n=17 10/64
+2026-10-05 21:41:51 EDT done n=17 8/64 wall=29s
+2026-10-05 21:41:51 EDT start n=17 11/64
+2026-10-05 21:41:53 EDT done n=17 10/64 wall=27s
+2026-10-05 21:41:54 EDT start n=17 12/64
+2026-10-05 21:41:58 EDT done n=17 9/64 wall=34s
+2026-10-05 21:41:58 EDT done n=17 7/64 wall=36s
+2026-10-05 21:41:58 EDT start n=17 13/64
+2026-10-05 21:41:58 EDT start n=17 14/64
+2026-10-05 21:42:01 EDT done n=17 3/64 wall=115s
+2026-10-05 21:42:02 EDT start n=17 15/64
+2026-10-05 21:42:49 EDT done n=17 11/64 wall=58s
+2026-10-05 21:42:49 EDT start n=17 16/64
+2026-10-05 21:43:05 EDT done n=17 13/64 wall=67s
+2026-10-05 21:43:05 EDT start n=17 17/64
+2026-10-05 21:43:08 EDT done n=17 6/64 wall=122s
+2026-10-05 21:43:08 EDT start n=17 18/64
+2026-10-05 21:43:10 EDT done n=17 12/64 wall=76s
+2026-10-05 21:43:10 EDT start n=17 19/64
+2026-10-05 21:43:30 EDT done n=17 16/64 wall=41s
+2026-10-05 21:43:31 EDT start n=17 20/64
+2026-10-05 21:43:34 EDT done n=17 14/64 wall=96s
+2026-10-05 21:43:34 EDT start n=17 21/64
+2026-10-05 21:43:35 EDT done n=17 15/64 wall=94s
+2026-10-05 21:43:35 EDT start n=17 22/64
+2026-10-05 21:44:20 EDT done n=17 17/64 wall=75s
+2026-10-05 21:44:20 EDT start n=17 23/64
+2026-10-05 21:44:37 EDT done n=17 19/64 wall=87s
+2026-10-05 21:44:38 EDT start n=17 24/64
+2026-10-05 21:44:41 EDT done n=17 20/64 wall=70s
+2026-10-05 21:44:41 EDT start n=17 25/64
+2026-10-05 21:44:42 EDT done n=17 18/64 wall=94s
+2026-10-05 21:44:43 EDT start n=17 26/64
+2026-10-05 21:44:54 EDT done n=17 22/64 wall=79s
+2026-10-05 21:44:54 EDT start n=17 27/64
+2026-10-05 21:45:25 EDT done n=17 21/64 wall=111s
+2026-10-05 21:45:25 EDT start n=17 28/64
+2026-10-05 21:45:26 EDT done n=17 27/64 wall=32s
+2026-10-05 21:45:26 EDT start n=17 29/64
+2026-10-05 21:45:45 EDT done n=17 23/64 wall=85s
+2026-10-05 21:45:45 EDT start n=17 30/64
+2026-10-05 21:45:48 EDT done n=17 25/64 wall=67s
+2026-10-05 21:45:48 EDT start n=17 31/64
+2026-10-05 21:46:03 EDT done n=17 26/64 wall=80s
+2026-10-05 21:46:04 EDT start n=17 32/64
+2026-10-05 21:46:15 EDT superset n9_noflags done wall=0s
+2026-10-05 21:46:15 EDT superset n10_noflags done wall=0s
+2026-10-05 21:46:15 EDT superset n11_noflags done wall=0s
+2026-10-05 21:46:15 EDT superset n12_noflags done wall=0s
+2026-10-05 21:46:16 EDT superset n13_noflags done wall=1s
+2026-10-05 21:46:18 EDT superset n14_noflags done wall=2s
+2026-10-05 21:46:31 EDT done n=17 24/64 wall=113s
+2026-10-05 21:46:31 EDT start n=17 33/64
+2026-10-05 21:46:58 EDT done n=17 32/64 wall=54s
+2026-10-05 21:46:58 EDT start n=17 34/64
+2026-10-05 21:46:58 EDT done n=17 31/64 wall=70s
+2026-10-05 21:46:59 EDT start n=17 35/64
+2026-10-05 21:47:03 EDT done n=17 28/64 wall=98s
+2026-10-05 21:47:03 EDT start n=17 36/64
+2026-10-05 21:47:12 EDT done n=17 29/64 wall=106s
+2026-10-05 21:47:13 EDT start n=17 37/64
+2026-10-05 21:47:18 EDT superset n15_noflags done wall=60s
+2026-10-05 21:47:53 EDT done n=17 30/64 wall=128s
+2026-10-05 21:47:53 EDT start n=17 38/64
+2026-10-05 21:47:55 EDT superset n17_D6only_r0of4 done wall=37s
+2026-10-05 21:48:14 EDT done n=17 38/64 wall=20s
+2026-10-05 21:48:14 EDT start n=17 39/64
+2026-10-05 21:48:24 EDT done n=17 34/64 wall=86s
+2026-10-05 21:48:24 EDT start n=17 40/64
+2026-10-05 21:48:30 EDT superset n17_D6only_r1of4 done wall=35s
+2026-10-05 21:48:34 EDT done n=17 36/64 wall=91s
+2026-10-05 21:48:34 EDT start n=17 41/64
+2026-10-05 21:48:40 EDT done n=17 33/64 wall=129s
+2026-10-05 21:48:41 EDT start n=17 42/64
+2026-10-05 21:48:47 EDT done n=17 35/64 wall=108s
+2026-10-05 21:48:47 EDT start n=17 43/64
+2026-10-05 21:48:52 EDT done n=17 37/64 wall=100s
+2026-10-05 21:48:52 EDT start n=17 44/64
+2026-10-05 21:48:55 EDT superset n17_D6only_r2of4 done wall=25s
+2026-10-05 21:49:14 EDT done n=17 42/64 wall=33s
+2026-10-05 21:49:14 EDT start n=17 45/64
+2026-10-05 21:49:22 EDT superset n17_D6only_r3of4 done wall=27s
+2026-10-05 21:49:26 EDT done n=17 43/64 wall=39s
+2026-10-05 21:49:26 EDT start n=17 46/64
+2026-10-05 21:49:45 EDT done n=17 45/64 wall=31s
+2026-10-05 21:49:46 EDT start n=17 47/64
+2026-10-05 21:49:58 EDT done n=17 41/64 wall=84s
+2026-10-05 21:49:58 EDT start n=17 48/64
+2026-10-05 21:50:05 EDT done n=17 39/64 wall=111s
+2026-10-05 21:50:05 EDT start n=17 49/64
+2026-10-05 21:50:06 EDT done n=17 44/64 wall=74s
+2026-10-05 21:50:06 EDT start n=17 50/64
+2026-10-05 21:50:25 EDT done n=17 46/64 wall=59s
+2026-10-05 21:50:25 EDT start n=17 51/64
+2026-10-05 21:50:32 EDT done n=17 48/64 wall=34s
+2026-10-05 21:50:32 EDT start n=17 52/64
+2026-10-05 21:50:50 EDT done n=17 40/64 wall=146s
+2026-10-05 21:50:51 EDT start n=17 53/64
+2026-10-05 21:51:35 EDT done n=17 53/64 wall=44s
+2026-10-05 21:51:35 EDT start n=17 54/64
+2026-10-05 21:51:54 EDT done n=17 47/64 wall=128s
+2026-10-05 21:51:54 EDT start n=17 55/64
+2026-10-05 21:51:57 EDT done n=17 52/64 wall=85s
+2026-10-05 21:51:57 EDT start n=17 56/64
+2026-10-05 21:52:15 EDT done n=17 54/64 wall=39s
+2026-10-05 21:52:15 EDT start n=17 57/64
+2026-10-05 21:52:16 EDT done n=17 51/64 wall=111s
+2026-10-05 21:52:16 EDT start n=17 58/64
+2026-10-05 21:52:17 EDT done n=17 50/64 wall=131s
+2026-10-05 21:52:17 EDT start n=17 59/64
+2026-10-05 21:52:46 EDT done n=17 56/64 wall=49s
+2026-10-05 21:52:46 EDT start n=17 60/64
+2026-10-05 21:53:00 EDT done n=17 49/64 wall=175s
+2026-10-05 21:53:00 EDT start n=17 61/64
+2026-10-05 21:53:02 EDT done n=17 55/64 wall=68s
+2026-10-05 21:53:02 EDT start n=17 62/64
+2026-10-05 21:53:09 EDT done n=17 57/64 wall=54s
+2026-10-05 21:53:09 EDT start n=17 63/64
+2026-10-05 21:54:20 EDT done n=17 61/64 wall=80s
+2026-10-05 21:54:20 EDT start n=16 0/8
+2026-10-05 21:54:52 EDT done n=17 63/64 wall=103s
+2026-10-05 21:54:52 EDT start n=16 1/8
+2026-10-05 21:55:02 EDT done n=17 62/64 wall=120s
+2026-10-05 21:55:02 EDT start n=16 2/8
+2026-10-05 21:55:03 EDT superset n16_d4only done wall=341s
+2026-10-05 21:55:03 EDT superset script end
+2026-10-05 21:55:04 EDT done n=17 58/64 wall=168s
+2026-10-05 21:55:05 EDT start n=16 3/8
+2026-10-05 21:56:24 EDT done n=16 3/8 wall=79s
+2026-10-05 21:56:24 EDT done n=17 60/64 wall=218s
+2026-10-05 21:56:24 EDT start n=16 4/8
+2026-10-05 21:56:25 EDT start n=16 5/8
+2026-10-05 21:56:32 EDT done n=16 0/8 wall=132s
+2026-10-05 21:56:32 EDT start n=16 6/8
+2026-10-05 21:56:36 EDT done n=16 2/8 wall=94s
+2026-10-05 21:56:36 EDT start n=16 7/8
+2026-10-05 21:56:48 EDT done n=17 59/64 wall=271s
+2026-10-05 21:56:48 EDT start n=5 0/1
+2026-10-05 21:56:48 EDT done n=5 0/1 wall=0s
+2026-10-05 21:56:49 EDT start n=6 0/1
+2026-10-05 21:56:50 EDT done n=6 0/1 wall=0s
+2026-10-05 21:56:50 EDT start n=7 0/1
+2026-10-05 21:56:51 EDT done n=7 0/1 wall=1s
+2026-10-05 21:56:51 EDT start n=8 0/1
+2026-10-05 21:56:51 EDT done n=8 0/1 wall=0s
+2026-10-05 21:56:51 EDT start n=9 0/1
+2026-10-05 21:56:52 EDT done n=9 0/1 wall=1s
+2026-10-05 21:56:52 EDT start n=11 0/1
+2026-10-05 21:56:52 EDT done n=11 0/1 wall=0s
+2026-10-05 21:56:52 EDT start n=13 0/1
+2026-10-05 21:56:53 EDT done n=13 0/1 wall=0s
+2026-10-05 21:56:53 EDT start n=15 0/1
+2026-10-05 21:57:07 EDT done n=15 0/1 wall=14s
+2026-10-05 21:57:08 EDT count n=15: >A [local path] -bd4D6 n=15 e=40
+>Z 2895 graphs generated in 0.21 sec
+2026-10-05 21:57:14 EDT count n=16: >A [local path] -bd4D6 n=16 e=43
+>Z 116035 graphs generated in 2.66 sec
+2026-10-05 21:57:30 EDT done n=16 1/8 wall=158s
+2026-10-05 21:58:03 EDT done n=16 4/8 wall=99s
+2026-10-05 21:58:12 EDT done n=16 6/8 wall=100s
+2026-10-05 21:58:37 EDT done n=16 5/8 wall=132s
+2026-10-05 21:58:39 EDT count n=17: >A [local path] -bd4D6 n=17 e=46
+>Z 1237978 graphs generated in 53.74 sec
+2026-10-05 21:59:01 EDT done n=16 7/8 wall=145s
+2026-10-05 21:59:01 EDT driver end pid=79156

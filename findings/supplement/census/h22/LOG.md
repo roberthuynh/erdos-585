@@ -1,0 +1,34 @@
+2026-10-05 21:18:45 EDT start: H22B lane, independent second method for H22 at n=22
+2026-10-05 21:23:49 EDT found the original method: genbg -q -c -d4:4 -D4:4 11 11 44:44 in 24 shards | ptool H (pairs/run_q4a11.sh, LOG 11:05), 5,582,592 color-preserving classes, 236 non-HD, all with a 2-edge cut (cuts.c). Referee re-ran n<=20 with geng -c -b -d4 -D4 + review/code/hd.c + networkx swapcount.py. So the brief's suggested genbg IS the original's generator; this lane uses geng -c -b (a different generator) at n=22, plus own 2-cut filter, own HD decider (edge 2-coloring search, not Hamilton-cycle enumeration), own color-swap test. Machine: 18 cores, load ~34 from other lanes.
+2026-10-05 21:26:43 EDT geng pilot (n=22, -c -b -d4 -D4 -u, 4 slices of 2000: 0,700,1400,1999): 1363/1422/1629/1460 graphs, user 15.1/17.3/16.1/14.4 s (wall 21-25 s under load). Projection: ~15.7 s x 2000 = ~8.7 CPU-hours generation, ~2.9M uncolored graphs. Under the 25 core-hour budget; decider expected to add well under 1 core-hour. Next: write own decider code/hdq.c.
+2026-10-05 21:29:29 EDT code/hdq.c written and compiled (clang -O2 -Wall -Wextra clean). Known graphs: K44, K5, octahedron, L(K33) HD; L(Petersen) no 2-cut and not HD (X N, Kotzig); 2xK5-e has a 2-cut, decider N. geng n=8..18 + hdq -B: U = 1,1,4,14,129,1980; swap S = 1,1,4,12,65,432; 2U-S = 1,1,4,16,193,3528 = the original's color-preserving counts; 2-cut graphs 0,0,0,0,1,2 (color-preserving 1,2 = original non-HD); every other graph HD with verified certificate (max 16 nodes); brute-force 2-cut check agrees on all. Started n=20 validation detached: code/driver.sh 20 32 8 data/n20 (pid 37144).
+2026-10-05 21:31:15 EDT n=20 validation done (32 shards, 55 s wall): U=62,611 (= referee geng), S=3,437, 2U-S=121,785 (= original genbg count); 2-cut graphs 15 uncolored / 17 color-preserving (= original 17 non-HD), decider N on all 15 (max 152 nodes); 62,596 HD, max 36 nodes; brute-force cut check agrees; code/verify_certs.py (independent Python) re-checks all 62,611 lines, 0 failures. Next: SAT second decider test.
+2026-10-05 21:32:12 EDT SAT decider (code/sat_hd.py, PySAT Cadical153, lazy cut clauses): known graphs agree (L(Petersen) not HD in 111 iterations); all 15 n=20 cut graphs NOT_HD; 501 sampled n=20 HD graphs HD. n=22 pipeline pilot, shard 1000/2000: geng 17.9 s, hdq -B +0.04 s for 1,340 graphs (all HD). Projection ~9-10 CPU-hours total. Launched production: code/driver.sh 22 2000 10 data/n22, driver PID 45444, xargs PID 45452 (nohup). SHA-256s in data/sha256_launch.txt. RESUME.md written.
+2026-10-05 21:34:03 EDT labelg comparison of cut graphs with the original non-HD lists (uncoloured canonical forms): n=16 1=1, n=18 2=2, n=20 original 17 lines -> 15 classes = my 15, identical sets. Swap flag vs labelg 2-colored canonical forms (code/swap_labelg_prep.py, partition a^10 b^10) on all 62,611 n=20 graphs: agree on every graph (3,437 swap, 59,174 not). n=22 progress: 53/2000 shards, 0 failed; ETA ~3 h wall at current load.
+2026-10-05 21:35:14 EDT early n=22 checks on 60 shards (82,867 graphs): verify_certs 82,857 H + 10 C, 0 failures (57 us/line, full run ~3 min); swap flags = labelg 2-colored canonical forms (a^11 b^11) on all 82,867. Progress 93/2000, mean geng CPU 15.9 s/shard (projection 8.9 CPU-h), ETA ~22:50. H22B.md draft written.
+2026-10-05 21:39:37 EDT wrote code/final_checks.sh (collect, Python re-verification in 4 parts, SAT on all cut graphs and a 1/1000 HD sample, labelg duplicate check, labelg comparison with the original 236, swap flags vs labelg on all graphs, geng CPU sum). Progress 234/2000, 0 failed. Disk 78 GB free.
+2026-10-05 21:40:00 EDT progress 244/2000 done, 0 failed, driver alive=yes
+2026-10-05 21:44:00 EDT progress 339/2000 done, 0 failed, driver alive=yes
+2026-10-05 21:48:01 EDT progress 444/2000 done, 0 failed, driver alive=yes
+2026-10-05 21:52:01 EDT progress 549/2000 done, 0 failed, driver alive=yes
+2026-10-05 21:56:01 EDT progress 636/2000 done, 0 failed, driver alive=yes
+2026-10-05 21:58:17 EDT note: machine load average ~135 (other lanes and projects); geng workers at nice 15 effective (shell nice 5 + 10), ~60% CPU each; rate ~0.35-0.45 shards/s
+2026-10-05 22:00:01 EDT progress 735/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:04:01 EDT progress 857/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:08:01 EDT progress 939/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:11:28 EDT progress 1022/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:15:28 EDT progress 1103/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:19:28 EDT progress 1211/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:23:29 EDT progress 1293/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:27:29 EDT progress 1380/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:31:29 EDT progress 1472/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:35:29 EDT progress 1563/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:39:29 EDT progress 1661/2000 done, 0 failed, driver alive=yes
+2026-10-05 22:43:33 EDT progress 1760/2000 done, 0 failed
+2026-10-05 22:46:31 EDT progress 1851/2000 done, 0 failed
+2026-10-05 22:49:18 EDT progress 1952/2000 done, 0 failed
+2026-10-05 22:50:39 EDT driver finished: done 2000/2000, failed 0, ALLDONE=yes
+2026-10-05 22:50:45 EDT started code/final_checks.sh detached, pid 88082, log logs/final_checks.log
+2026-10-05 22:50:54 EDT COLLECTED n=22: 2000/2000 shards, geng total = hdq graphs = 2,806,490 uncolored classes; swap S = 30,388; 2U-S = 5,582,592 = original exactly. 2-edge-cut graphs C = 155 (swapC 74, 2C-swapC = 236 = original non-HD exactly); HD = 2,806,335 = U - C (color-preserving 5,582,356 = original HD count); X = 0, E = 0, bruteMismatch 0, verifyFail 0, decider N on all 155 cut graphs (max 276 nodes), max 125 nodes on HD graphs. Final checks running.
+2026-10-05 22:58:13 EDT FINAL CHECKS DONE (logs/final_checks.log): verify_certs.py on all 2,806,490 lines: 2,806,335 H + 155 C, 0 failures; 2,806,490 distinct g6 strings and 2,806,490 distinct labelg canonical forms (no isomorphic duplicates); SAT: 155/155 cut graphs NOT_HD (3-7 iterations), 2,807/2,807 sampled HD graphs HD; labelg: my 155 cut graphs = the original's 236 non-HD lines as uncolored classes (155), identical sets; swap flag = labelg on all 2,806,490 (30,388 swap); geng CPU 31,933.6 s = 8.87 h. Original shard summaries re-summed: 5,582,592 graphs, 5,582,356 HD, 0 unknown. Launch binaries unchanged (data/sha256_final.txt). Removed reproducible intermediates (all_lines, all.g6, all.can, swap A/B files). Writing H22B.md.
+2026-10-05 22:59:28 EDT H22B.md written with the verdict: all 2,806,335 graphs without a 2-edge cut are HD (0 exceptions); counts match the original exactly (5,582,592; 5,582,356 HD; 236 non-HD = the 155 cut classes). RESUME.md marked finished. Lane done.

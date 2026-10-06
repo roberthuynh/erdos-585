@@ -21,12 +21,12 @@ import Openmath.Proofs.Counting
 The double wheel `K₂ ∨ Cₘ` has two adjacent hubs joined to every vertex of an `m`-cycle, so it
 has `3 m + 1` edges. For `m ≥ 5` it contains no two edge-disjoint cycles with the same vertex set:
 
-* in such a pair `(p, q)` with common vertex set `S`, every `v ∈ S` has exactly two neighbours
-  along `p` and two along `q`, and these are disjoint, so `v` has exactly four neighbours along
+* in such a pair `(p, q)` with common vertex set `S`, every `v ∈ S` has exactly two neighbors
+  along `p` and two along `q`, and these are disjoint, so `v` has exactly four neighbors along
   the union of the two edge sets;
 * a rim vertex has degree four, so if it lies in `S` then all its edges are used and all its
-  neighbours lie in `S`; propagating along the rim, every spoke to a hub is used, and the hub has
-  at least `m ≥ 5` neighbours along the union, a contradiction;
+  neighbors lie in `S`; propagating along the rim, every spoke to a hub is used, and the hub has
+  at least `m ≥ 5` neighbors along the union, a contradiction;
 * if `S` has no rim vertex then `S` has at most two elements, but it has at least five
   (`five_le_card_support`).
 
@@ -42,7 +42,7 @@ section Pair
 variable {V : Type*} [DecidableEq V] {G : SimpleGraph V} {u v : V} {p : G.Walk u u}
   {q : G.Walk v v}
 
-/-- The neighbours of `x` along the edges of a walk are the neighbours of `x` in its subgraph. -/
+/-- The neighbors of `x` along the edges of a walk are the neighbors of `x` in its subgraph. -/
 lemma coe_filter_mem_edges (x : V) :
     ((p.support.toFinset.filter (fun w => s(x, w) ∈ p.edges)) : Set V) =
       p.toSubgraph.neighborSet x := by
@@ -51,14 +51,14 @@ lemma coe_filter_mem_edges (x : V) :
     Walk.adj_toSubgraph_iff_mem_edges]
   exact ⟨fun h => h.2, fun h => ⟨p.snd_mem_support_of_mem_edges h, h⟩⟩
 
-/-- A vertex of a cycle has exactly two neighbours along the cycle. -/
+/-- A vertex of a cycle has exactly two neighbors along the cycle. -/
 lemma card_filter_mem_edges (hp : p.IsCycle) {x : V} (hx : x ∈ p.support) :
     (p.support.toFinset.filter (fun w => s(x, w) ∈ p.edges)).card = 2 := by
   rw [← Set.ncard_coe_finset, coe_filter_mem_edges]
   exact hp.ncard_neighborSet_toSubgraph_eq_two hx
 
 /-- In two edge-disjoint cycles with the same vertex set, every vertex has exactly four
-neighbours along the union of the two edge sets. -/
+neighbors along the union of the two edge sets. -/
 theorem card_neighbors_of_pair (hp : p.IsCycle) (hq : q.IsCycle)
     (hS : p.support.toFinset = q.support.toFinset)
     (hE : Disjoint p.edges.toFinset q.edges.toFinset) {x : V} (hx : x ∈ p.support) :
@@ -83,7 +83,7 @@ theorem card_neighbors_of_pair (hp : p.IsCycle) (hq : q.IsCycle)
   exact Finset.disjoint_left.1 hE (List.mem_toFinset.2 hw1.2) (List.mem_toFinset.2 hw2.2)
 
 /-- In two edge-disjoint cycles with the same vertex set, every vertex has at least four
-neighbours along the union of the two edge sets. -/
+neighbors along the union of the two edge sets. -/
 theorem four_le_card_neighbors_of_pair (hp : p.IsCycle) (hq : q.IsCycle)
     (hS : p.support.toFinset = q.support.toFinset)
     (hE : Disjoint p.edges.toFinset q.edges.toFinset) {x : V} (hx : x ∈ p.support) :
@@ -91,8 +91,8 @@ theorem four_le_card_neighbors_of_pair (hp : p.IsCycle) (hq : q.IsCycle)
       (fun w => s(x, w) ∈ p.edges.toFinset ∪ q.edges.toFinset)).card :=
   (card_neighbors_of_pair hp hq hS hE hx).ge
 
-/-- A neighbour of `x` along the union of the edge sets of two cycles with the same vertex set
-lies in that vertex set and is a neighbour of `x` in `G`. -/
+/-- A neighbor of `x` along the union of the edge sets of two cycles with the same vertex set
+lies in that vertex set and is a neighbor of `x` in `G`. -/
 theorem mem_support_and_adj_of_mem_union_edges
     (hS : p.support.toFinset = q.support.toFinset) {x w : V}
     (h : s(x, w) ∈ p.edges.toFinset ∪ q.edges.toFinset) :
@@ -144,12 +144,12 @@ instance (m : ℕ) : DecidableRel (doubleWheel m).Adj
   | .inr _, .inl _ => inferInstanceAs (Decidable True)
   | .inr a, .inr b => inferInstanceAs (Decidable (a ≠ b))
 
-/-- The neighbours of a rim vertex: its neighbours on the cycle and both hubs. -/
+/-- The neighbors of a rim vertex: its neighbors on the cycle and both hubs. -/
 lemma neighborFinset_doubleWheel_inl (m : ℕ) (i : Fin m) :
     (doubleWheel m).neighborFinset (.inl i) = ((cycleGraph m).neighborFinset i).disjSum univ := by
   ext (j | a) <;> simp
 
-/-- The neighbours of a hub: every rim vertex and the other hub. -/
+/-- The neighbors of a hub: every rim vertex and the other hub. -/
 lemma neighborFinset_doubleWheel_inr (m : ℕ) (a : Fin 2) :
     (doubleWheel m).neighborFinset (.inr a) = univ.disjSum {a}ᶜ := by
   ext (j | b) <;> simp [eq_comm]
@@ -166,7 +166,7 @@ lemma degree_doubleWheel_inr (m : ℕ) (a : Fin 2) :
   rw [← card_neighborFinset_eq_degree, neighborFinset_doubleWheel_inr, card_disjSum,
     card_univ, Fintype.card_fin, card_compl, card_singleton, Fintype.card_fin]
 
-/-- The neighbours of a rim vertex: its two rim neighbours and the two hubs. -/
+/-- The neighbors of a rim vertex: its two rim neighbors and the two hubs. -/
 lemma neighborFinset_doubleWheel_inl_eq (k : ℕ) (i : Fin (k + 3)) :
     (doubleWheel (k + 3)).neighborFinset (.inl i) =
       {.inl (i - 1), .inl (i + 1), .inr 0, .inr 1} := by
@@ -263,7 +263,7 @@ theorem doubleWheel_not_hasPair (k : ℕ) (hk : 2 ≤ k) :
     exact key j (hall j) _ doubleWheel_adj_inl_inr
   have hhub : (Sum.inr 0 : Fin (k + 3) ⊕ Fin 2) ∈ p.support :=
     List.mem_toFinset.1 (memS _ _ (key i₀ hi₀ (Sum.inr 0) doubleWheel_adj_inl_inr))
-  -- so the hub has `k + 3 ≥ 5` neighbours along the union, not four
+  -- so the hub has `k + 3 ≥ 5` neighbors along the union, not four
   have h4 := card_neighbors_of_pair hp hq hS hE hhub
   have hsub : Finset.univ.map Function.Embedding.inl ⊆ p.support.toFinset.filter
       (fun w => s(Sum.inr 0, w) ∈ p.edges.toFinset ∪ q.edges.toFinset) := by

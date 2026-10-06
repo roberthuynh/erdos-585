@@ -1,0 +1,32 @@
+{
+ "cuts": 37420,
+ "e10": 100,
+ "fresh_no": 0,
+ "fresh_span": 0,
+ "graphs": 100,
+ "hash_mismatch": 0,
+ "mincut_hist": {
+  "10": 100
+ },
+ "no": 0,
+ "non_e10": 0,
+ "non_e10_graphs": [],
+ "rounds_hist": {
+  "1": 2133,
+  "2": 2712,
+  "3": 1184,
+  "4": 406,
+  "5": 119,
+  "6": 30,
+  "7": 11,
+  "8": 3,
+  "9": 1,
+  "10": 1
+ },
+ "sec_cpu": 1.12,
+ "sec_wall": 1.23,
+ "solver": "glucose4",
+ "span": 6600,
+ "tests": 6600,
+ "witness_fail": 0
+}

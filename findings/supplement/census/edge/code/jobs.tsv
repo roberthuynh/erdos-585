@@ -1,0 +1,4 @@
+# tag	kind	mod	binary	args	note
+n18_99_e47	q4	40	[local path]	-X-2 -d4:4 -D6:6 9 9 47:47	n=18 e=47=3n-7 sides 9+9 delta>=4
+n19_910_e50	q4	200	[local path]	-X-2 -d4:4 -D6:6 9 10 50:50	n=19 e=50=3n-7 sides 9+10 delta>=4
+n20_1010_e54_d5	q4	200	[local path]	-X-2 -d5:5 -D6:6 10 10 54:54	n=20 e=54=3n-6 sides 10+10 delta>=5

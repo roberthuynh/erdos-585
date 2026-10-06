@@ -1,0 +1,74 @@
+== start 00:15:42
+    progress d=9: nodes=500000 best=27 310s
+    progress d=9: nodes=1000000 best=27 637s
+    progress d=9: nodes=1500000 best=27 1171s
+    progress d=9: nodes=2000000 best=27 1629s
+    progress d=9: nodes=2500000 best=27 1933s
+    progress d=9: nodes=3000000 best=27 2174s
+    progress d=9: nodes=3500000 best=27 2671s
+  n=10 d=9: best=27 found_here=1 nodes=3829947 checks=2481529 2949.2s
+    progress d=8: nodes=4000000 best=27 187s
+    progress d=8: nodes=4500000 best=27 554s
+    progress d=8: nodes=5000000 best=27 864s
+    progress d=8: nodes=5500000 best=27 1313s
+    progress d=8: nodes=6000000 best=27 1644s
+    progress d=8: nodes=6500000 best=27 1968s
+    progress d=8: nodes=7000000 best=27 2347s
+    progress d=8: nodes=7500000 best=27 2722s
+    progress d=8: nodes=8000000 best=27 3117s
+    progress d=8: nodes=8500000 best=27 3550s
+    progress d=8: nodes=9000000 best=27 3937s
+    progress d=8: nodes=9500000 best=27 4325s
+    progress d=8: nodes=10000000 best=27 4705s
+    progress d=8: nodes=10500000 best=27 5096s
+    progress d=8: nodes=11000000 best=27 5358s
+    progress d=8: nodes=11500000 best=27 5727s
+    progress d=8: nodes=12000000 best=27 6059s
+    progress d=8: nodes=12500000 best=27 6330s
+  n=10 d=8: best=27 found_here=0 nodes=12927657 checks=7857687 6594.5s
+    progress d=7: nodes=13000000 best=27 62s
+    progress d=7: nodes=13500000 best=27 501s
+    progress d=7: nodes=14000000 best=27 920s
+    progress d=7: nodes=14500000 best=27 1254s
+    progress d=7: nodes=15000000 best=27 1552s
+    progress d=7: nodes=15500000 best=27 1919s
+    progress d=7: nodes=16000000 best=27 2251s
+    progress d=7: nodes=16500000 best=27 2603s
+    progress d=7: nodes=17000000 best=27 2984s
+    progress d=7: nodes=17500000 best=27 3360s
+    progress d=7: nodes=18000000 best=27 3719s
+    progress d=7: nodes=18500000 best=27 4079s
+    progress d=7: nodes=19000000 best=27 4449s
+    progress d=7: nodes=19500000 best=27 4828s
+    progress d=7: nodes=20000000 best=27 5197s
+    progress d=7: nodes=20500000 best=27 5534s
+    progress d=7: nodes=21000000 best=27 5737s
+    progress d=7: nodes=21500000 best=27 5939s
+    progress d=7: nodes=22000000 best=27 6137s
+    progress d=7: nodes=22500000 best=27 6413s
+    progress d=7: nodes=23000000 best=27 6734s
+    progress d=7: nodes=23500000 best=27 7202s
+    progress d=7: nodes=24000000 best=27 7526s
+    progress d=7: nodes=24500000 best=27 7850s
+    progress d=7: nodes=25000000 best=27 8160s
+    progress d=7: nodes=25500000 best=27 8450s
+  n=10 d=7: best=27 found_here=0 nodes=25569903 checks=14951202 8485.4s
+    progress d=6: nodes=26000000 best=27 357s
+    progress d=6: nodes=26500000 best=27 744s
+    progress d=6: nodes=27000000 best=27 1110s
+    progress d=6: nodes=27500000 best=27 1460s
+    progress d=6: nodes=28000000 best=27 1739s
+    progress d=6: nodes=28500000 best=27 1966s
+    progress d=6: nodes=29000000 best=27 2352s
+    progress d=6: nodes=29500000 best=27 2694s
+    progress d=6: nodes=30000000 best=27 3081s
+    progress d=6: nodes=30500000 best=27 3458s
+    progress d=6: nodes=31000000 best=27 3813s
+  n=10 d=6: best=27 found_here=0 nodes=31175037 checks=18128963 3896.5s
+  n=10 d=5: skipped (n*d/2 below target)
+  n=10 d=4: skipped (n*d/2 below target)
+  n=10 d=3: skipped (n*d/2 below target)
+  n=10 d=2: skipped (n*d/2 below target)
+  n=10 d=1: skipped (n*d/2 below target)
+n=10: f=27 C(n,2)=45 classes=1 labelled=226800 (value only (<= pruning; classes listed are only those met)) nodes=31175037 checks=18128963 21925.5s
+== exit 0 06:21:08

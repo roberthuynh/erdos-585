@@ -1,0 +1,1 @@
+certificates_ok=388 bad=0 nopair_lines=0

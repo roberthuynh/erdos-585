@@ -1,0 +1,18 @@
+{
+ "s": 6,
+ "slice": null,
+ "graphs": 39,
+ "DU0": 11,
+ "DU1": 28,
+ "no_quartic": [],
+ "bad_port_graphs": 26,
+ "minW4_graphs": 12,
+ "minW4_sparse": 9,
+ "minW4_nonsparse_examples": 0,
+ "min_g_hist": {
+  "10": 9,
+  "8": 3
+ },
+ "seconds": 0.1
+}
+RESULT: PASS

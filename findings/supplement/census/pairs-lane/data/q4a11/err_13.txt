@@ -1,0 +1,1 @@
+mode=H graphs=234048 hits=234034 aux1=0 aux2=0

@@ -1,0 +1,4 @@
+shape=n19k44 relax2 tests=40: (1) star SAT 40 (with one-crossing: 0) star UNSAT 0; (2) agree 40 disagree 0 (configs without one-crossing: 0)
+shape=n21k44 relax2 tests=40: (1) star SAT 40 (with one-crossing: 0) star UNSAT 0; (2) agree 40 disagree 0 (configs without one-crossing: 0)
+shape=n21_55 relax2 tests=40: (1) star SAT 40 (with one-crossing: 0) star UNSAT 0; (2) agree 40 disagree 0 (configs without one-crossing: 0)
+shape=n23_55 relax2 tests=40: (1) star SAT 40 (with one-crossing: 0) star UNSAT 0; (2) agree 40 disagree 0 (configs without one-crossing: 0)

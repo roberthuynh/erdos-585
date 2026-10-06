@@ -1,0 +1,4 @@
+graph 0: e10cut=2 flow=2 agree
+FLOW_CHECK 1/1 agree
+graph 0: e10cut=10 flow=10 agree
+FLOW_CHECK 1/1 agree

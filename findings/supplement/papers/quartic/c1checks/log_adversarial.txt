@@ -1,0 +1,24 @@
+{
+ "generated": 145753,
+ "all_ports_bad": 10168,
+ "step_counts": {
+  "P": 10168
+ },
+ "by_s": {
+  "s=7,DU=1": 1624,
+  "s=6,DU=1": 1895,
+  "s=9,DU=1": 1257,
+  "s=7,DU=0": 605,
+  "s=10,DU=1": 1176,
+  "s=8,DU=1": 1455,
+  "s=6,DU=0": 721,
+  "s=10,DU=0": 449,
+  "s=9,DU=0": 461,
+  "s=8,DU=0": 525
+ },
+ "seconds": 200.0,
+ "n_failures": 0,
+ "failures": [],
+ "RESULT": "PASS"
+}
+exit 0

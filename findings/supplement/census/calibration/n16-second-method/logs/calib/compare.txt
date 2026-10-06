@@ -1,0 +1,8 @@
+n=3 4 graphs: graphs_sat=4 graphs_brute=4 nopair_sat=4 nopair_brute=4 mismatches=0
+n=4 11 graphs: graphs_sat=11 graphs_brute=11 nopair_sat=11 nopair_brute=11 mismatches=0
+n=5 34 graphs: graphs_sat=34 graphs_brute=34 nopair_sat=33 nopair_brute=33 mismatches=0
+n=6 156 graphs: graphs_sat=156 graphs_brute=156 nopair_sat=148 nopair_brute=148 mismatches=0
+n=7 1044 graphs: graphs_sat=1044 graphs_brute=1044 nopair_sat=954 nopair_brute=954 mismatches=0
+n=8 12346 graphs: graphs_sat=12346 graphs_brute=12346 nopair_sat=10512 nopair_brute=10512 mismatches=0
+n=9 e=21: graphs_sat=276 graphs_brute=276 nopair_sat=15 nopair_brute=15 mismatches=0
+n=10 e=23: graphs_sat=8435 graphs_brute=8435 nopair_sat=1765 nopair_brute=1765 mismatches=0

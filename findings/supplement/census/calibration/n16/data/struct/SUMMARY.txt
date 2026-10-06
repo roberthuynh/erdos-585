@@ -1,0 +1,6 @@
+Complete searches of natural subfamilies (5-regular graphs on 16 vertices), run 04:06-04:09 EDT:
+- Triangle-free (geng -t): 388 graphs (plain geng -t -d5 -D5 16, 3.1 s). pairc: 388 with a pair, 0 pair-free; pairdec: the same. Pruned geng_pp -t: 0 outputs (3.4 s). Files: data/struct/trianglefree-all.g6, logs/struct/trianglefree*.
+- Bipartite (geng -b): 41 graphs. pairc: 41 with a pair. Pruned geng_pp -b: 0 outputs. Files: data/struct/bipartite-all.g6, logs/struct/bipartite-all.err.
+- Square-free (geng -f, no 4-cycle): no 5-regular graph on 16 vertices exists.
+- Small edge cuts: CALIBRATION.md R3 (wave3 census) already shows that a 5-regular pair-free graph on 16 vertices has no edge cut of at most 3 edges (it relies on the B-1 ladder values L5(8) = -2 and L5(12) = -1.5).
+- K4-free (geng -k) was piloted and is too large for tonight: shard 0/2000 ran over 120 s.

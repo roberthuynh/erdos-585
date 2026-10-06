@@ -1,0 +1,30 @@
+# shape=n21k44 mode=enum star=False f2=True levels=('k44w', 'c55') solver=cadical195 jobs=28
+n21k44 0 K44-e 0 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 0 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 1 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 6, 'k0': 6, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 1 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 6, 'k0': 6, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 2 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 3, 'k1': 7, 'k44w': False}
+n21k44 0 K44-e 3 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 6, 'k0': 6, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 2 5 True 1 0 0.01 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 2, 'k0': 4, 'k1': 8, 'k44w': False}
+n21k44 0 K44-e 4 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 4 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 3 5 True 1 0 0.01 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 2, 'k0': 4, 'k1': 8, 'k44w': False}
+n21k44 0 K44-e 5 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 5 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 6 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 6 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 7 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 7 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 8 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 8 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 9 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 9 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 10 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 6, 'k0': 6, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 10 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 6, 'k0': 6, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 11 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 11 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 12 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+n21k44 0 K44-e 12 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 1, 'k0': 6, 'k1': 8, 'k44w': False}
+n21k44 0 K44-e 13 4 True 1 0 0.0 {'onecross': True, 'D_P': 5, 'D_Q': 5, 'eHB': 5, 'k0': 7, 'k1': 3, 'k44w': False}
+n21k44 0 K44-e 13 5 True 1 0 0.0 {'onecross': True, 'D_P': 6, 'D_Q': 6, 'eHB': 5, 'k0': 7, 'k1': 2, 'k44w': False}
+# SUMMARY shape=n21k44 mode=enum star=False f2=True: UNSAT 0 SAT 28 UNKNOWN 0 (SAT with one-crossing 28) wall 0.1 s

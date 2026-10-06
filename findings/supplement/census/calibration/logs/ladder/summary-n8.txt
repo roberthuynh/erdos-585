@@ -1,0 +1,4 @@
+n=8 e=20 level=0.0 shards=1 graphs=3 with_pair=3 pair_free=0 user_s=0.0 wall_s=0
+n=8 e=19 level=-1.0 shards=1 graphs=16 with_pair=16 pair_free=0 user_s=0.0 wall_s=0
+n=8 e=18 level=-2.0 shards=1 graphs=68 with_pair=49 pair_free=19 user_s=0.0 wall_s=0
+n=8 FIRST pair-free at e=18 level=-2.0 count=19

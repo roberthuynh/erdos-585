@@ -1,0 +1,7 @@
+g0 N????BoBvoXwn_^O]W? n=15 e=37 CERTIFIED (empty clause derived, 9 lemmas)
+g1 O????BoBvoXwn_^O]W?@o n=16 e=40 CERTIFIED (empty clause derived, 9 lemmas)
+g2 P????BoBvoXwn_^O]W?@o@_C n=17 e=43 CERTIFIED (empty clause derived, 9 lemmas)
+g3 Q????BoBvoXwn_^O]W?@o@_C?oG n=18 e=46 CERTIFIED (empty clause derived, 9 lemmas)
+g4 R????BoBvoXwn_^O]W?@o@_C?oGA?g n=19 e=49 CERTIFIED (empty clause derived, 9 lemmas)
+g5 S????BoBvoXwn_^O]W?@o@_C?oGA?m??G n=20 e=52 CERTIFIED (empty clause derived, 9 lemmas)
+CERTIFIED 6 of 6

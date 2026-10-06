@@ -1,0 +1,138 @@
+Process SpawnPoolWorker-4:
+Traceback (most recent call last):
+  File "[local path]", line 131, in worker
+    put((job, i, result))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[local path]", line 314, in _bootstrap
+    self.run()
+  File "[local path]", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "[local path]", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-2:
+Traceback (most recent call last):
+  File "[local path]", line 131, in worker
+    put((job, i, result))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[local path]", line 314, in _bootstrap
+    self.run()
+  File "[local path]", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "[local path]", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-1:
+Traceback (most recent call last):
+  File "[local path]", line 131, in worker
+    put((job, i, result))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[local path]", line 314, in _bootstrap
+    self.run()
+  File "[local path]", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "[local path]", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-3:
+Traceback (most recent call last):
+  File "[local path]", line 131, in worker
+    put((job, i, result))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "[local path]", line 314, in _bootstrap
+    self.run()
+  File "[local path]", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "[local path]", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "[local path]", line 377, in put
+    self._writer.send_bytes(obj)
+  File "[local path]", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "[local path]", line 427, in _send_bytes
+    self._send(header + buf)
+  File "[local path]", line 384, in _send
+    n = write(self._handle, buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[local path] UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

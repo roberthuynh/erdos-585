@@ -1,0 +1,6 @@
+n17 e44 8+9: shard 3/50 every 120th graph: 2000 sampled, with H 2000 (C vs SAT mismatches 0; flow vs SAT on 150: 0); peeled boundary pairs 2000 (first graph without H has 39.4 edges on average; C vs expected mismatches 0; flow vs expected on 140: 0) [7 s]
+n18 e47 8+10: shard 5/50 every 80th graph: 23 sampled, with H 23 (C vs SAT mismatches 0; flow vs SAT on 150: 0); peeled boundary pairs 23 (first graph without H has 42.2 edges on average; C vs expected mismatches 0; flow vs expected on 69: 0) [1 s]
+n18 e47 9+9: shard 77/200 every 5000th graph: 2000 sampled, with H 2000 (C vs SAT mismatches 0; flow vs SAT on 150: 0); peeled boundary pairs 2000 (first graph without H has 41.9 edges on average; C vs expected mismatches 0; flow vs expected on 140: 0) [21 s]
+n19 e50 9+10: shard 123/2000 every 3000th graph: 2000 sampled, with H 2000 (C vs SAT mismatches 0; flow vs SAT on 150: 0); peeled boundary pairs 2000 (first graph without H has 44.3 edges on average; C vs expected mismatches 0; flow vs expected on 140: 0) [35 s]
+n19 e51 9+10 d5: shard 7/50 every 100th graph: 989 sampled, with H 989 (C vs SAT mismatches 0; flow vs SAT on 150: 0); peeled boundary pairs 989 (first graph without H has 43.7 edges on average; C vs expected mismatches 0; flow vs expected on 140: 0) [15 s]
+SAMPLECHECK PASS

@@ -1,0 +1,8 @@
+n=9 e=21:21 plain_geng+pairc_free=15 pruned_geng_out=15 canon_sets_equal=yes
+n=9 e=20:20 plain_geng+pairc_free=642 pruned_geng_out=642 canon_sets_equal=yes
+n=10 e=23:23 plain_geng+pairc_free=1765 pruned_geng_out=1765 canon_sets_equal=yes
+n=10 e=22:22 plain_geng+pairc_free=21029 pruned_geng_out=21029 canon_sets_equal=yes
+n=11 e=26:26 plain_geng+pairc_free=1501 pruned_geng_out=1501 canon_sets_equal=yes
+n=11 e=27:27 plain_geng+pairc_free=0 pruned_geng_out=0 canon_sets_equal=yes
+n=10 e=0:25 plain_geng+pairc_free=178784 pruned_geng_out=178784 canon_sets_equal=yes
+n=8 e=0:20 plain_geng+pairc_free=796 pruned_geng_out=796 canon_sets_equal=yes

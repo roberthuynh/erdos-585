@@ -1,0 +1,55 @@
+GAMMA5: n=13 e=30 I-degrees=[5, 5, 5, 5, 5, 5] O-degrees=[5, 5, 5, 5, 4, 3, 3] simple=True bipartite=True 4-core size=0
+L5: n=8 e=20 degrees=[5]
+L5: cycles=411 pairs by brute force=0 ilp=NONE
+composite: n=104 e=260 degrees=[5] simple=True bipartite=True
+round 1 S 44 red comps 4 blue comps 4
+round 2 S 44 red comps 5 blue comps 3
+round 3 S 44 red comps 4 blue comps 3
+round 4 S 44 red comps 4 blue comps 5
+round 5 S 44 red comps 5 blue comps 3
+round 6 S 44 red comps 3 blue comps 3
+round 7 S 44 red comps 4 blue comps 4
+round 8 S 44 red comps 2 blue comps 5
+round 9 S 44 red comps 2 blue comps 3
+round 10 S 44 red comps 3 blue comps 2
+round 11 S 44 red comps 1 blue comps 2
+round 12 S 44 red comps 2 blue comps 4
+round 13 S 44 red comps 2 blue comps 3
+round 14 S 44 red comps 6 blue comps 2
+round 15 S 44 red comps 5 blue comps 3
+round 16 S 44 red comps 5 blue comps 4
+round 17 S 44 red comps 5 blue comps 3
+round 18 S 44 red comps 3 blue comps 3
+round 19 S 44 red comps 3 blue comps 2
+round 20 S 44 red comps 3 blue comps 2
+round 21 S 44 red comps 5 blue comps 4
+round 22 S 44 red comps 3 blue comps 4
+round 23 S 44 red comps 3 blue comps 2
+round 24 S 44 red comps 3 blue comps 5
+round 25 S 44 red comps 4 blue comps 4
+round 26 S 44 red comps 2 blue comps 5
+round 27 S 44 red comps 5 blue comps 5
+round 28 S 44 red comps 4 blue comps 3
+round 29 S 44 red comps 2 blue comps 4
+round 30 S 44 red comps 3 blue comps 5
+round 31 S 44 red comps 5 blue comps 3
+round 32 S 44 red comps 3 blue comps 4
+round 33 S 44 red comps 4 blue comps 1
+round 34 S 44 red comps 2 blue comps 3
+round 35 S 44 red comps 3 blue comps 3
+round 36 S 44 red comps 5 blue comps 3
+round 37 S 44 red comps 3 blue comps 4
+round 38 S 44 red comps 3 blue comps 5
+round 39 S 44 red comps 5 blue comps 4
+round 40 S 44 red comps 6 blue comps 5
+round 41 S 44 red comps 6 blue comps 5
+round 42 S 44 red comps 5 blue comps 2
+round 43 S 44 red comps 2 blue comps 3
+round 44 S 44 red comps 3 blue comps 3
+round 45 S 44 red comps 3 blue comps 5
+round 46 S 44 red comps 5 blue comps 4
+round 47 S 44 red comps 4 blue comps 3
+round 48 S 44 red comps 5 blue comps 4
+round 49 S 44 red comps 1 blue comps 4
+round 50 S 44 red comps 4 blue comps 1
+composite ILP: UNKNOWN Time limit reached. (HiGHS Status 13: Time limit reached) (round 51) 6000s

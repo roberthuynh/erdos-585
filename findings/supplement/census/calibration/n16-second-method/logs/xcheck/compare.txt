@@ -1,0 +1,17 @@
+all n=3 vs brute: graphs_sat=4 graphs_brute=4 nopair_sat=4 nopair_brute=4 mismatches=0
+all n=4 vs brute: graphs_sat=11 graphs_brute=11 nopair_sat=11 nopair_brute=11 mismatches=0
+all n=5 vs brute: graphs_sat=34 graphs_brute=34 nopair_sat=33 nopair_brute=33 mismatches=0
+all n=6 vs brute: graphs_sat=156 graphs_brute=156 nopair_sat=148 nopair_brute=148 mismatches=0
+all n=7 vs brute: graphs_sat=1044 graphs_brute=1044 nopair_sat=954 nopair_brute=954 mismatches=0
+all n=8 vs brute: graphs_sat=12346 graphs_brute=12346 nopair_sat=10512 nopair_brute=10512 mismatches=0
+ladder n=7 e=15 vs pairsat: graphs_sat=14 graphs_brute=14 nopair_sat=8 nopair_brute=8 mismatches=0
+ladder n=8 e=18 vs pairsat: graphs_sat=68 graphs_brute=68 nopair_sat=19 nopair_brute=19 mismatches=0
+ladder n=9 e=21 vs pairsat: graphs_sat=276 graphs_brute=276 nopair_sat=15 nopair_brute=15 mismatches=0
+ladder n=9 e=22 vs pairsat: graphs_sat=28 graphs_brute=28 nopair_sat=0 nopair_brute=0 mismatches=0
+ladder n=10 e=23 vs pairsat: graphs_sat=8435 graphs_brute=8435 nopair_sat=1765 nopair_brute=1765 mismatches=0
+ladder n=10 e=24 vs pairsat: graphs_sat=1188 graphs_brute=1188 nopair_sat=0 nopair_brute=0 mismatches=0
+ladder n=10 e=25 vs pairsat: graphs_sat=60 graphs_brute=60 nopair_sat=0 nopair_brute=0 mismatches=0
+ladder n=11 e=26 vs pairsat: graphs_sat=56071 graphs_brute=56071 nopair_sat=1501 nopair_brute=1501 mismatches=0
+ladder n=11 e=27 vs pairsat: graphs_sat=3749 graphs_brute=3749 nopair_sat=0 nopair_brute=0 mismatches=0
+check1 trianglefree: {"graphs": 388, "pair": 388, "nopair": 0, "verify_fail": 0, "max_iter": 10, "cuts": 1587, "seconds": 1.35}
+check1 bipartite_gengb: {"graphs": 41, "pair": 41, "nopair": 0, "verify_fail": 0, "max_iter": 6, "cuts": 407, "seconds": 0.04}

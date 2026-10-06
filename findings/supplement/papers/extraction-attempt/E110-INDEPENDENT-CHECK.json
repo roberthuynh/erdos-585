@@ -1,0 +1,54 @@
+{
+  "status": "all independent finite certificate checks passed",
+  "scope": "source receipt identity, source-adjacency H102, Hall cut, supplied matching, supplied Q4 cycles, nine-state bound, author manifest; no avoidance search, Lean, or oracle",
+  "parent_proof_sha256_matches_saved_PASS": "bbabb4afd5c48f064c7bfe596397d1b635f194f3bea7339a1ce9f7dbac61a0ec",
+  "H102": {
+    "vertices": 102,
+    "edges": 250,
+    "degree_counts": {
+      "4": 10,
+      "5": 92
+    },
+    "shore_sizes": [
+      51,
+      51
+    ],
+    "Hall_t_a_b_DX_DY": [
+      1,
+      1,
+      1,
+      5,
+      0
+    ],
+    "verified_matching_size": 51
+  },
+  "Q4_crossings": [
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "Q4_max_codegree": 2,
+  "nine_state_max_product": 9,
+  "author_files_verified": {
+    "PAPER.md": "033c07c47a7a21d0e1c25628190aa54cd9b31301e283baae96d31bec1f3bf217",
+    "PROGRESS.md": "39a72df53da52cc619d10d1b873302aacea11f83103c5e2744a3fb7994bfba74",
+    "SOURCES.md": "b37edc5a75da9fb2660e370e74bc55776e64eeb58c25a86526cbeb09f0a03b64",
+    "check_controls.py": "9fa453563d8e283063fb9f030ac0a34f4e0f09dd6ba72bd3cea42bb01d016253",
+    "CONTROL-CHECK.json": "2df037af3a360acb25c8d8fe662f7fc3d01eb840206b40606508535f00c10603"
+  },
+  "initial_paper_sha256": "cf4740593fc82fac403138071419773db110d87d794ac0adde3777b70118a6dc",
+  "final_text_revision": "Three requested clarifications applied; canonical Fable source pointers recorded. Math/control data unchanged; final manifest verified without repeating finite checks."
+}

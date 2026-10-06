@@ -1,0 +1,3 @@
+n=11 e=27 level=-0.5 shards=1 graphs=3749 with_pair=3749 pair_free=0 user_s=0.1 wall_s=0
+n=11 e=26 level=-1.5 shards=1 graphs=56071 with_pair=54570 pair_free=1501 user_s=1.2 wall_s=1
+n=11 FIRST pair-free at e=26 level=-1.5 count=1501

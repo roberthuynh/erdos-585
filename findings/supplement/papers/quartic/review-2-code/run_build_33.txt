@@ -1,0 +1,2 @@
+{"seed": 33, "mode": "build", "tally": {"built": 251, "sparse": 246, "sparse_with_bad": 246, "bad_def_hist": {"2": 107, "1": 139}, "P_sizes": {"1": 240, "2": 6}, "incomparable_pairs": 0, "quartic_all": true, "n_bad_ports": 338, "n_viol_checked": 338, "sparse_DU0": 0, "sparse_DU1": 246}, "n_failures": 0}
+exit 0

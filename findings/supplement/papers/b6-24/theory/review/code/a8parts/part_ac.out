@@ -1,0 +1,4 @@
+file a8parts/part_ac graphs 8714 not_instance 0 not_sparse(orient-runs) 0 unmatched 0 identity_failures 0 negative_s 0 complement_remark_failures 0
+orientation 0: F1=6520 F2=703 U0=0 U1=0 U2=21816 U3=17428 U4=10228
+orientation 1: F1=8714 F2=703 U0=0 U1=0 U2=17428 U3=10228 U4=17428
+exit 0

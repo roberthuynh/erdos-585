@@ -1,0 +1,3 @@
+10:01:11 graphs=50000 pair=50000 nopair=0 vfail=0 t=68.3s
+10:02:06 graphs=100000 pair=100000 nopair=0 vfail=0 t=123.5s
+10:03:01 graphs=150000 pair=150000 nopair=0 vfail=0 t=178.4s

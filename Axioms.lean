@@ -3,6 +3,9 @@ import Openmath.Proofs.TopFive
 import Openmath.Proofs.Final
 import Openmath.Proofs.RegularFive
 import Openmath.Proofs.BipartiteFive
+import Openmath.Proofs.RegularFive18
+import Openmath.Proofs.QB4.Statement
+import Openmath.Proofs.QB5.Statement
 
 /-! Prints the axioms of every result listed in
     `scripts/headline-theorems.json`; `scripts/check_axioms.py`
@@ -27,5 +30,9 @@ import Openmath.Proofs.BipartiteFive
 #print axioms Erdos585.matchingSubdivision_not_hasTwoEdgeDisjointCyclesSameVertexSet
 #print axioms Erdos585.RegularFive.exists_five_regular_pairfree
 #print axioms Erdos585.BipartiteFive.exists_bipartite_five_regular_pairfree
+#print axioms Erdos585.RegularFive18.exists_five_regular_pairfree
+#print axioms Erdos585.qb5
+#print axioms Erdos585.qb4
+#print axioms Erdos585.exists_four_regular_avoiding_of_bipartite_six_regular
 #print axioms Erdos585.hasPair_top_five
 #print axioms Erdos585.hasTwoEdgeDisjointCyclesSameVertexSet_top_five

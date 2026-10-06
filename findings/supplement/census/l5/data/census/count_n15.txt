@@ -1,0 +1,2 @@
+>A [local path] -bd4D6 n=15 e=40
+>Z 2895 graphs generated in 0.21 sec

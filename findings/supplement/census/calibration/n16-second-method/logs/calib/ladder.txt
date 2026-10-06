@@ -1,0 +1,9 @@
+n=7 e=15 graphs=14 {"graphs": 14, "pair": 6, "nopair": 8, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 0.0}
+n=8 e=18 graphs=68 {"graphs": 68, "pair": 49, "nopair": 19, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 0.01}
+n=9 e=21 graphs=276 {"graphs": 276, "pair": 261, "nopair": 15, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 0.06}
+n=9 e=22 graphs=28 {"graphs": 28, "pair": 28, "nopair": 0, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 0.01}
+n=10 e=23 graphs=8435 {"graphs": 8435, "pair": 6670, "nopair": 1765, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 2.37}
+n=10 e=24 graphs=1188 {"graphs": 1188, "pair": 1188, "nopair": 0, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 0.35}
+n=10 e=25 graphs=60 {"graphs": 60, "pair": 60, "nopair": 0, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 0.02}
+n=11 e=26 graphs=56071 {"graphs": 56071, "pair": 54570, "nopair": 1501, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 19.28}
+n=11 e=27 graphs=3749 {"graphs": 3749, "pair": 3749, "nopair": 0, "verify_fail": 0, "decode_mismatch": 0, "degree_mismatch": 0, "seconds": 1.34}

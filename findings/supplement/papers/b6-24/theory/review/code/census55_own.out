@@ -1,0 +1,8 @@
+np=5 nq=5 e=25 labelled=1 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=1 pairfree_with_K44=0 iso_classes=1 iso_pairfree=0
+np=5 nq=5 e=24 labelled=25 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=25 pairfree_with_K44=0 iso_classes=1 iso_pairfree=0
+np=5 nq=5 e=23 labelled=300 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=300 pairfree_with_K44=0 iso_classes=3 iso_pairfree=0
+np=5 nq=5 e=22 labelled=2300 labelled_pairfree=0 methodA_vs_B_disagree=0 labelled_with_K44=1700 pairfree_with_K44=0 iso_classes=6 iso_pairfree=0
+np=5 nq=5 e=21 labelled=12650 labelled_pairfree=9100 methodA_vs_B_disagree=0 labelled_with_K44=2950 pairfree_with_K44=0 iso_classes=16 iso_pairfree=8
+np=5 nq=5 e=20 labelled=53130 labelled_pairfree=49900 methodA_vs_B_disagree=0 labelled_with_K44=3110 pairfree_with_K44=0 iso_classes=34 iso_pairfree=24
+np=5 nq=5 e=19 labelled=177100 labelled_pairfree=175000 methodA_vs_B_disagree=0 labelled_with_K44=2100 pairfree_with_K44=0 iso_classes=69 iso_pairfree=62
+np=5 nq=5 e=18 labelled=480700 labelled_pairfree=479800 methodA_vs_B_disagree=0 labelled_with_K44=900 pairfree_with_K44=0 iso_classes=130 iso_pairfree=125

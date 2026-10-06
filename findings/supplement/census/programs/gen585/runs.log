@@ -1,0 +1,69 @@
+# runs.log: commands and outcomes (sms-census lane). Times are wall-clock seconds on one core.
+2026-10-04 02:34:24 built nauty 2.8.9 locally (sha256 c97ab42b...4ee) in nauty2_8_9/; gen585.c compiled with clang -O3 -DWORDSIZE=32.
+2026-10-04 02:34:24 test_pair.py 400: 0 disagreements vs pair_oracle/brute (233 pair, 167 nopair).
+2026-10-04 02:34:24 positive control (e>=3n-5, (3,6)-proper sparsity): finals n=7:1 (K2 v C5), n=8:2, n=9:3, n=10:11.
+2026-10-04 02:34:24 S10 controls gen585 n 3n-4 5 2 4: finals 0 for n=7..10 (n=11 also 0, 0.5 s, timing only).
+STATUS partial seconds=150.0 total_seconds=150.0 finals=0 nauty=3290333 done_idx=26600
+level  1 nodes 1 (this run 1) tested 0 sparse_rej 0 la_rej 0 inv_rej 0 pair_rej 0 canon_rej 0 dup_rej 0
+level  2 nodes 1 (this run 1) tested 1 sparse_rej 0 la_rej 0 inv_rej 0 pair_rej 0 canon_rej 0 dup_rej 0
+level  3 nodes 2 (this run 2) tested 3 sparse_rej 0 la_rej 0 inv_rej 0 pair_rej 0 canon_rej 0 dup_rej 1
+level  4 nodes 3 (this run 3) tested 5 sparse_rej 0 la_rej 0 inv_rej 0 pair_rej 0 canon_rej 0 dup_rej 2
+level  5 nodes 9 (this run 9) tested 20 sparse_rej 0 la_rej 0 inv_rej 2 pair_rej 0 canon_rej 0 dup_rej 9
+level  6 nodes 44 (this run 44) tested 118 sparse_rej 0 la_rej 1 inv_rej 28 pair_rej 0 canon_rej 0 dup_rej 45
+level  7 nodes 232 (this run 232) tested 692 sparse_rej 0 la_rej 3 inv_rej 187 pair_rej 2 canon_rej 6 dup_rej 262
+level  8 nodes 2134 (this run 2134) tested 6459 sparse_rej 0 la_rej 426 inv_rej 2341 pair_rej 85 canon_rej 132 dup_rej 1341
+level  9 nodes 26601 (this run 26601) tested 101562 sparse_rej 0 la_rej 24519 inv_rej 38437 pair_rej 1373 canon_rej 1868 dup_rej 8764
+level 10 nodes 403489 (this run 403489) tested 1499673 sparse_rej 0 la_rej 276786 inv_rej 694880 pair_rej 37363 canon_rej 29505 dup_rej 57650
+level 11 nodes 1911083 (this run 1911083) tested 24947090 sparse_rej 0 la_rej 13312664 inv_rej 8129934 pair_rej 1335292 canon_rej 113433 dup_rej 144684
+level 12 nodes 3090 (this run 3090) tested 51778647 sparse_rej 0 la_rej 2033712 inv_rej 42931106 pair_rej 6809788 canon_rej 446 dup_rej 505
+level 13 nodes 0 (this run 0) tested 8111 sparse_rej 0 la_rej 0 inv_rej 6809 pair_rej 1302 canon_rej 0 dup_rej 0
+2026-10-04 02:41:17 s10n13 slice 1: STATUS partial seconds=210.1 total_seconds=360.1 finals=0 nauty=5073624 done_idx=46041
+2026-10-04 02:43:01 s10n13 slice 2: STATUS complete seconds=103.6 total_seconds=463.7 finals=0 nauty=3296273 done_idx=57312
+2026-10-04 02:44:51 RESULT S10 n=13: gen585 13 35 5 2 4 -s 9 complete, 0 finals, 463.7 s one core. Levels 9..13: 57313, 831257, 7352173, 62832, 0 (level-13 children tested 405413).
+2026-10-04 02:51:38 s10n13dp slice 1: STATUS partial seconds=210.0 total_seconds=210.0 finals=0 nauty=5529336 done_idx=28234 dp_states=909 comp_ok=11878864 comp_rej=4966454
+2026-10-04 02:55:08 s10n13dp slice 2: STATUS partial seconds=210.1 total_seconds=420.1 finals=0 nauty=5022764 done_idx=43401 dp_states=1170 comp_ok=10152276 comp_rej=7061193
+2026-10-04 02:55:31 s10n13dp slice 3: STATUS complete seconds=22.2 total_seconds=442.3 finals=0 nauty=561351 done_idx=44571 dp_states=1116 comp_ok=1099751 comp_rej=1535517
+2026-10-04 02:58:02 RECHECK S10 n=13 with DP look-ahead build (gen585_dp, different enumeration order): complete, 0 finals, 442.3 s.
+2026-10-04 03:00:38 perf builds: lazy whole-component pair test, lazy tight sets/Aut(P), HC degree-2 propagation, early-exit invariant. Pair test agrees with first build on 404,609 graphs; n=14 1/1000 sample (-s 10 -r 7 -m 1000): 24.3 s -> 8.0 s, identical counts (level13 926, level14 0). Launching S10 n=14 as two halves: GEN=gen585_run14 run_slices.sh s10n14r{0,1} -- 14 38 5 2 4 -s 10 -r {0,1} -m 2 -A
+2026-10-04 03:04:09 s10n14r0 slice 1: STATUS partial seconds=210.0 total_seconds=210.0 finals=0 nauty=1832881 done_idx=200800 dp_states=743 comp_ok=10665890 comp_rej=6621996 pairs_verified=14597404 pairv=1
+2026-10-04 03:04:09 s10n14r1 slice 1: STATUS partial seconds=210.0 total_seconds=210.0 finals=0 nauty=1851818 done_idx=201481 dp_states=741 comp_ok=10718653 comp_rej=6695654 pairs_verified=14558915 pairv=1
+2026-10-04 03:05:55 VALIDATION summary:
+  V1 S11 n=8 finals: geng -d4 -D6 8 19:19 + pair_oracle + sparsity = gen585 finals (2 = 2) MATCH
+  V2 S11 n=9 finals: 3 = 3 MATCH (oracle)
+  V4 S10 N=13 level 8 (-L): 4738 = 4738 MATCH (geng -D6 8 14:19 + pair_oracle + sparsity)
+  V5 S10 N=13 level 9 (-L): 85282 = 85282 MATCH (geng -D6 9 17:22, 111767 graphs, + pair_oracle + sparsity)
+  V6 S11 n=10 finals with DP look-ahead (gen585u): 11 = 11 MATCH (geng -d4 -D6 10 25:25, 53886 graphs, C filter + sparsity, survivors NOPAIR by pair_oracle)
+  validate_finals.py on all 17 S11 control finals: brute NOPAIR and pair_oracle NOPAIR for every one
+  pair test: test_pair.py 400 random graphs 0 disagreements vs pair_oracle/brute; v1 vs final build: 0 differences on 197867 (all 9-vertex maxdeg<=6) + 140019 (10-vertex, mindeg>=4, 22-25 edges) + 66723 (level-11 avoiders)
+2026-10-04 03:07:39 s10n14r0 slice 2: STATUS partial seconds=210.0 total_seconds=420.0 finals=0 nauty=2589495 done_idx=370854 dp_states=864 comp_ok=23538842 comp_rej=14744658 pairs_verified=26742166 pairv=1
+2026-10-04 03:07:39 s10n14r1 slice 2: STATUS partial seconds=210.0 total_seconds=420.0 finals=0 nauty=2540650 done_idx=370893 dp_states=868 comp_ok=23274431 comp_rej=14701791 pairs_verified=26638195 pairv=1
+2026-10-04 03:10:10 PROBE 6-regular N=16 (gen585_run14 16 48 5 2 6 -x 14 -s 10 -r 7 -m 2000 -A): 17.9 s for 1/2000 of 1518293 level-10 subtrees (3.1 s is regeneration) -> est. 29600 core-s (~8.2 core-h). Sample levels 11..14: 17176, 337812, 220484, 0. Not run (over budget).
+2026-10-04 03:11:09 s10n14r0 slice 3: STATUS partial seconds=210.0 total_seconds=630.0 finals=0 nauty=3355290 done_idx=541946 dp_states=1095 comp_ok=42143252 comp_rej=15963480 pairs_verified=50857111 pairv=1
+2026-10-04 03:11:09 s10n14r1 slice 3: STATUS partial seconds=210.0 total_seconds=630.0 finals=0 nauty=3345091 done_idx=541969 dp_states=1095 comp_ok=42295149 comp_rej=15854655 pairs_verified=51167280 pairv=1
+2026-10-04 03:12:59 tidy: kept gen585.c (final source, binary gen585), gen585_first.c (source of first n=13 run), gen585_dp.c (source of n=13 DP recheck), gen585_run14.c (source of n=14 run binary gen585_run14). Cache patch in final source: 0 hits on n=14 sample, counts identical.
+2026-10-04 03:14:39 s10n14r0 slice 4: STATUS partial seconds=210.0 total_seconds=840.0 finals=0 nauty=4526438 done_idx=665598 dp_states=1244 comp_ok=46106719 comp_rej=15392574 pairs_verified=58157914 pairv=1
+2026-10-04 03:14:39 s10n14r1 slice 4: STATUS partial seconds=210.0 total_seconds=840.0 finals=0 nauty=4536284 done_idx=664489 dp_states=1244 comp_ok=45512851 comp_rej=15223874 pairs_verified=57530537 pairv=1
+2026-10-04 03:18:09 s10n14r0 slice 5: STATUS partial seconds=210.0 total_seconds=1050.0 finals=0 nauty=4639522 done_idx=759772 dp_states=1235 comp_ok=51281622 comp_rej=15568786 pairs_verified=64633800 pairv=1
+2026-10-04 03:18:09 s10n14r1 slice 5: STATUS partial seconds=210.0 total_seconds=1050.0 finals=0 nauty=4666175 done_idx=759135 dp_states=1284 comp_ok=51074739 comp_rej=15536459 pairs_verified=64581390 pairv=1
+2026-10-04 03:21:39 s10n14r0 slice 6: STATUS partial seconds=210.0 total_seconds=1260.0 finals=0 nauty=4942659 done_idx=927980 dp_states=1495 comp_ok=37444706 comp_rej=16033344 pairs_verified=46561006 pairv=1
+2026-10-04 03:21:39 s10n14r1 slice 6: STATUS partial seconds=210.1 total_seconds=1260.1 finals=0 nauty=4946611 done_idx=927979 dp_states=1495 comp_ok=38019448 comp_rej=16249885 pairs_verified=46877176 pairv=1
+2026-10-04 03:25:09 s10n14r0 slice 7: STATUS partial seconds=210.0 total_seconds=1470.0 finals=0 nauty=5949155 done_idx=1060004 dp_states=1427 comp_ok=47450059 comp_rej=15766520 pairs_verified=60161067 pairv=1
+2026-10-04 03:25:09 s10n14r1 slice 7: STATUS partial seconds=210.0 total_seconds=1470.1 finals=0 nauty=5844442 done_idx=1058277 dp_states=1429 comp_ok=46977678 comp_rej=15593168 pairs_verified=59470284 pairv=1
+2026-10-04 03:28:39 s10n14r0 slice 8: STATUS partial seconds=210.0 total_seconds=1680.0 finals=0 nauty=7732218 done_idx=1201856 dp_states=1847 comp_ok=50654579 comp_rej=34210470 pairs_verified=59171561 pairv=1
+2026-10-04 03:28:39 s10n14r1 slice 8: STATUS partial seconds=210.0 total_seconds=1680.1 finals=0 nauty=7609584 done_idx=1195685 dp_states=1847 comp_ok=49389109 comp_rej=31587993 pairs_verified=58463531 pairv=1
+2026-10-04 03:30:29 s10n14r0 slice 9: STATUS complete seconds=109.5 total_seconds=1789.5 finals=0 nauty=5404108 done_idx=1303710 dp_states=1832 comp_ok=38645511 comp_rej=42749572 pairs_verified=40560339 pairv=1
+2026-10-04 03:30:32 s10n14r1 slice 9: STATUS complete seconds=112.9 total_seconds=1793.0 finals=0 nauty=5760348 done_idx=1303709 dp_states=1833 comp_ok=40847779 comp_rej=45467166 pairs_verified=42895011 pairv=1
+2026-10-04 03:30:56 RESULT S10 n=14: gen585_run14 14 38 5 2 4 -s 10 -r {0,1} -m 2 -A complete, 0 finals; 1789.5 + 1793.0 = 3582.5 core-s; certified pair rejections 40560339 + 42895011; 1303711 level-10 subtrees.
+2026-10-04 03:32:06 PROBE S10 n=15 (gen585 15 41 5 2 4 -s 10 -r 7 -m 2000 -A): 45.5 s for 1/2000 of 1965523 level-10 subtrees -> est. 86600 core-s (~24 core-h). Sample levels 11..15: 22851, 466096, 3066410, 73, 0 (level-14 children tested 70.8M). Not run.
+2026-10-04 03:32:15 s10n13cert slice 1: STATUS complete seconds=79.3 total_seconds=79.3 finals=0 nauty=3402526 done_idx=44571 dp_states=1174 comp_ok=23088398 comp_rej=13525968 pairs_verified=27586946 pairv=1 cache_hits=2
+2026-10-04 03:32:39 RESULT S10 n=13 certified rerun: gen585 (final build) 13 35 5 2 4 -s 9 -A complete, 0 finals, 79.3 s, 27586946 certified pair rejections; level counts identical to the DP-build run at every level (9..13: 44572, 646323, 7228638, 61983, 0).
+2026-10-04 03:33:36 V7 S10 N=14 level 9 (-L): A-B 0  B-A 0  -> MATCH (avoiders kept 110243; geng -D6 9 16:22; C filter + sparsity; every survivor NOPAIR by pair_oracle)
+2026-10-04 03:33:36 construction check: K2 v C5 plus degree-3 vertices gives avoiders with maxdeg 6 and exactly 3n-5 edges for n=8..14 (brute NOPAIR and pair_oracle NOPAIR each).
+715d011fa1673d37 gen585.c
+e24007ee9dec1fbb gen585_run14.c
+4d9604d1fe94d5b7 gen585_first.c
+342d79c749e5b293 gen585_dp.c
+07342b52eab9f07f run_slices.sh
+ef5d8c2bd69681f2 validate_levels.py
+c379da0d1dc14238 validate_finals.py
+a8847bffa3d642f9 test_pair.py

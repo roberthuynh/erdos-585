@@ -1,0 +1,10 @@
+== lake build Openmath.Proofs.MatchingSubdivision (leanprover/lean4:v4.33.1)
+warning: Openmath/Target.lean:62:8: declaration uses `sorry`
+warning: Openmath/Target.lean:70:8: declaration uses `sorry`
+warning: Openmath/Target.lean:81:8: declaration uses `sorry`
+warning: Openmath/Target.lean:97:8: declaration uses `sorry`
+Build completed successfully (8943 jobs).
+== sorry in Openmath/Proofs/MatchingSubdivision.lean, comments ignored: 0
+== axioms
+'Erdos585.MatchingSubdivision.ofBase_not_hasPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

@@ -1,0 +1,7 @@
+== lake build Openmath.Proofs.CubelikeForest (leanprover/lean4:v4.33.1)
+Build completed successfully (3051 jobs).
+== sorry in Openmath/Proofs/CubelikeForest.lean, comments ignored: 0
+== axioms
+<stdin>:2:0: error: Unknown option `linter.style.moduleDocstring`
+'Erdos585.CubelikeForest.cycle_law_forest_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

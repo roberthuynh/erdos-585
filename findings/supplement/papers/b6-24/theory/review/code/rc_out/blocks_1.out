@@ -1,0 +1,2 @@
+file inst/blocks_1.g6 graphs 60 skipped 0 no4factor 45 graphs_with_Ex 7 | balancedT 657770 rigid 26 (A 21, B-only 5) | fail L1.1 0 C2.2i 0 C2.2ii(E0) 0 C2.2ii(E1) 0 complement/(1) 0 | T2.1 tests 0 fail 0 weak 0 formula 0
+exit 0

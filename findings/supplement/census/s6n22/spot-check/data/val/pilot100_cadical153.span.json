@@ -1,0 +1,31 @@
+{
+ "cuts": 36522,
+ "e10": 100,
+ "fresh_no": 0,
+ "fresh_span": 0,
+ "graphs": 100,
+ "hash_mismatch": 0,
+ "mincut_hist": {
+  "10": 100
+ },
+ "no": 0,
+ "non_e10": 0,
+ "non_e10_graphs": [],
+ "rounds_hist": {
+  "1": 2234,
+  "2": 2610,
+  "3": 1146,
+  "4": 405,
+  "5": 147,
+  "6": 41,
+  "7": 12,
+  "8": 4,
+  "9": 1
+ },
+ "sec_cpu": 0.99,
+ "sec_wall": 1.02,
+ "solver": "cadical153",
+ "span": 6600,
+ "tests": 6600,
+ "witness_fail": 0
+}

@@ -1,0 +1,15 @@
+>A [local path] -bd4D6 n=11 e=22-30
+>Z 15 graphs generated in 0.00 sec
+real 0.20
+user 0.00
+sys 0.00
+>T total 15 with_H 12 without_H 3 nonbip 0 nodes 41
+>S e=24 sides=5+6 mindeg=4 maxdeg=6 conn=1 count=2 without_H=2
+>S e=25 sides=5+6 mindeg=4 maxdeg=6 conn=1 count=2 without_H=1
+>S e=26 sides=5+6 mindeg=4 maxdeg=6 conn=1 count=3 without_H=0
+>S e=24 sides=5+6 mindeg=4 maxdeg=5 conn=1 count=1 without_H=0
+>S e=27 sides=5+6 mindeg=4 maxdeg=6 conn=1 count=2 without_H=0
+>S e=28 sides=5+6 mindeg=4 maxdeg=6 conn=1 count=2 without_H=0
+>S e=29 sides=5+6 mindeg=4 maxdeg=6 conn=1 count=1 without_H=0
+>S e=30 sides=5+6 mindeg=5 maxdeg=6 conn=1 count=1 without_H=0
+>S e=25 sides=5+6 mindeg=4 maxdeg=5 conn=1 count=1 without_H=0

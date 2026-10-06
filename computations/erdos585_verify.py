@@ -45,7 +45,7 @@ Method:
 - Checker: DFS from the minimum vertex s of each cycle through vertices > s (vertex and edge bitmasks), closing back to s only when the last vertex exceeds the second, so each cycle appears once; cycles are grouped by vertex-set mask and a pair is two disjoint edge masks in one group.
 - Every bad verdict carries a witness that a separate routine re-checks: both edge sets lie in G, are disjoint, and are each 2-regular and connected on exactly the shared vertex set.
 - Brute-force cross-check: every vertex subset S and every cyclic order of S (min(S) first, one direction), then an all-pairs test (literal over the whole cycle list for n <= 7 random tests and the Petersen graph, within vertex-set buckets for n = 8 and the reported lists).
-- Isomorphism reduction: colour refinement from degrees, then the minimum edge mask over all relabellings that keep the colour classes in colour order; the number of relabellings that reach the minimum is |Aut|. Class lists are cross-checked by sum n!/|Aut| = number of labelled graphs and against OEIS A008406.
+- Isomorphism reduction: color refinement from degrees, then the minimum edge mask over all relabelings that keep the color classes in color order; the number of relabelings that reach the minimum is |Aut|. Class lists are cross-checked by sum n!/|Aut| = number of labeled graphs and against OEIS A008406.
 - Times are wall-clock seconds, CPython %s, one core.
 
 Sections are appended as each step finishes.
@@ -296,7 +296,7 @@ def fmt_witness(ctx, w):
 
 
 def refine(n, adj):
-    """Colour refinement starting from degrees.  Colours are ranks of
+    """Color refinement starting from degrees.  Colors are ranks of
     isomorphism-invariant signatures, so the ordered partition is canonical."""
     nbrs = [[w for w in range(n) if (adj[v] >> w) & 1] for v in range(n)]
     color = [len(x) for x in nbrs]
@@ -315,12 +315,12 @@ def refine(n, adj):
 def canon(ctx, m):
     """(canonical edge mask, |Aut|).
 
-    The form is the minimum edge mask over every relabelling that sends the
-    colour classes of `refine` to consecutive position blocks in colour order.
+    The form is the minimum edge mask over every relabeling that sends the
+    color classes of `refine` to consecutive position blocks in color order.
     Refinement is isomorphism-invariant, so isomorphic graphs get the same
-    form; the form is itself a relabelling of the graph, so equal forms imply
-    isomorphic graphs.  Automorphisms preserve colours, so the number of these
-    relabellings that reach the minimum is |Aut|."""
+    form; the form is itself a relabeling of the graph, so equal forms imply
+    isomorphic graphs.  Automorphisms preserve colors, so the number of these
+    relabelings that reach the minimum is |Aut|."""
     n = ctx.n
     adj = ctx.adj(m)
     color = refine(n, adj)
@@ -397,11 +397,11 @@ def gen_levels(ctx, kmax, state, state_path, deadline, log):
                     raise AssertionError('|Aut| disagrees for one canonical form')
         k += 1
         levels[str(k)] = sorted([f, a] for f, a in new.items())
-        labelled = sum(fact // a for _, a in levels[str(k)])
+        labeled = sum(fact // a for _, a in levels[str(k)])
         save_state(state_path, state)
         log('- progress n = %d, level %d edges: %d classes from %d extensions; sum %d!/|Aut| = %d vs C(%d,%d) = %d (%s); %.2f s'
-            % (ctx.n, k, len(new), extensions, ctx.n, labelled, ctx.N, k, math.comb(ctx.N, k),
-               'match' if labelled == math.comb(ctx.N, k) else 'MISMATCH', time.time() - t))
+            % (ctx.n, k, len(new), extensions, ctx.n, labeled, ctx.N, k, math.comb(ctx.N, k),
+               'match' if labeled == math.comb(ctx.N, k) else 'MISMATCH', time.time() - t))
     return True
 
 
@@ -521,7 +521,7 @@ def step_selftest(args, state):
                 aut_n += 1
                 if aut_bruteforce(ctx, m) == a1:
                     aut_ok += 1
-    check('canonical form invariant under random relabelling', cf_ok == cf_n, '%d/%d graphs on 6-8 vertices' % (cf_ok, cf_n))
+    check('canonical form invariant under random relabeling', cf_ok == cf_n, '%d/%d graphs on 6-8 vertices' % (cf_ok, cf_n))
     check('|Aut| from canon equals brute force over all n! permutations', aut_ok == aut_n,
           '%d/%d graphs; %.1f s' % (aut_ok, aut_n, time.time() - tc))
     lines.append('- self-test total %.1f s; overall **%s**' % (time.time() - t0, 'PASS' if allok else 'FAIL'))
@@ -544,9 +544,9 @@ def parse_md(n):
     for mm in re.finditer(r'^\s*- \|Aut\| = (\d+): (\[.*\])\s*$', sec, re.M):
         lists.append(('|Aut| line', int(mm.group(1)), ast.literal_eval(mm.group(2))))
     cls = re.search(r'extremal graphs: (\d+) isomorphism classes', sec)
-    lab = re.search(r'(\d+) labelled graphs', sec)
+    lab = re.search(r'(\d+) labeled graphs', sec)
     return {'lists': lists, 'classes': int(cls.group(1)) if cls else None,
-            'labelled': int(lab.group(1)) if lab else None}
+            'labeled': int(lab.group(1)) if lab else None}
 
 
 def join_k2(ctx, cyc_len):
@@ -586,7 +586,7 @@ def step_lower(args, state):
                            '' if claimed_aut is None else (' (reported %d, %s)' % (claimed_aut, 'match' if claimed_aut == a else 'MISMATCH'))))
         aut_lines = [x for x in info['lists'] if x[0] == '|Aut| line']
         distinct = len(forms) == len(aut_lines)
-        labelled = sum(fact // v[0][1] for v in forms.values())
+        labeled = sum(fact // v[0][1] for v in forms.values())
         auts_match = all(ca == a for v in forms.values() for ca, a in v)
         jm = join_k2(ctx, n - 2)
         jf, ja = canon(ctx, jm)
@@ -594,12 +594,12 @@ def step_lower(args, state):
         lines.append('- n = %d: %d list(s) parsed (%d |Aut| lines); all have %d edges and are good by both checkers: **%s**; '
                      '|Aut| lines pairwise non-isomorphic: %s (%d classes, reported %s); sum %d!/|Aut| = %d (reported %s); reported |Aut| all match: %s'
                      % (n, len(info['lists']), len(aut_lines), CLAIM[n], 'yes' if allgood else 'NO',
-                        'yes' if distinct else 'NO', len(forms), info['classes'], n, labelled, info['labelled'],
+                        'yes' if distinct else 'NO', len(forms), info['classes'], n, labeled, info['labeled'],
                         'yes' if auts_match else 'NO'))
         lines.extend(rows)
         lines.append('  - C%d join K2 built here: %d edges, %s, |Aut| = %d, isomorphic to a reported class: %s'
                      % (n - 2, popcount(jm), 'good' if jw is None else 'BAD', ja, 'yes' if jf in forms else 'no'))
-        res[str(n)] = {'ok': allgood, 'distinct': distinct, 'classes': len(forms), 'labelled': labelled,
+        res[str(n)] = {'ok': allgood, 'distinct': distinct, 'classes': len(forms), 'labeled': labeled,
                        'forms': sorted(forms), 'auts_match': auts_match}
     lines.append('- lower-bound step %.1f s' % (time.time() - t0))
     append('\n'.join(lines))
@@ -640,15 +640,15 @@ def step_upper7(args, state):
     t_iso = time.time() - t0
     total = sum(c for _, c in classes.values())
     orbit_ok = all(a * c == fact for a, c in classes.values())
-    lines.append('- enumerated all C(21,4) = %d labelled 4-edge sets (%d seen); canonical forms give %d isomorphism classes (OEIS A008406: %d); '
-                 'every class has exactly 7!/|Aut| labelled members: %s; %.2f s'
+    lines.append('- enumerated all C(21,4) = %d labeled 4-edge sets (%d seen); canonical forms give %d isomorphism classes (OEIS A008406: %d); '
+                 'every class has exactly 7!/|Aut| labeled members: %s; %.2f s'
                  % (math.comb(21, 4), total, len(classes), A008406[(7, 4)], 'yes' if orbit_ok else 'NO', t_iso))
     t1 = time.time()
     res = check_complements(ctx, sorted((f, v[0]) for f, v in classes.items()), True)
     t_chk = time.time() - t1
     nbad = sum(1 for r in res if r[4])
     for f, a, comp, w, ok in res:
-        lines.append('  - complement of %s (|Aut| %d, %d labelled): %s, pair on %d vertices: %s'
+        lines.append('  - complement of %s (|Aut| %d, %d labeled): %s, pair on %d vertices: %s'
                      % (ctx.edges(f), a, fact // a, 'bad, witness verified' if ok else 'NOT SHOWN BAD',
                         popcount(w[0]) if w else 0, fmt_witness(ctx, w)))
     lines.append('- class check: %d/%d complements bad with verified witnesses; %.2f s' % (nbad, len(res), t_chk))
@@ -664,12 +664,12 @@ def step_upper7(args, state):
         if w is not None and witness_ok(ctx, comp, w):
             lab_bad += 1
     t_lab = time.time() - t2
-    lines.append('- labelled cross-check with no isomorphism reduction: %d/%d labelled 17-edge graphs bad with verified witnesses; %.2f s'
+    lines.append('- labeled cross-check with no isomorphism reduction: %d/%d labeled 17-edge graphs bad with verified witnesses; %.2f s'
                  % (lab_bad, lab_tot, t_lab))
     ok = (nbad == len(res) and orbit_ok and total == math.comb(21, 4) and lab_bad == lab_tot == math.comb(21, 4))
     lines.append('- upper bound n = 7 (f(7) <= 16): **%s**; step %.1f s' % ('confirmed' if ok else 'NOT confirmed', time.time() - t0))
     append('\n'.join(lines))
-    state['results']['upper7'] = {'ok': ok, 'classes': len(classes), 'labelled_bad': lab_bad,
+    state['results']['upper7'] = {'ok': ok, 'classes': len(classes), 'labeled_bad': lab_bad,
                                   'seconds': round(time.time() - t0, 2)}
     return ok
 
@@ -688,7 +688,7 @@ def step_upper8(args, state):
         append('- progress: level generation paused at the time budget; rerun `upper8` to resume from the checkpoint')
         return None
     reps = [tuple(x) for x in state['levels'][str(n)][str(k)]]
-    labelled = sum(fact // a for _, a in reps)
+    labeled = sum(fact // a for _, a in reps)
     t1 = time.time()
     res = check_complements(ctx, reps, True)
     t_chk = time.time() - t1
@@ -712,15 +712,15 @@ def step_upper8(args, state):
     t_s = time.time() - t2
     lines = []
     lines.append('- 8-edge graphs on 8 vertices up to isomorphism: %d classes (OEIS A008406: %d); sum 8!/|Aut| = %d vs C(28,8) = %d: %s'
-                 % (len(reps), A008406[(8, 8)], labelled, math.comb(28, 8), 'match' if labelled == math.comb(28, 8) else 'MISMATCH'))
+                 % (len(reps), A008406[(8, 8)], labeled, math.comb(28, 8), 'match' if labeled == math.comb(28, 8) else 'MISMATCH'))
     lines.append('- class check: %d/%d complements (20 edges) bad with verified witnesses; witness vertex-set sizes %s; %.2f s'
                  % (nbad, len(res), ', '.join('%d: %d' % (s, sizes[s]) for s in sorted(sizes)), t_chk))
-    lines.append('- random labelled sample: %d/%d random 20-edge labelled graphs bad with verified witnesses; %.2f s' % (samp_bad, SAMPLES, t_s))
-    ok = nbad == len(res) == A008406[(8, 8)] and labelled == math.comb(28, 8) and samp_bad == SAMPLES
+    lines.append('- random labeled sample: %d/%d random 20-edge labeled graphs bad with verified witnesses; %.2f s' % (samp_bad, SAMPLES, t_s))
+    ok = nbad == len(res) == A008406[(8, 8)] and labeled == math.comb(28, 8) and samp_bad == SAMPLES
     lines.append('- upper bound n = 8 (f(8) <= 19): **%s**; this run %.1f s (level generation times in the progress lines above)'
                  % ('confirmed' if ok else 'NOT confirmed', time.time() - t0))
     append('\n'.join(lines))
-    state['results']['upper8'] = {'ok': ok, 'classes': len(reps), 'labelled': labelled,
+    state['results']['upper8'] = {'ok': ok, 'classes': len(reps), 'labeled': labeled,
                                   'check_seconds': round(t_chk, 2), 'seconds': round(time.time() - t0, 2)}
     return ok
 
@@ -765,17 +765,17 @@ def step_extremal7(args, state):
             lab_bad_ok = False
     t_lab = time.time() - t2
     lines = ['', '## 5. Extremal graphs n = 7 (16 edges)', '']
-    lines.append('- 5-edge graphs on 7 vertices: %d classes from all %d labelled sets (OEIS A008406: %d), orbit sizes 7!/|Aut|: %s'
+    lines.append('- 5-edge graphs on 7 vertices: %d classes from all %d labeled sets (OEIS A008406: %d), orbit sizes 7!/|Aut|: %s'
                  % (len(classes), math.comb(21, 5), A008406[(7, 5)], 'yes' if orbit_ok else 'NO'))
-    lines.append('- good 16-edge classes: %d, %d labelled (sum 7!/|Aut|); all other complements bad with verified witnesses: %s; '
+    lines.append('- good 16-edge classes: %d, %d labeled (sum 7!/|Aut|); all other complements bad with verified witnesses: %s; '
                  'same class set as 585-small-n.md: %s; %.2f s'
                  % (len(goods), good_lab, 'yes' if bads_ok else 'NO', 'yes' if same else 'NO', t_cls))
     for r in goods:
         lines.append('  - good: complement of %s, |Aut| = %d' % (ctx.edges(r[0]), r[1]))
-    lines.append('- labelled cross-check: %d of %d labelled 16-edge graphs are good (reported 252); every bad one has a verified witness: %s; %.2f s'
+    lines.append('- labeled cross-check: %d of %d labeled 16-edge graphs are good (reported 252); every bad one has a verified witness: %s; %.2f s'
                  % (lab_good, math.comb(21, 5), 'yes' if lab_bad_ok else 'NO', t_lab))
     append('\n'.join(lines))
-    state['results']['extremal7'] = {'good_classes': len(goods), 'good_labelled': good_lab, 'labelled_good': lab_good,
+    state['results']['extremal7'] = {'good_classes': len(goods), 'good_labeled': good_lab, 'labeled_good': lab_good,
                                      'same_as_reported': same, 'seconds': round(time.time() - t0, 2)}
     return True
 
@@ -794,7 +794,7 @@ def step_extremal8(args, state):
         append('- progress: level generation paused at the time budget; rerun `extremal8` to resume from the checkpoint')
         return None
     reps = [tuple(x) for x in state['levels'][str(n)][str(k)]]
-    labelled = sum(fact // a for _, a in reps)
+    labeled = sum(fact // a for _, a in reps)
     t1 = time.time()
     res = check_complements(ctx, reps, False)
     goods = [r for r in res if r[3] is None]
@@ -807,19 +807,19 @@ def step_extremal8(args, state):
     t_chk = time.time() - t1
     lines = []
     lines.append('- 9-edge graphs on 8 vertices: %d classes (OEIS A008406: %d); sum 8!/|Aut| = %d vs C(28,9) = %d: %s'
-                 % (len(reps), A008406[(8, 9)], labelled, math.comb(28, 9), 'match' if labelled == math.comb(28, 9) else 'MISMATCH'))
-    lines.append('- good 19-edge classes: %d (brute force agrees on %d), %d labelled (sum 8!/|Aut|); all other complements bad with verified witnesses: %s; '
+                 % (len(reps), A008406[(8, 9)], labeled, math.comb(28, 9), 'match' if labeled == math.comb(28, 9) else 'MISMATCH'))
+    lines.append('- good 19-edge classes: %d (brute force agrees on %d), %d labeled (sum 8!/|Aut|); all other complements bad with verified witnesses: %s; '
                  'same class set as the 12 lists in 585-small-n.md: %s; %.2f s'
                  % (len(goods), naive_good, good_lab, 'yes' if bads_ok else 'NO', 'yes' if same else 'NO', t_chk))
     for r in goods:
         lines.append('  - good: complement of %s, |Aut| = %d' % (ctx.edges(r[0]), r[1]))
     append('\n'.join(lines))
-    state['results']['extremal8'] = {'good_classes': len(goods), 'naive_good': naive_good, 'good_labelled': good_lab,
+    state['results']['extremal8'] = {'good_classes': len(goods), 'naive_good': naive_good, 'good_labeled': good_lab,
                                      'same_as_reported': same, 'seconds': round(time.time() - t0, 2)}
     return True
 
 
-def _labelled8_task(prefix):
+def _labeled8_task(prefix):
     """All 8-edge sets whose smallest edge indices are `prefix`; checks each complement."""
     ctx = Ctx(8)
     base = 0
@@ -841,17 +841,17 @@ def _labelled8_task(prefix):
     return tuple(prefix), cnt, bad, example
 
 
-def step_labelled8(args, state):
-    """Isomorphism-free cross-check: every labelled 20-edge graph on 8 vertices,
+def step_labeled8(args, state):
+    """Isomorphism-free cross-check: every labeled 20-edge graph on 8 vertices,
     split into tasks by the two smallest missing-edge indices, run on a process
     pool; finished tasks are checkpointed so a rerun resumes."""
     import multiprocessing as mp
     t0 = time.time()
     res = state['results']
-    done = res.setdefault('labelled8', {})
-    if 'labelled8_header' not in res:
-        append('\n## 7. Labelled cross-check n = 8: all C(28,8) = 3,108,105 labelled 20-edge graphs, no isomorphism reduction\n')
-        res['labelled8_header'] = True
+    done = res.setdefault('labeled8', {})
+    if 'labeled8_header' not in res:
+        append('\n## 7. Labeled cross-check n = 8: all C(28,8) = 3,108,105 labeled 20-edge graphs, no isomorphism reduction\n')
+        res['labeled8_header'] = True
         save_state(args.state, state)
     # First chunk ran with 2-edge prefixes (231 tasks, up to 230,230 graphs each; too coarse on a
     # loaded machine), later chunks with 4-edge prefixes (up to 10,626 graphs each); a 4-prefix
@@ -865,7 +865,7 @@ def step_labelled8(args, state):
         last = time.time()
         pool = mp.Pool(workers)
         try:
-            for q, cnt, bad, ex in pool.imap_unordered(_labelled8_task, tasks):
+            for q, cnt, bad, ex in pool.imap_unordered(_labeled8_task, tasks):
                 done[','.join(map(str, q))] = [cnt, bad, ex]
                 if time.time() - last > 5:
                     save_state(args.state, state)
@@ -882,16 +882,16 @@ def step_labelled8(args, state):
     examples = [v[2] for v in done.values() if v[2] is not None]
     target = math.comb(28, 8)
     if paused:
-        append('- progress: %d prefix tasks done, %d of %d labelled graphs checked (%d remaining), %d bad with verified witnesses; '
-               'this chunk %.1f s on %d processes; rerun `labelled8` to resume'
+        append('- progress: %d prefix tasks done, %d of %d labeled graphs checked (%d remaining), %d bad with verified witnesses; '
+               'this chunk %.1f s on %d processes; rerun `labeled8` to resume'
                % (len(done), total, target, target - total, bad, time.time() - t0, workers))
         return None
     ok = total == target and bad == total and not examples
-    append('- %d prefix tasks, %d labelled 20-edge graphs checked (C(28,8) = %d); bad with verified witnesses: %d; '
+    append('- %d prefix tasks, %d labeled 20-edge graphs checked (C(28,8) = %d); bad with verified witnesses: %d; '
            'graphs not shown bad: %d; last chunk %.1f s on %d processes'
            % (len(done), total, target, bad, total - bad, time.time() - t0, workers))
-    append('- labelled cross-check n = 8 (f(8) <= 19 without the canonical form): **%s**' % ('confirmed' if ok else 'NOT confirmed'))
-    res['labelled8_ok'] = ok
+    append('- labeled cross-check n = 8 (f(8) <= 19 without the canonical form): **%s**' % ('confirmed' if ok else 'NOT confirmed'))
+    res['labeled8_ok'] = ok
     return ok
 
 
@@ -903,9 +903,9 @@ def step_status(args, state):
     lines.append('|---|---|---|---|---|---|')
     u7 = r.get('upper7', {})
     u8 = r.get('upper8', {})
-    for n, u, cls in ((7, u7, '10 classes of 4-edge complements, plus all 5,985 labelled'),
+    for n, u, cls in ((7, u7, '10 classes of 4-edge complements, plus all 5,985 labeled'),
                       (8, u8, '221 classes of 8-edge complements, plus %s' % (
-                          'all 3,108,105 labelled' if r.get('labelled8_ok') else '3,000 random labelled'))):
+                          'all 3,108,105 labeled' if r.get('labeled8_ok') else '3,000 random labeled'))):
         low = lo.get(str(n), {}).get('ok')
         up = u.get('ok')
         lines.append('| %d | f(%d) = %d | %s | %s | %s | **%s** |'
@@ -914,18 +914,18 @@ def step_status(args, state):
     e7 = r.get('extremal7', {})
     e8 = r.get('extremal8', {})
     lines.append('')
-    lines.append('- extremal class counts: n = 7: %s good 16-edge class(es), %s labelled (reported 1 and 252); n = 8: %s good 19-edge classes, %s labelled (reported 12 and 175560)'
-                 % (e7.get('good_classes'), e7.get('good_labelled'), e8.get('good_classes'), e8.get('good_labelled')))
+    lines.append('- extremal class counts: n = 7: %s good 16-edge class(es), %s labeled (reported 1 and 252); n = 8: %s good 19-edge classes, %s labeled (reported 12 and 175560)'
+                 % (e7.get('good_classes'), e7.get('good_labeled'), e8.get('good_classes'), e8.get('good_labeled')))
     lines.append('- self-tests: %s' % ('PASS' if r.get('selftest', {}).get('ok') else 'FAIL or not run'))
     diffs = []
     if not (lo.get('7', {}).get('auts_match') and lo.get('8', {}).get('auts_match')):
         diffs.append('reported |Aut| values')
-    if (e7.get('good_classes'), e7.get('good_labelled'), e7.get('labelled_good')) != (1, 252, 252) or not e7.get('same_as_reported'):
+    if (e7.get('good_classes'), e7.get('good_labeled'), e7.get('labeled_good')) != (1, 252, 252) or not e7.get('same_as_reported'):
         diffs.append('n = 7 extremal classes')
-    if (e8.get('good_classes'), e8.get('good_labelled')) != (12, 175560) or not e8.get('same_as_reported'):
+    if (e8.get('good_classes'), e8.get('good_labeled')) != (12, 175560) or not e8.get('same_as_reported'):
         diffs.append('n = 8 extremal classes')
     lines.append('- discrepancies with 585-small-n.md: %s' % (', '.join(diffs) if diffs else
-                 'none; f(7) = 16, f(8) = 19, the extremal class counts (1 and 12), labelled counts (252 and 175560) and every reported |Aut| reproduce'))
+                 'none; f(7) = 16, f(8) = 19, the extremal class counts (1 and 12), labeled counts (252 and 175560) and every reported |Aut| reproduce'))
     lines.append('- step times (s): self-test %s, lower %s, upper7 %s, upper8 %s (class check %s), extremal7 %s, extremal8 %s; '
                  ''
                  % (r.get('selftest', {}).get('seconds'), lo.get('seconds'), u7.get('seconds'), u8.get('seconds'),
@@ -936,13 +936,13 @@ def step_status(args, state):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('step', choices=['selftest', 'lower', 'upper7', 'upper8', 'extremal7', 'extremal8', 'labelled8', 'status'])
+    ap.add_argument('step', choices=['selftest', 'lower', 'upper7', 'upper8', 'extremal7', 'extremal8', 'labeled8', 'status'])
     ap.add_argument('--state', default=os.path.join(tempfile.gettempdir(), 'erdos585_verify_state.json'))
     ap.add_argument('--budget', type=float, default=180.0, help='seconds before a resumable step checkpoints and stops')
     args = ap.parse_args()
     state = load_state(args.state)
     fn = {'selftest': step_selftest, 'lower': step_lower, 'upper7': step_upper7, 'upper8': step_upper8,
-          'extremal7': step_extremal7, 'extremal8': step_extremal8, 'labelled8': step_labelled8,
+          'extremal7': step_extremal7, 'extremal8': step_extremal8, 'labeled8': step_labeled8,
           'status': step_status}[args.step]
     t = time.time()
     ok = fn(args, state)

@@ -180,7 +180,8 @@ def check(name, expect_n, expect_bipartite):
 
 
 checked = 0
-for name, n, bip in [("regular-five-32.edges", 32, False), ("bipartite-five-104.edges", 104, True),
+for name, n, bip in [("regular-five-18.edges", 18, False), ("regular-five-32.edges", 32, False),
+                     ("bipartite-five-104.edges", 104, True),
                      ("bipartite-five-104-alt.edges", 104, True)]:
     if os.path.exists(os.path.join(HERE, name)):
         check(name, n, bip)
@@ -195,5 +196,5 @@ if os.path.exists(os.path.join(HERE, "bipartite-five-104-sides.txt")):
     _, edges104 = load_edges("bipartite-five-104.edges")
     assert len(sides) == 104 and all(sides[a] != sides[b] for a, b in edges104)
     print("bipartite-five-104-sides.txt: a proper two-coloring of the 104-vertex graph")
-assert checked >= 2, "expected at least the two graph files next to this script"
+assert checked >= 3, "expected the three graph files next to this script"
 print("all checks passed")

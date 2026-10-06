@@ -1,0 +1,7 @@
+fast multigraph test agrees with plain enumeration on 355 random multigraphs (254 with a pair)
+K degrees [4, 4, 4, 4]
+K: 15 multigraph cycles; pair: None
+K has two edge-disjoint Hamilton cycles: False
+L6: 1296 attachments checked, all 6-regular, 0 with a pair
+L6b degrees [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6] bipartite: True
+L6b: pair (fast exact test): None

@@ -1,0 +1,11 @@
+{
+ "instances": 193,
+ "petals": 193,
+ "distinct_pairs": 0,
+ "pairs_cap_cup_in_P": 0,
+ "pairs_premise_failed": 0,
+ "ports_with_two_extremes": 0,
+ "seconds": 1.0,
+ "failures": [],
+ "RESULT": "PASS"
+}

@@ -1,0 +1,4 @@
+# shape=n23_55 mode=free star=True f2=True levels=('k44w', 'r12') solver=cadical195 jobs=88
+n23_55 0 alpha H=[] None 4 False 1 0 17.03 None
+n23_55 2 alpha H=[(0, 1)] None 4 False 1 0 19.13 None
+n23_55 1 alpha H=[(0, 0)] None 4 False 1 0 50.86 None

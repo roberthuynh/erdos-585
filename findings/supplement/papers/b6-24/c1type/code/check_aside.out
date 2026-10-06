@@ -1,0 +1,46 @@
+alpha [] pair-free
+alpha [(0, 0)] PAIR
+alpha [(0, 1)] pair-free
+alpha [(1, 0)] pair-free
+alpha [(2, 2)] pair-free
+alpha [(3, 3)] pair-free
+alpha [(4, 4)] pair-free
+alpha [(0, 0), (0, 1)] PAIR
+alpha [(0, 0), (1, 0)] PAIR
+alpha [(0, 0), (2, 2)] PAIR
+alpha [(0, 0), (3, 3)] PAIR
+alpha [(0, 0), (4, 4)] PAIR
+alpha [(0, 1), (1, 0)] PAIR
+alpha [(0, 1), (2, 2)] pair-free
+alpha [(0, 1), (3, 3)] pair-free
+alpha [(0, 1), (4, 4)] pair-free
+alpha [(1, 0), (2, 2)] pair-free
+alpha [(1, 0), (3, 3)] pair-free
+alpha [(1, 0), (4, 4)] pair-free
+alpha [(2, 2), (3, 3)] pair-free
+alpha [(2, 2), (4, 4)] pair-free
+alpha [(3, 3), (4, 4)] pair-free
+beta [] pair-free
+beta [(0, 1)] pair-free
+beta [(0, 2)] pair-free
+beta [(1, 0)] pair-free
+beta [(2, 0)] pair-free
+beta [(3, 3)] pair-free
+beta [(4, 4)] pair-free
+beta [(0, 1), (0, 2)] pair-free
+beta [(0, 1), (1, 0)] PAIR
+beta [(0, 1), (2, 0)] PAIR
+beta [(0, 1), (3, 3)] pair-free
+beta [(0, 1), (4, 4)] pair-free
+beta [(0, 2), (1, 0)] PAIR
+beta [(0, 2), (2, 0)] PAIR
+beta [(0, 2), (3, 3)] pair-free
+beta [(0, 2), (4, 4)] pair-free
+beta [(1, 0), (2, 0)] pair-free
+beta [(1, 0), (3, 3)] pair-free
+beta [(1, 0), (4, 4)] pair-free
+beta [(2, 0), (3, 3)] pair-free
+beta [(2, 0), (4, 4)] pair-free
+beta [(3, 3), (4, 4)] PAIR
+K44-e [] pair-free
+K44 (control) [] PAIR

@@ -1,0 +1,9 @@
+same cycle twice                         rejected
+reversed copy                            rejected
+vertex o included                        rejected
+vertex dropped                           rejected
+vertex repeated                          rejected
+non-edge (two A-vertices adjacent)       rejected
+swap two entries                         rejected
+random shuffles: agree with a direct recount on 20000 cases; accepted 2
+WITNESS_CHECK PASS
