@@ -1,0 +1,1 @@
+input=reg5-n12.g6 graphs=7849 PAIR=7849 NOPAIR=0 TIMEOUT=0 bad_witness=0 pairc_free=0 nopair_not_pairc=0 pairc_not_nopair=0 agree=True max_s=0.01 wall_s=4 seconds_cap=120

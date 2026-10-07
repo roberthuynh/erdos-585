@@ -1,0 +1,46 @@
+control K44 has pair: True  K44-e has pair: False
+alpha H=[] e=19 pair-free rule-agrees
+alpha H=[(0, 0)] e=20 pair rule-agrees
+alpha H=[(0, 1)] e=20 pair-free rule-agrees
+alpha H=[(1, 0)] e=20 pair-free rule-agrees
+alpha H=[(2, 2)] e=20 pair-free rule-agrees
+alpha H=[(3, 3)] e=20 pair-free rule-agrees
+alpha H=[(4, 4)] e=20 pair-free rule-agrees
+alpha H=[(0, 0), (0, 1)] e=21 pair rule-agrees
+alpha H=[(0, 0), (1, 0)] e=21 pair rule-agrees
+alpha H=[(0, 0), (2, 2)] e=21 pair rule-agrees
+alpha H=[(0, 0), (3, 3)] e=21 pair rule-agrees
+alpha H=[(0, 0), (4, 4)] e=21 pair rule-agrees
+alpha H=[(0, 1), (1, 0)] e=21 pair rule-agrees
+alpha H=[(0, 1), (2, 2)] e=21 pair-free rule-agrees
+alpha H=[(0, 1), (3, 3)] e=21 pair-free rule-agrees
+alpha H=[(0, 1), (4, 4)] e=21 pair-free rule-agrees
+alpha H=[(1, 0), (2, 2)] e=21 pair-free rule-agrees
+alpha H=[(1, 0), (3, 3)] e=21 pair-free rule-agrees
+alpha H=[(1, 0), (4, 4)] e=21 pair-free rule-agrees
+alpha H=[(2, 2), (3, 3)] e=21 pair-free rule-agrees
+alpha H=[(2, 2), (4, 4)] e=21 pair-free rule-agrees
+alpha H=[(3, 3), (4, 4)] e=21 pair-free rule-agrees
+beta H=[] e=19 pair-free rule-agrees
+beta H=[(0, 1)] e=20 pair-free rule-agrees
+beta H=[(0, 2)] e=20 pair-free rule-agrees
+beta H=[(1, 0)] e=20 pair-free rule-agrees
+beta H=[(2, 0)] e=20 pair-free rule-agrees
+beta H=[(3, 3)] e=20 pair-free rule-agrees
+beta H=[(4, 4)] e=20 pair-free rule-agrees
+beta H=[(0, 1), (0, 2)] e=21 pair-free rule-agrees
+beta H=[(0, 1), (1, 0)] e=21 pair rule-agrees
+beta H=[(0, 1), (2, 0)] e=21 pair rule-agrees
+beta H=[(0, 1), (3, 3)] e=21 pair-free rule-agrees
+beta H=[(0, 1), (4, 4)] e=21 pair-free rule-agrees
+beta H=[(0, 2), (1, 0)] e=21 pair rule-agrees
+beta H=[(0, 2), (2, 0)] e=21 pair rule-agrees
+beta H=[(0, 2), (3, 3)] e=21 pair-free rule-agrees
+beta H=[(0, 2), (4, 4)] e=21 pair-free rule-agrees
+beta H=[(1, 0), (2, 0)] e=21 pair-free rule-agrees
+beta H=[(1, 0), (3, 3)] e=21 pair-free rule-agrees
+beta H=[(1, 0), (4, 4)] e=21 pair-free rule-agrees
+beta H=[(2, 0), (3, 3)] e=21 pair-free rule-agrees
+beta H=[(2, 0), (4, 4)] e=21 pair-free rule-agrees
+beta H=[(3, 3), (4, 4)] e=21 pair rule-agrees
+sides with a pair: 12, pair-free: 32, rule agrees on 44 of 44

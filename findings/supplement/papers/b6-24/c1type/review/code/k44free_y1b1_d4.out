@@ -1,0 +1,3 @@
+# shape=n23k44 mode=free star=True f2=True levels=('k44w', 'r12', 'symG', 'case=y1b1') solver=cadical195 jobs=1
+n23k44 0 K44-e None 4 False 1 0 1350.32 None
+# SUMMARY shape=n23k44 mode=free star=True f2=True: UNSAT 1 SAT 0 UNKNOWN 0 (SAT with one-crossing 0) wall 1350.4 s

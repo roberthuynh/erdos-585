@@ -1,0 +1,67 @@
+{
+ "tested": 5,
+ "sparse": 5,
+ "sparse_bad_ports": {
+  "2": 2,
+  "1": 3
+ },
+ "min_g": {
+  "10": 5
+ },
+ "pairs": 2,
+ "examples": [
+  {
+   "c": 4,
+   "t": 10,
+   "eps": 0,
+   "variant": "y55",
+   "min_g": 10,
+   "bad": 2,
+   "bad_def": 2,
+   "distinct_petals": 1
+  },
+  {
+   "c": 6,
+   "t": 10,
+   "eps": 0,
+   "variant": "y55",
+   "min_g": 10,
+   "bad": 2,
+   "bad_def": 2,
+   "distinct_petals": 1
+  },
+  {
+   "c": 5,
+   "t": 10,
+   "eps": 1,
+   "variant": "e1",
+   "min_g": 10,
+   "bad": 1,
+   "bad_def": 1,
+   "distinct_petals": 1
+  },
+  {
+   "c": 4,
+   "t": 10,
+   "eps": 0,
+   "variant": "y4",
+   "min_g": 10,
+   "bad": 1,
+   "bad_def": 2,
+   "distinct_petals": 1
+  },
+  {
+   "c": 6,
+   "t": 10,
+   "eps": 0,
+   "variant": "y4",
+   "min_g": 10,
+   "bad": 1,
+   "bad_def": 2,
+   "distinct_petals": 1
+  }
+ ],
+ "seconds": 30.1,
+ "failures": [],
+ "RESULT": "PASS"
+}

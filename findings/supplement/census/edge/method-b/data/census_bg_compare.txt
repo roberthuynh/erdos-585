@@ -1,0 +1,2 @@
+7 7 vs q4free_bg_7x7_d4.g6: mine 485, census 485, identical multisets: yes
+7 8 vs q4free_bg_7x8_d4.g6: mine 24231, census 24231, identical multisets: yes

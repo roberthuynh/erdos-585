@@ -1,0 +1,16 @@
+{
+ "counts": {
+  "T1": 15,
+  "T2": 111537,
+  "T3": 4081,
+  "T4_graphs": 0,
+  "T4_barriers": 0,
+  "T3_n7": "complete: 4 graphs",
+  "T3_n8": "complete: 19 graphs",
+  "T3_n9": "complete: 191 graphs",
+  "T3_n10": "complete: 3867 graphs"
+ },
+ "fails": 0,
+ "first": [],
+ "seconds": 8.3
+}

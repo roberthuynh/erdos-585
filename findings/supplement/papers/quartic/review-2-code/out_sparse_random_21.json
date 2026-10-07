@@ -1,0 +1,1 @@
+{"seed": 21, "mode": "random", "budget": 200.0, "tally": {"built": 5226, "sparse": 4137, "sparse_with_bad": 0, "bad_def_hist": {}, "P_sizes": {"0": 2625}, "incomparable_pairs": 0, "quartic_all": true}, "failures": [], "n_failures": 0, "sample_sparse_with_bad": []}

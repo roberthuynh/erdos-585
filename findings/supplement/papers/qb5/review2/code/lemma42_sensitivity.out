@@ -1,0 +1,6 @@
+TOTAL mode=0 budget=5 msize=4 labelled_graphs=4941 classes=142 labellings=1617633 failures=0
+TOTAL mode=1 budget=5 msize=4 labelled_graphs=4941 classes=142 labellings=1617633 failures=0
+TOTAL mode=0 budget=6 msize=4 labelled_graphs=4941 classes=142 labellings=2515315 failures=0
+TOTAL mode=0 budget=7 msize=4 labelled_graphs=4941 classes=142 labellings=2994025 failures=0
+TOTAL mode=0 budget=9 msize=4 labelled_graphs=4941 classes=142 labellings=3828353 failures=7820
+TOTAL mode=0 budget=5 msize=5 labelled_graphs=4941 classes=142 labellings=1617633 failures=3268

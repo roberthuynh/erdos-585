@@ -1,0 +1,5 @@
+lines:      388 tf,      388 tf connected,       41 geng -b,       51 genbg bicoloured
+distinct canonical:      388 tf,      388 tf connected,       41 geng -b,       41 genbg
+tf vs tf-connected differ:        0
+geng -b vs genbg differ:        0
+bipartite not in tf:        0

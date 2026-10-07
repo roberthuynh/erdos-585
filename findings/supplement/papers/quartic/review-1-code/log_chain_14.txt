@@ -1,0 +1,44 @@
+{
+ "seed": 14,
+ "stats": {
+  "built": 109,
+  "planted_ok": 109,
+  "sparse": 52,
+  "P_hist": {
+   "2": 50,
+   "3": 2
+  },
+  "pairs": 56,
+  "comparable_pairs": 56,
+  "incomparable_pairs": 0,
+  "brute_crosscheck": 0,
+  "truncated": 0,
+  "by_shape": {
+   "c5_p6_t7_v1": 23,
+   "c5_p6_t7_v0": 15,
+   "c5_p5_t6_v1": 3,
+   "c5_p6_t6_v1": 3,
+   "c5_p6_t6_v0": 4,
+   "c5_p5_t7_v1": 2,
+   "c5_p5_t7_v0": 2
+  }
+ },
+ "checks": {
+  "chain: both planted sets have g = 10, kappa = 1, contain u1": 109,
+  "chain: enumerated cut has slack -1": 1118,
+  "chain sparse: no W-vertex with maxflow(G - w) <= 4s - 2": 52,
+  "chain sparse: both planted petals found in P": 52,
+  "chain L4.1(1) |Q|>=3": 106,
+  "chain L4.1(2) D^Q(Q_W)=2, D(Q_W)<=2": 106,
+  "chain L4.1(3) deg_Q(u1)>=3": 106,
+  "N4 (referee claim): in a sparse instance P is a chain": 56,
+  "chain L4.2(a) |QnQ'|>=2": 56,
+  "chain L4.2(b) QuQ' != V": 56,
+  "chain L4.2(c) QnQ', QuQ' in P": 56,
+  "chain: union of P in P": 52,
+  "chain L4.4: bad ports = ports in a member of P": 52,
+  "chain L4.4: bad-port deficiency <= 2": 52
+ },
+ "failures": 0,
+ "seconds": 200.5
+}

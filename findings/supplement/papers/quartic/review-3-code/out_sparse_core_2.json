@@ -1,0 +1,325 @@
+{
+ "seed": 2,
+ "built": 18,
+ "sparse": 18,
+ "fails": 0,
+ "first_fails": [],
+ "seconds": 159.6,
+ "results": [
+  {
+   "c": 4,
+   "t": 6,
+   "eps": 1,
+   "s": 10,
+   "n": 21,
+   "g6": "T???????F_}?{W|?]SBo?B{ANO?^_?N_?No?",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 1,
+   "P_size": 1,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "19": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????^O{?{G]cFg?{G?Jw?Mo?]o?LW?A}??No??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "18": 1,
+    "20": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]?{A{E]GF`?{c?No?]O?Zo?Ng?B{??Lo??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "18": 1,
+    "22": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]_{?|O]gFa?{C?Eg?Vo?Vo?Mw?Bm??Vo??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 2,
+   "P_size": 2,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 1,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]@{c{G]OF`?[O?NW?ZO?]o?Fw?b[??\\o??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 1,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "18": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]C|O|A]?Fc?|??KW?No?Vo?Jw?B{??Vo??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 2,
+   "P_size": 2,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 6,
+   "eps": 0,
+   "s": 10,
+   "n": 21,
+   "g6": "T???????F_]E}?}?]_Fe?@{?No?N_?^_?No?",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "16": 1,
+    "18": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 1,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]?}C\\C]?Fo?|O?Ng?Vo?NOAEw?@}??Vo??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 1,
+   "P_size": 1,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "19": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]B}A{A]?F_?{o?Lo?^_?^_?Fg?Bm??No??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1,
+    "20": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]a}G}?]?Fg?|??FG?No?Vo?Jw?@}??Vo??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 2,
+   "P_size": 2,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]O{Q}_]@F_?{C?Lw?^??Zo?Fw?@m??^_??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "18": 1,
+    "21": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 6,
+   "eps": 1,
+   "s": 10,
+   "n": 21,
+   "g6": "T???????F_}_{G{KMGFc?B{AN_?^_?^_?NO?",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 1,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "20": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]_{E|O]CFg?{??FO?Vo?Vo?Jw?Bm??^O??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 2,
+   "P_size": 2,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]_{C{_]SF_?}A?Fw?Zo?Fo?Lw?B{??]O??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "19": 1,
+    "22": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????^?{?{o]GF`_{A?Dw?No?^O?Mw?Bs??\\o??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1,
+    "21": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]?|A|A]_F`?{G?FO?]o?Vo?No?A}??Vo??",
+   "min_g": 10,
+   "bad_ports": 1,
+   "bad_def": 2,
+   "P_size": 2,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]C{A|C]EF_O{??Fg?]o?]o?Jo?By??^_??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 6,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1,
+    "20": 1
+   }
+  },
+  {
+   "c": 4,
+   "t": 7,
+   "eps": 0,
+   "s": 11,
+   "n": 23,
+   "g6": "V?????????]W{?|_]GFb?{??Iw?Zo?No?MW?B]??\\o??",
+   "min_g": 10,
+   "bad_ports": 2,
+   "bad_def": 2,
+   "P_size": 1,
+   "ports": 5,
+   "incomparable_pairs": 0,
+   "petals_per_bad_port": {
+    "17": 1,
+    "20": 1
+   }
+  }
+ ]
+}

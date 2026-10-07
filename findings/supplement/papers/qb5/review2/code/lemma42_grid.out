@@ -1,0 +1,4 @@
+grid mode=0 graphs=22792 labellings=15342638 failures=0
+timeout 240 ./lemma42_grid $m  2.49s user 0.01s system 94% cpu 2.636 total
+grid mode=1 graphs=22792 labellings=15342638 failures=0
+timeout 240 ./lemma42_grid $m  2.65s user 0.01s system 99% cpu 2.680 total

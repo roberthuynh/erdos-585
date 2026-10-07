@@ -1,0 +1,64 @@
+{
+ "tag": "rand_21",
+ "summary": {
+  "instances": 400,
+  "sparse": 252,
+  "sparse_DU1": 252,
+  "sparse_DU0": 0,
+  "sparse_with_P_ge2": 0,
+  "max_P": 0,
+  "sparse_with_bad": 0,
+  "pairs_tested": 0
+ },
+ "checks": {
+  "brute min proper g agrees with flow-based min_proper_g (capped at 10)": 400,
+  "sparse C1 => W-degrees >= 4": 252,
+  "L4.4 bad ports = ports lying in a member of P": 252,
+  "L4.4 bad-port deficiency <= 2": 252,
+  "nonsparse pairs leaving P": 40
+ },
+ "failures": 0,
+ "examples": {
+  "lattice_fails_nonsparse": {
+   "label": "rand:21:13",
+   "Q": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    14,
+    15,
+    16
+   ],
+   "Qp": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    13,
+    14,
+    15,
+    16
+   ],
+   "g_union": 6,
+   "g_inter": 14,
+   "union_is_V": false
+  }
+ },
+ "seconds": 44.6
+}

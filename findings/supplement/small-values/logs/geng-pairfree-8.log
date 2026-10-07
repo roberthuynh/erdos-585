@@ -1,0 +1,11 @@
+>A [temporary path] -ld0D7 n=8 e=0-28
+585 summary outputs=10512 cpu=0.010 red_trials=7311
+585 n=1 calls=1 rejected=0
+585 n=2 calls=2 rejected=0
+585 n=3 calls=4 rejected=0
+585 n=4 calls=11 rejected=0
+585 n=5 calls=34 rejected=1
+585 n=6 calls=155 rejected=7
+585 n=7 calls=1033 rejected=79
+585 n=8 calls=12141 rejected=1629
+>Z 10512 graphs generated in 0.01 sec

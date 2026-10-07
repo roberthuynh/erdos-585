@@ -1,0 +1,39 @@
+{
+ "seed": 5,
+ "stats": {
+  "built": 68,
+  "sparse": 68,
+  "lattice_tested": 68,
+  "P_sizes": {
+   "1": 68
+  },
+  "bad_def": {
+   "1": 52,
+   "2": 16
+  },
+  "by_ct": {
+   "c5_t6_eps1": 29,
+   "c4_t7_eps1": 21,
+   "c5_t6_eps0": 12,
+   "c4_t6_eps1": 2,
+   "c4_t7_eps0": 4
+  }
+ },
+ "checks": {
+  "built: planted cut slack -1, k = 2": 68,
+  "built: planted petal g = 10, kappa = 1, contains y and u1": 68,
+  "built sparse: maxflow(G - y) = 4s - 1": 68,
+  "brute min proper g agrees with flow-based min_proper_g (capped at 10)": 68,
+  "sparse C1 => W-degrees >= 4": 68,
+  "L4.1(1) |Q|>=3": 68,
+  "L4.1(2) D^Q(Q_W)=2 and D(Q_W)<=2": 68,
+  "L4.1(3) deg_Q(u1)>=3": 68,
+  "union of all of P is in P": 68,
+  "L4.4 bad ports = ports lying in a member of P": 68,
+  "L4.4 bad-port deficiency <= 2": 68,
+  "L3.2 in sparse instance: maxflow(G-y) = 4s-1": 73
+ },
+ "failures": 0,
+ "examples": {},
+ "seconds": 200.3
+}

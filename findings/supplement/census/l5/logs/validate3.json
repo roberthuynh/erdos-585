@@ -1,0 +1,62 @@
+{
+ "bad": 0,
+ "brute_files": {
+  "data/validation/bip14_e36_d4.g6": {
+   "agree": 1144,
+   "free": 0,
+   "graphs": 1144,
+   "pair": 1144
+  }
+ },
+ "named": {
+  "K33": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K4": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K44": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  },
+  "K44-e": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K5": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  },
+  "Petersen": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "octahedron": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  }
+ },
+ "pairfree_files": {},
+ "random": {
+  "disagree": 0,
+  "free": 0,
+  "pair": 0,
+  "tested": 0
+ }
+}

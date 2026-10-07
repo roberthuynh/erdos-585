@@ -20,7 +20,7 @@ import Openmath.Proofs.Five
 # Erdős 585: rigidity of a pair, an extension lemma, and a witness on nine vertices
 
 In two edge-disjoint cycles `p`, `q` with the same vertex set `S`, every `v ∈ S` has two
-neighbours along `p` and two along `q`, and these four are distinct because the edge sets are
+neighbors along `p` and two along `q`, and these four are distinct because the edge sets are
 disjoint. So `v` has degree at least four, and a vertex of degree at most three lies on no pair.
 
 Consequently, adding a new vertex joined to three old vertices keeps a graph pair-free, and adds
@@ -41,7 +41,7 @@ section Rigidity
 
 variable {V : Type*} [Fintype V] [DecidableEq V] {G : SimpleGraph V}
 
-/-- The neighbours of `v` along the edges of a walk. -/
+/-- The neighbors of `v` along the edges of a walk. -/
 def walkNbrs {u w : V} (p : G.Walk u w) (v : V) : Finset V :=
   univ.filter fun x => s(v, x) ∈ p.edges
 
@@ -54,12 +54,12 @@ lemma coe_walkNbrs {u w : V} (p : G.Walk u w) (v : V) :
   rw [Finset.mem_coe, mem_walkNbrs, Subgraph.mem_neighborSet, ← Subgraph.mem_edgeSet,
     Walk.mem_edges_toSubgraph]
 
-/-- On a cycle, every vertex of the support has exactly two neighbours along the cycle. -/
+/-- On a cycle, every vertex of the support has exactly two neighbors along the cycle. -/
 lemma card_walkNbrs {u v : V} {p : G.Walk u u} (hp : p.IsCycle) (hv : v ∈ p.support) :
     (walkNbrs p v).card = 2 := by
   rw [← Set.ncard_coe_finset, coe_walkNbrs, hp.ncard_neighborSet_toSubgraph_eq_two hv]
 
-/-- The neighbours of `v` along the edges of `p` or of `q`. -/
+/-- The neighbors of `v` along the edges of `p` or of `q`. -/
 def pairNbrs {u w : V} (p : G.Walk u u) (q : G.Walk w w) (v : V) : Finset V :=
   walkNbrs p v ∪ walkNbrs q v
 
@@ -85,7 +85,7 @@ lemma mem_support_of_mem_pairNbrs (hS : p.support.toFinset = q.support.toFinset)
   · rw [← List.mem_toFinset, hS, List.mem_toFinset]
     exact q.fst_mem_support_of_mem_edges h
 
-/-- In a pair, every vertex of the common support has exactly four neighbours along the union. -/
+/-- In a pair, every vertex of the common support has exactly four neighbors along the union. -/
 lemma card_pairNbrs (hp : p.IsCycle) (hq : q.IsCycle) (hS : p.support.toFinset = q.support.toFinset)
     (hE : Disjoint p.edges.toFinset q.edges.toFinset) {v : V} (hv : v ∈ p.support) :
     (pairNbrs p q v).card = 4 := by
@@ -97,7 +97,7 @@ lemma card_pairNbrs (hp : p.IsCycle) (hq : q.IsCycle) (hS : p.support.toFinset =
     exact Finset.disjoint_left.1 hE (List.mem_toFinset.2 hx) (List.mem_toFinset.2 hx')
   rw [pairNbrs, card_union_of_disjoint hdisj, card_walkNbrs hp hv, card_walkNbrs hq hv']
 
-/-- A vertex on a pair has at least four neighbours (stated with `Set.ncard`). -/
+/-- A vertex on a pair has at least four neighbors (stated with `Set.ncard`). -/
 theorem four_le_ncard_neighborSet_of_mem_pair (hp : p.IsCycle) (hq : q.IsCycle)
     (hS : p.support.toFinset = q.support.toFinset) (hE : Disjoint p.edges.toFinset q.edges.toFinset)
     {v : V} (hv : v ∈ p.support) : 4 ≤ (G.neighborSet v).ncard := by
@@ -112,7 +112,7 @@ theorem four_le_degree_of_mem_pair [DecidableRel G.Adj] (hp : p.IsCycle) (hq : q
   rw [← card_neighborFinset_eq_degree, ← card_pairNbrs hp hq hS hE hv]
   exact card_le_card fun x hx => (mem_neighborFinset _ _ _).2 (adj_of_mem_pairNbrs hx)
 
-/-- A vertex with at most three neighbours is on no cycle of a pair (stated with `Set.ncard`). -/
+/-- A vertex with at most three neighbors is on no cycle of a pair (stated with `Set.ncard`). -/
 theorem not_mem_support_of_ncard_le_three (hp : p.IsCycle) (hq : q.IsCycle)
     (hS : p.support.toFinset = q.support.toFinset) (hE : Disjoint p.edges.toFinset q.edges.toFinset)
     {v : V} (hv : (G.neighborSet v).ncard ≤ 3) : v ∉ p.support := fun h => by
@@ -299,7 +299,7 @@ lemma ncard_edgeSet_thetaWheel : thetaWheel.edgeSet.ncard = 23 := by
   rw [← coe_edgeFinset, Set.ncard_coe_finset]
   decide
 
-/-- The neighbourhoods of the non-hub vertices of `thetaWheel`. -/
+/-- The neighborhoods of the non-hub vertices of `thetaWheel`. -/
 lemma thetaWheel_nbrs :
     (∀ x, thetaWheel.Adj 0 x → x ∈ ({1, 5, 7, 8} : Finset (Fin 9))) ∧
     (∀ x, thetaWheel.Adj 1 x → x ∈ ({0, 6, 7, 8} : Finset (Fin 9))) ∧
@@ -310,7 +310,7 @@ lemma thetaWheel_nbrs :
     (∀ x, thetaWheel.Adj 6 x → x = 1 ∨ x = 3 ∨ x = 4 ∨ x = 7 ∨ x = 8) := by
   decide
 
-/-- A symmetric neighbourhood function on `thetaWheel` in which every nonempty neighbourhood has
+/-- A symmetric neighborhood function on `thetaWheel` in which every nonempty neighborhood has
 exactly four elements is empty everywhere. This is the case analysis on which of the five
 degree-four vertices carry the union. -/
 theorem thetaWheel_aux (N : Fin 9 → Finset (Fin 9))
@@ -351,7 +351,7 @@ theorem thetaWheel_aux (N : Fin 9 → Finset (Fin 9))
       have h73 : 3 ∈ N 7 := hS 3 7 (by rw [e3]; decide)
       have h82 : 2 ∈ N 8 := hS 2 8 (by rw [e2]; decide)
       have h83 : 3 ∈ N 8 := hS 3 8 (by rw [e3]; decide)
-      -- the hubs are saturated by `0, 1, 2, 3`, so `5` has at most two union neighbours
+      -- the hubs are saturated by `0, 1, 2, 3`, so `5` has at most two union neighbors
       refine small 5 0 {0, 2} ?_ (by decide) h50
       intro x hx
       rcases n5 x (hA 5 x hx) with rfl | rfl | rfl | rfl | rfl
@@ -464,7 +464,7 @@ theorem thetaWheel_aux (N : Fin 9 → Finset (Fin 9))
       · decide
   have h3 : ∀ w, w ∉ N 3 := fun w hw =>
     h2 3 (hS 3 2 (by rw [full 3 w _ (fun x hx => n3 x (hA 3 x hx)) (by decide) hw]; decide))
-  -- vertex `4` carries no union edge: then `5` would have at most three union neighbours
+  -- vertex `4` carries no union edge: then `5` would have at most three union neighbors
   have h4 : ∀ w, w ∉ N 4 := by
     intro w hw
     have e4 := full 4 w _ (fun x hx => n4 x (hA 4 x hx)) (by decide) hw

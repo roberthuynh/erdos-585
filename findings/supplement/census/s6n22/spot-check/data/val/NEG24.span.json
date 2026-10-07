@@ -1,0 +1,38 @@
+{
+ "cuts": 22,
+ "e10": 0,
+ "fresh_no": 72,
+ "fresh_span": 0,
+ "graphs": 1,
+ "hash_mismatch": 0,
+ "mincut_hist": {
+  "2": 1
+ },
+ "no": 0,
+ "no_nonE10": 72,
+ "non_e10": 1,
+ "non_e10_graphs": [
+  {
+   "cutset_mask": "3f03f",
+   "cutset_size": 12,
+   "g6": "W???????????^_~?^_Fw?~?B{?CBw?Fw?B{??~??Fw??^_?",
+   "index": 0,
+   "mincut": 2,
+   "tests": {
+    "NO": 72,
+    "SPAN": 0
+   }
+  }
+ ],
+ "rounds_hist": {
+  "1": 70,
+  "2": 2
+ },
+ "sec_cpu": 1.32,
+ "sec_wall": 1.55,
+ "solver": "minisat22",
+ "span": 0,
+ "tests": 0,
+ "tests_nonE10": 72,
+ "witness_fail": 0
+}

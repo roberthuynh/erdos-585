@@ -1,0 +1,31 @@
+{
+ "S_size_hist": {
+  "10": 20,
+  "11": 69,
+  "12": 384,
+  "13": 2238,
+  "14": 17020,
+  "15": 70381,
+  "16": 40406,
+  "6": 13,
+  "8": 2,
+  "9": 7
+ },
+ "clauses_per_n": {
+  "16": 24105
+ },
+ "cpu_seconds": 198.78,
+ "decode_mismatch": 0,
+ "degree_mismatch": 0,
+ "graphs": 130540,
+ "input": "[local scratch folder]",
+ "n_hist": {
+  "16": 130540
+ },
+ "nopair": 0,
+ "pair": 130540,
+ "phase_x": false,
+ "seconds": 253.68,
+ "solver": "m22",
+ "verify_fail": 0
+}

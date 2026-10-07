@@ -1,0 +1,3 @@
+# selftest jobs
+selftest_q4	q4	4	[local path]	-d4:4 -D6:6 7 8	control: expect 24231 graphs in total
+selftest_sat	sat	2	[local path]	-d4:4 -D6:6 7 7	control: expect UNSAT 485 in total

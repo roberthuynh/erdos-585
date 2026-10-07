@@ -1,0 +1,6 @@
+b=6 levels=('symG',) generators=12 tests=300 (lex-ok assignments 150): agree 300 disagree 0
+b=7 levels=('symG',) generators=14 tests=200 (lex-ok assignments 100): agree 200 disagree 0
+b=6 levels=('symG', 'case=y1pp') generators=11 tests=300 (lex-ok assignments 150): agree 300 disagree 0
+b=7 levels=('symG', 'case=y1pp') generators=13 tests=200 (lex-ok assignments 100): agree 200 disagree 0
+b=6 levels=('symG', 'case=y1b1') generators=10 tests=300 (lex-ok assignments 150): agree 300 disagree 0
+b=7 levels=('symG', 'case=y1b1') generators=12 tests=200 (lex-ok assignments 100): agree 200 disagree 0

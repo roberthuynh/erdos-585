@@ -1,0 +1,2 @@
+{"counts": {"random": 3549, "thm5shape": 3500}, "seed": 77, "n_fails": 0}
+exit 0

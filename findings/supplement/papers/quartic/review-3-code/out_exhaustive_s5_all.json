@@ -1,0 +1,16 @@
+{
+ "s": 5,
+ "slice": null,
+ "graphs": 2,
+ "DU0": 1,
+ "DU1": 1,
+ "no_quartic": [],
+ "bad_port_graphs": 0,
+ "minW4_graphs": 2,
+ "minW4_sparse": 2,
+ "minW4_nonsparse_examples": 0,
+ "min_g_hist": {
+  "10": 2
+ },
+ "seconds": 0.0
+}

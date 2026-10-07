@@ -1,0 +1,4 @@
+n=28 m=79 max(e(S)-3|S|) over 3<=|S|<=n-1 = -6 (attained by 5 sets), violating sets = 0
+one argmax set: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+SPARSE
+timeout 240 ./sparse_gray < cert_n28.g6  0.42s user 0.00s system 59% cpu 0.708 total

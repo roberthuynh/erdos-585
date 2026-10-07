@@ -1,0 +1,13 @@
+pr_n17_e44_8x9	1	bin/bipgen 8 9 44:44 4:4 6:6
+pr_n17_e44_9x8	1	bin/bipgen 9 8 44:44 4:4 6:6
+pr_n18_e47_8x10	1	bin/bipgen 8 10 47:47 4:4 6:6
+pr_n18_e47_10x8	1	bin/bipgen 10 8 47:47 4:4 6:6
+pr_n18_e47_9x9	4	bin/bipgen 9 9 47:47 4:4 6:6 {r}/{mod}
+pr_n19_e51_9x10_d5	1	bin/bipgen 9 10 51:51 5:5 6:6
+pr_n19_e51_10x9_d5	1	bin/bipgen 10 9 51:51 5:5 6:6
+n19_e50_10x9	50	bin/bipgen 10 9 50:50 4:4 6:6 {r}/{mod}
+n19_e50_9x10	50	bin/bipgen 9 10 50:50 4:4 6:6 {r}/{mod}
+wh_n17_e44_8x9	1	bin/bipgen -P -q 8 9 44:44 4:4 6:6 | bin/h4filt
+wh_n18_e47_10x8	1	bin/bipgen -P -q 10 8 47:47 4:4 6:6 | bin/h4filt
+wh_n19_e51_10x9_d5	1	bin/bipgen -P -q 10 9 51:51 5:5 6:6 | bin/h4filt
+wh_n18_e47_9x9	200	bin/bipgen -P -q 9 9 47:47 4:4 6:6 {r}/{mod} | bin/h4filt

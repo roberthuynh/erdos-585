@@ -1,0 +1,259 @@
+- progress n = 8, level 1 edges: 1 classes from 28 extensions; sum 8!/|Aut| = 28 vs C(28,1) = 28 (match); 0.01 s
+- progress n = 8, level 2 edges: 2 classes from 27 extensions; sum 8!/|Aut| = 378 vs C(28,2) = 378 (match); 0.00 s
+- progress n = 8, level 3 edges: 5 classes from 52 extensions; sum 8!/|Aut| = 3276 vs C(28,3) = 3276 (match); 0.00 s
+- progress n = 8, level 4 edges: 11 classes from 125 extensions; sum 8!/|Aut| = 20475 vs C(28,4) = 20475 (match); 0.02 s
+- progress n = 8, level 5 edges: 24 classes from 264 extensions; sum 8!/|Aut| = 98280 vs C(28,5) = 98280 (match); 0.01 s
+- progress n = 8, level 6 edges: 56 classes from 552 extensions; sum 8!/|Aut| = 376740 vs C(28,6) = 376740 (match); 0.01 s
+- progress n = 8, level 7 edges: 115 classes from 1232 extensions; sum 8!/|Aut| = 1184040 vs C(28,7) = 1184040 (match); 0.03 s
+- progress n = 8, level 8 edges: 221 classes from 2415 extensions; sum 8!/|Aut| = 3108105 vs C(28,8) = 3108105 (match); 0.12 s
+- progress n = 8, level 9 edges: 402 classes from 4420 extensions; sum 8!/|Aut| = 6906900 vs C(28,9) = 6906900 (match); 0.08 s
+- progress n = 8, level 10 edges: 663 classes from 7638 extensions; sum 8!/|Aut| = 13123110 vs C(28,10) = 13123110 (match); 0.13 s
+eight {"18": 270, "19": 12}
+{"n": 9, "parents": 1, "total": 282, "tests": 70, "kept": 4}
+{"n": 9, "parents": 11, "total": 282, "tests": 595, "kept": 53}
+{"n": 9, "parents": 21, "total": 282, "tests": 1105, "kept": 75}
+{"n": 9, "parents": 31, "total": 282, "tests": 1395, "kept": 97}
+{"n": 9, "parents": 41, "total": 282, "tests": 1675, "kept": 114}
+{"n": 9, "parents": 51, "total": 282, "tests": 2047, "kept": 146}
+{"n": 9, "parents": 61, "total": 282, "tests": 2317, "kept": 150}
+{"n": 9, "parents": 71, "total": 282, "tests": 2497, "kept": 151}
+{"n": 9, "parents": 81, "total": 282, "tests": 3038, "kept": 170}
+{"n": 9, "parents": 91, "total": 282, "tests": 3273, "kept": 172}
+{"n": 9, "parents": 101, "total": 282, "tests": 3513, "kept": 177}
+{"n": 9, "parents": 111, "total": 282, "tests": 3774, "kept": 215}
+{"n": 9, "parents": 121, "total": 282, "tests": 3990, "kept": 217}
+{"n": 9, "parents": 131, "total": 282, "tests": 4230, "kept": 226}
+{"n": 9, "parents": 141, "total": 282, "tests": 4460, "kept": 232}
+{"n": 9, "parents": 151, "total": 282, "tests": 4916, "kept": 257}
+{"n": 9, "parents": 161, "total": 282, "tests": 5112, "kept": 270}
+{"n": 9, "parents": 171, "total": 282, "tests": 5382, "kept": 278}
+{"n": 9, "parents": 181, "total": 282, "tests": 5573, "kept": 313}
+{"n": 9, "parents": 191, "total": 282, "tests": 5823, "kept": 313}
+{"n": 9, "parents": 201, "total": 282, "tests": 6073, "kept": 313}
+{"n": 9, "parents": 211, "total": 282, "tests": 6283, "kept": 315}
+{"n": 9, "parents": 221, "total": 282, "tests": 6598, "kept": 318}
+{"n": 9, "parents": 231, "total": 282, "tests": 7006, "kept": 369}
+{"n": 9, "parents": 241, "total": 282, "tests": 7357, "kept": 382}
+{"n": 9, "parents": 251, "total": 282, "tests": 7639, "kept": 439}
+{"n": 9, "parents": 261, "total": 282, "tests": 7839, "kept": 441}
+{"n": 9, "parents": 271, "total": 282, "tests": 7995, "kept": 443}
+{"n": 9, "parents": 281, "total": 282, "tests": 8233, "kept": 485}
+finished 9 {"22": 477, "23": 8, "24": 0}
+{"n": 10, "parents": 1, "total": 485, "tests": 5, "kept": 0}
+{"n": 10, "parents": 11, "total": 485, "tests": 47, "kept": 0}
+{"n": 10, "parents": 21, "total": 485, "tests": 57, "kept": 0}
+{"n": 10, "parents": 31, "total": 485, "tests": 208, "kept": 2}
+{"n": 10, "parents": 41, "total": 485, "tests": 223, "kept": 2}
+{"n": 10, "parents": 51, "total": 485, "tests": 385, "kept": 2}
+{"n": 10, "parents": 61, "total": 485, "tests": 395, "kept": 2}
+{"n": 10, "parents": 71, "total": 485, "tests": 411, "kept": 2}
+{"n": 10, "parents": 81, "total": 485, "tests": 419, "kept": 2}
+{"n": 10, "parents": 91, "total": 485, "tests": 419, "kept": 2}
+{"n": 10, "parents": 101, "total": 485, "tests": 420, "kept": 2}
+{"n": 10, "parents": 111, "total": 485, "tests": 420, "kept": 2}
+{"n": 10, "parents": 121, "total": 485, "tests": 426, "kept": 2}
+{"n": 10, "parents": 131, "total": 485, "tests": 432, "kept": 2}
+{"n": 10, "parents": 141, "total": 485, "tests": 441, "kept": 2}
+{"n": 10, "parents": 151, "total": 485, "tests": 448, "kept": 2}
+{"n": 10, "parents": 161, "total": 485, "tests": 459, "kept": 2}
+{"n": 10, "parents": 171, "total": 485, "tests": 590, "kept": 3}
+{"n": 10, "parents": 181, "total": 485, "tests": 721, "kept": 4}
+{"n": 10, "parents": 191, "total": 485, "tests": 725, "kept": 4}
+{"n": 10, "parents": 201, "total": 485, "tests": 728, "kept": 4}
+{"n": 10, "parents": 211, "total": 485, "tests": 730, "kept": 4}
+{"n": 10, "parents": 221, "total": 485, "tests": 865, "kept": 6}
+{"n": 10, "parents": 231, "total": 485, "tests": 865, "kept": 6}
+{"n": 10, "parents": 241, "total": 485, "tests": 869, "kept": 6}
+{"n": 10, "parents": 251, "total": 485, "tests": 871, "kept": 6}
+{"n": 10, "parents": 261, "total": 485, "tests": 1010, "kept": 7}
+{"n": 10, "parents": 271, "total": 485, "tests": 1010, "kept": 7}
+{"n": 10, "parents": 281, "total": 485, "tests": 1011, "kept": 7}
+{"n": 10, "parents": 291, "total": 485, "tests": 1011, "kept": 7}
+{"n": 10, "parents": 301, "total": 485, "tests": 1142, "kept": 7}
+{"n": 10, "parents": 311, "total": 485, "tests": 1142, "kept": 7}
+{"n": 10, "parents": 321, "total": 485, "tests": 1273, "kept": 7}
+{"n": 10, "parents": 331, "total": 485, "tests": 1276, "kept": 7}
+{"n": 10, "parents": 341, "total": 485, "tests": 1283, "kept": 7}
+{"n": 10, "parents": 351, "total": 485, "tests": 1283, "kept": 7}
+{"n": 10, "parents": 361, "total": 485, "tests": 1283, "kept": 7}
+{"n": 10, "parents": 371, "total": 485, "tests": 1286, "kept": 7}
+{"n": 10, "parents": 381, "total": 485, "tests": 1291, "kept": 7}
+{"n": 10, "parents": 391, "total": 485, "tests": 1292, "kept": 7}
+{"n": 10, "parents": 401, "total": 485, "tests": 1292, "kept": 7}
+{"n": 10, "parents": 411, "total": 485, "tests": 1292, "kept": 7}
+{"n": 10, "parents": 421, "total": 485, "tests": 1294, "kept": 7}
+{"n": 10, "parents": 431, "total": 485, "tests": 1296, "kept": 7}
+{"n": 10, "parents": 441, "total": 485, "tests": 1297, "kept": 7}
+{"n": 10, "parents": 451, "total": 485, "tests": 1297, "kept": 7}
+{"n": 10, "parents": 461, "total": 485, "tests": 1301, "kept": 7}
+{"n": 10, "parents": 471, "total": 485, "tests": 1301, "kept": 7}
+{"n": 10, "parents": 481, "total": 485, "tests": 1303, "kept": 7}
+finished 10 {"27": 7, "28": 0}
+{"n": 11, "parents": 1, "total": 7, "tests": 21, "kept": 0}
+finished 11 {"32": 0}
+{
+  "status": "complete",
+  "counts": {
+    "8": {
+      "18": 270,
+      "19": 12
+    },
+    "9": {
+      "22": 477,
+      "23": 8,
+      "24": 0
+    },
+    "10": {
+      "27": 7,
+      "28": 0
+    },
+    "11": {
+      "32": 0
+    }
+  },
+  "bounds": {
+    "8": 19,
+    "9": 23,
+    "10": 27
+  },
+  "extension_tests": {
+    "9": 8233,
+    "10": 1304,
+    "11": 137
+  },
+  "positive_rejections": {
+    "9": 6593,
+    "10": 1276,
+    "11": 137
+  },
+  "lower_witness_edges": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      10
+    ]
+  ],
+  "lower_witness_independent_checks": 2,
+  "method": "minimum-degree vertex deletion; independent Python canonicalization and cycle enumeration; no nauty or SAT",
+  "conclusion": "computational evidence f(11)=31; no Lean theorem",
+  "last_invocation_seconds": 13.835198458982632
+}

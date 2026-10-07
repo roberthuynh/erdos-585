@@ -1,0 +1,2 @@
+c=5 graphs=7 sparse_and_d>=3=3 candidates=0 (k=1:0 k=2:0 k=3:0 other:0) relevant=0 infeasible_cut_vectors=0
+c=5 orbit_sum=16807.0 labelled_count=16807.0

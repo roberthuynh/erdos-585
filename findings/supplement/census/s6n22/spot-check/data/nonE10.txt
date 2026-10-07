@@ -1,0 +1,31 @@
+slice 5491 (mode e10only) graph index 33070: min essential cut 8, S = [0, 5, 6, 8, 9, 10, 12, 14, 16, 18, 20] (|S_A| = 6, |S_B| = 5), cut edges [(0, 11), (5, 11), (5, 15), (6, 13), (7, 12), (8, 17), (9, 19), (10, 21)]
+  tests: 58 SPAN (witness verified), 8 NO (both SAT encodings): [(0, 11), (5, 11), (5, 15), (6, 13), (7, 12), (8, 17), (9, 19), (10, 21)]
+  NO edges are exactly the cut edges: True
+  NO (0,11): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[5, 6, 8, 9, 10, 12, 14, 16, 18, 20], a=5, b=1, d=0
+  NO (5,11): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 8, 9, 10, 12, 14, 16, 18, 20], a=4, b=1, d=0
+  NO (5,15): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 8, 9, 10, 12, 14, 16, 18, 20], a=5, b=1, d=0
+  NO (6,13): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 5, 8, 9, 10, 12, 14, 16, 18, 20], a=6, b=1, d=0
+  NO (7,12): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 5, 6, 8, 9, 10, 14, 16, 18, 20], a=7, b=0, d=2
+  NO (8,17): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 5, 6, 9, 10, 12, 14, 16, 18, 20], a=6, b=1, d=0
+  NO (9,19): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 5, 6, 8, 10, 12, 14, 16, 18, 20], a=6, b=1, d=0
+  NO (10,21): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 5, 6, 8, 9, 12, 14, 16, 18, 20], a=6, b=1, d=0
+slice 7913 (mode e10only) graph index 12216: min essential cut 6, S = [0, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20] (|S_A| = 6, |S_B| = 5), cut edges [(0, 11), (6, 13), (7, 15), (8, 17), (9, 19), (10, 21)]
+  tests: 60 SPAN (witness verified), 6 NO (both SAT encodings): [(0, 11), (6, 13), (7, 15), (8, 17), (9, 19), (10, 21)]
+  NO edges are exactly the cut edges: True
+  NO (0,11): second encoding NO; one Hamilton cycle in Y: none (UNSAT); counting certificate: no Hamilton cycle: T=[6, 7, 8, 9, 10, 12, 14, 16, 18, 20], a=5, b=0, d=0
+  NO (6,13): second encoding NO; one Hamilton cycle in Y: none (UNSAT); counting certificate: no Hamilton cycle: T=[0, 7, 8, 9, 10, 12, 14, 16, 18, 20], a=5, b=0, d=0
+  NO (7,15): second encoding NO; one Hamilton cycle in Y: none (UNSAT); counting certificate: no Hamilton cycle: T=[0, 6, 8, 9, 10, 12, 14, 16, 18, 20], a=5, b=0, d=0
+  NO (8,17): second encoding NO; one Hamilton cycle in Y: none (UNSAT); counting certificate: no Hamilton cycle: T=[0, 6, 7, 9, 10, 12, 14, 16, 18, 20], a=5, b=0, d=0
+  NO (9,19): second encoding NO; one Hamilton cycle in Y: none (UNSAT); counting certificate: no Hamilton cycle: T=[0, 6, 7, 8, 10, 12, 14, 16, 18, 20], a=5, b=0, d=0
+  NO (10,21): second encoding NO; one Hamilton cycle in Y: none (UNSAT); counting certificate: no Hamilton cycle: T=[0, 6, 7, 8, 9, 12, 14, 16, 18, 20], a=5, b=0, d=0
+slice 8360 (mode e10only) graph index 13715: min essential cut 8, S = [0, 6, 7, 8, 9, 10, 12, 14, 15, 18, 20] (|S_A| = 6, |S_B| = 5), cut edges [(0, 11), (0, 16), (1, 20), (6, 13), (7, 17), (8, 19), (9, 21), (10, 21)]
+  tests: 58 SPAN (witness verified), 8 NO (both SAT encodings): [(0, 11), (0, 16), (1, 20), (6, 13), (7, 17), (8, 19), (9, 21), (10, 21)]
+  NO edges are exactly the cut edges: True
+  NO (0,11): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[6, 7, 8, 9, 10, 12, 14, 15, 18, 20], a=5, b=1, d=0
+  NO (0,16): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[6, 7, 8, 9, 10, 12, 14, 15, 18, 20], a=5, b=1, d=0
+  NO (1,20): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 7, 8, 9, 10, 12, 14, 15, 18], a=7, b=0, d=2
+  NO (6,13): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 7, 8, 9, 10, 12, 14, 15, 18, 20], a=6, b=1, d=0
+  NO (7,17): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 8, 9, 10, 12, 14, 15, 18, 20], a=6, b=1, d=0
+  NO (8,19): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 7, 9, 10, 12, 14, 15, 18, 20], a=6, b=1, d=0
+  NO (9,21): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 7, 8, 10, 12, 14, 15, 18, 20], a=5, b=1, d=0
+  NO (10,21): second encoding NO; one Hamilton cycle in Y: exists; counting certificate: no two edge-disjoint Hamilton cycles: T=[0, 6, 7, 8, 9, 12, 14, 15, 18, 20], a=5, b=1, d=0

@@ -1,0 +1,44 @@
+idx=47 alpha n=22 HA=[('p1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=54 alpha n=22 HA=[('p1', 'q1'), ('x1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=52 alpha n=22 HA=[('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=51 alpha n=22 HA=[('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=50 alpha n=22 HA=[('x2', 'y2')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=53 alpha n=22 HA=[('p1', 'q1'), ('p1', 'y1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=48 alpha n=22 HA=[('p1', 'y1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=49 alpha n=22 HA=[('x1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=46 alpha n=22 HA=[] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=55 alpha n=22 HA=[('p1', 'q1'), ('x2', 'y2')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=61 alpha n=22 HA=[('p1', 'y1'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=58 alpha n=22 HA=[('p1', 'y1'), ('x1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=59 alpha n=22 HA=[('p1', 'y1'), ('x2', 'y2')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=62 alpha n=22 HA=[('x1', 'q1'), ('x2', 'y2')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=60 alpha n=22 HA=[('p1', 'y1'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=57 alpha n=22 HA=[('p1', 'q1'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=56 alpha n=22 HA=[('p1', 'q1'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=69 beta n=22 HA=[('p1', 'y1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=63 alpha n=22 HA=[('x1', 'q1'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=65 alpha n=22 HA=[('x2', 'y2'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=64 alpha n=22 HA=[('x1', 'q1'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=66 alpha n=22 HA=[('x2', 'y2'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=67 alpha n=22 HA=[('x3', 'y3'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=71 beta n=22 HA=[('x1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=70 beta n=22 HA=[('p1', 'y2')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=68 beta n=22 HA=[] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=73 beta n=22 HA=[('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=75 beta n=22 HA=[('p1', 'y1'), ('p1', 'y2')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=72 beta n=22 HA=[('x2', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=74 beta n=22 HA=[('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=79 beta n=22 HA=[('p1', 'y1'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=76 beta n=22 HA=[('p1', 'y1'), ('x1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=78 beta n=22 HA=[('p1', 'y1'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=77 beta n=22 HA=[('p1', 'y1'), ('x2', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=80 beta n=22 HA=[('p1', 'y2'), ('x1', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=81 beta n=22 HA=[('p1', 'y2'), ('x2', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=82 beta n=22 HA=[('p1', 'y2'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=83 beta n=22 HA=[('p1', 'y2'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=84 beta n=22 HA=[('x1', 'q1'), ('x2', 'q1')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=86 beta n=22 HA=[('x1', 'q1'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=85 beta n=22 HA=[('x1', 'q1'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=87 beta n=22 HA=[('x2', 'q1'), ('x3', 'y3')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=88 beta n=22 HA=[('x2', 'q1'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0
+idx=89 beta n=22 HA=[('x3', 'y3'), ('x4', 'y4')] mode=full solver=cd15 assume=None sat=False iters=1 cuts=0

@@ -1,0 +1,31 @@
+instance 1 c=5 t=7 eps=0 y4 bad=1 t=4.6s
+instance 7 c=6 t=7 eps=0 y4 bad=1 t=4.6s
+instance 13 c=4 t=7 eps=0 y55 bad=2 t=4.6s
+instance 19 c=5 t=8 eps=0 y55 bad=2 t=4.6s
+instance 25 c=6 t=8 eps=0 y55 bad=2 t=4.7s
+instance 31 c=4 t=8 eps=1 e1 bad=1 t=4.7s
+instance 37 c=5 t=8 eps=1 e1 bad=1 t=4.7s
+instance 43 c=6 t=8 eps=1 e1 bad=1 t=4.7s
+{
+ "instances": 8,
+ "maxflow_4s-1": 8,
+ "S6_checked": 111,
+ "S8_plus_a": 57,
+ "S8_minus_x": 61,
+ "bad_ports_total": 11,
+ "S10_tight_petals": 11,
+ "S11_tested": 1,
+ "S11_min_g_10": 1,
+ "S11_sparse": 1,
+ "S10_pairs": 3,
+ "S5_signed_solved": 3,
+ "S5_signed_solution_(4,0)": 3,
+ "S5_beta_used_SAT": 3,
+ "S7_checked": 8,
+ "S7_adjacent_skipped": 13,
+ "seconds": 4.7,
+ "n_failures": 0,
+ "failures": [],
+ "RESULT": "PASS"
+}
+exit 0

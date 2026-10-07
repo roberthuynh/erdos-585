@@ -1,0 +1,13 @@
+t=4 r=6 e=23 graphs=1 pairfree=0 [graphs=1 with_pair=1 pair_free=0 ]
+t=4 r=6 e=24 graphs=1 pairfree=0 [graphs=1 with_pair=1 pair_free=0 ]
+t=5 r=6 e=27 graphs=6 pairfree=0 [graphs=6 with_pair=6 pair_free=0 ]
+t=5 r=6 e=28 graphs=3 pairfree=0 [graphs=3 with_pair=3 pair_free=0 ]
+t=5 r=6 e=29 graphs=1 pairfree=0 [graphs=1 with_pair=1 pair_free=0 ]
+t=5 r=6 e=30 graphs=1 pairfree=0 [graphs=1 with_pair=1 pair_free=0 ]
+t=5 r=7 e=29 graphs=79 pairfree=1 [graphs=79 with_pair=78 pair_free=1 ]
+t=5 r=7 e=30 graphs=34 pairfree=0 [graphs=34 with_pair=34 pair_free=0 ]
+t=5 r=7 e=31 graphs=16 pairfree=0 [graphs=16 with_pair=16 pair_free=0 ]
+t=6 r=7 e=33 graphs=1042 pairfree=0 [graphs=1042 with_pair=1042 pair_free=0 ]
+t=6 r=7 e=34 graphs=469 pairfree=0 [graphs=469 with_pair=469 pair_free=0 ]
+t=6 r=7 e=35 graphs=196 pairfree=0 [graphs=196 with_pair=196 pair_free=0 ]
+done

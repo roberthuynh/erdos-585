@@ -1,0 +1,38 @@
+instance 0 c=4 t=9 eps=0 y4 bad=1 t=21.2s
+instance 6 c=5 t=9 eps=0 y4 bad=1 t=36.5s
+instance 12 c=6 t=9 eps=0 y4 bad=1 t=50.1s
+instance 18 c=5 t=7 eps=0 y55 bad=2 t=51.1s
+instance 24 c=6 t=7 eps=0 y55 bad=2 t=52.5s
+instance 30 c=4 t=7 eps=1 e1 bad=1 t=54.2s
+instance 36 c=5 t=8 eps=1 e1 bad=1 t=63.3s
+instance 42 c=6 t=8 eps=1 e1 bad=1 t=73.0s
+{
+ "instances": 8,
+ "maxflow_4s-1": 8,
+ "S3_witnesses": 372,
+ "S3_trace_type_(0,0)": 8,
+ "S4_traces": 1408,
+ "S3_trace_type_(4,0)": 280,
+ "S6_checked": 180,
+ "S8_plus_a": 57,
+ "S8_minus_x": 64,
+ "bad_ports_total": 10,
+ "S10_tight_petals": 10,
+ "S11_tested": 1,
+ "S11_min_g_10": 1,
+ "S11_sparse": 1,
+ "S10_pairs": 2,
+ "S3_trace_type_(1,1)": 21,
+ "S3_trace_type_(5,1)": 63,
+ "S5_signed_solved": 3,
+ "S5_signed_solution_(1,1)": 1,
+ "S5_beta_used_SAT": 3,
+ "S7_adjacent_skipped": 14,
+ "S7_checked": 7,
+ "S5_signed_solution_(4,0)": 2,
+ "seconds": 73.0,
+ "n_failures": 0,
+ "failures": [],
+ "RESULT": "PASS"
+}
+exit 0

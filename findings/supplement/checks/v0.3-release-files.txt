@@ -1,0 +1,93 @@
+== Lean checks of the v0.3 release files, in a clean clone; every project module built from source
+Lean build inputs, as git object ids (compare with `git rev-parse v0.3:<path>`):
+  Openmath            0674915256bcc13bb70486a0518c3ecad331cb3e
+  Openmath.lean       aff5372b7d5e078542051a5e4b96242f82911c17
+  Axioms.lean         8ee50a97ec31b19c6ed3a6970450fabfacaef8d3
+  scripts             70e068419bbf934f39d2233a4fcdea01961d4d0a
+  check.sh            f7382e009286064a79f582ec431476dfa61af979
+  lakefile.toml       eb34ac94e0bac8bd4e35a8be318996d5562e24a5
+  lake-manifest.json  4159d016a5feb45d5cbeeacf362167e187f77fd6
+  lean-toolchain      a8afa7d1b02d96f0671eba854a8dc4b416beb473
+Lean toolchain: leanprover/lean4:v4.33.1
+== lake build 2026-10-06 16:09:59 EDT
+Build completed successfully (8982 jobs).
+lake build exit=0 (118 s)
+== check_axioms 2026-10-06 16:11:57 EDT
+AXIOMS: PASS (25 proved declarations)
+STATEMENTS: PASS (25 recorded types)
+check_axioms exit=0 (8 s)
+== check.sh per oracle result 2026-10-06 16:12:05 EDT
+Erdos585.maxEdges_eq_choose_two_of_le_four | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.maxEdges_five | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.maxEdges_six | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.maxEdges_seven | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (7 s)
+Erdos585.three_mul_sub_six_le_maxEdges | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.three_mul_sub_five_le_maxEdges | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.three_mul_sub_four_le_maxEdges | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.maxEdges_succ_ge | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.four_mul_sub_thirteen_le_maxEdges | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.thirty_one_le_maxEdges_eleven | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.thirty_six_le_maxEdges_twelve | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.complete_matching_subdivision_lower_bound | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.latin_incidence_lower_bound | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.five_mul_sub_sqrt_le_maxEdges | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.doubleWheel_not_hasTwoEdgeDisjointCyclesSameVertexSet | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (8 s)
+Erdos585.thetaWheel_not_hasTwoEdgeDisjointCyclesSameVertexSet | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (10 s)
+Erdos585.matchingSubdivision_not_hasTwoEdgeDisjointCyclesSameVertexSet | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (11 s)
+Erdos585.RegularFive.exists_five_regular_pairfree | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (8 s)
+Erdos585.BipartiteFive.exists_bipartite_five_regular_pairfree | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.RegularFive18.exists_five_regular_pairfree | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+Erdos585.qb5 | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (3 s)
+Erdos585.qb4 | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (3 s)
+Erdos585.exists_four_regular_avoiding_of_bipartite_six_regular | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (3 s)
+Erdos585.hasPair_top_five | RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[] | exit 0 (6 s)
+check.sh: 24/24 PASS
+== leanchecker, every module of Openmath/ 2026-10-06 16:14:34 EDT
+ok   Openmath.Proofs.AdjacentHubs (19 s)
+ok   Openmath.Proofs.BipartiteBalance (11 s)
+ok   Openmath.Proofs.BipartiteFive (42 s)
+ok   Openmath.Proofs.Compat (7 s)
+ok   Openmath.Proofs.Counting (7 s)
+ok   Openmath.Proofs.CutGluing (7 s)
+ok   Openmath.Proofs.DensityCore (7 s)
+ok   Openmath.Proofs.DoubleWheel (8 s)
+ok   Openmath.Proofs.Extension (7 s)
+ok   Openmath.Proofs.Final (7 s)
+ok   Openmath.Proofs.Five (7 s)
+ok   Openmath.Proofs.IncidenceHubs (7 s)
+ok   Openmath.Proofs.LatinIncidence (7 s)
+ok   Openmath.Proofs.MatchingSubdivision (7 s)
+ok   Openmath.Proofs.QB4.Core (6 s)
+ok   Openmath.Proofs.QB4.Defs (6 s)
+ok   Openmath.Proofs.QB4.FourFactor (6 s)
+ok   Openmath.Proofs.QB4.Main (6 s)
+ok   Openmath.Proofs.QB4.Reductions (10 s)
+ok   Openmath.Proofs.QB4.Statement (6 s)
+ok   Openmath.Proofs.QB5.Block (6 s)
+ok   Openmath.Proofs.QB5.C2Hub (6 s)
+ok   Openmath.Proofs.QB5.C2Petals (6 s)
+ok   Openmath.Proofs.QB5.C2TwoBlock (6 s)
+ok   Openmath.Proofs.QB5.CaseB (6 s)
+ok   Openmath.Proofs.QB5.Cover (6 s)
+ok   Openmath.Proofs.QB5.CoverCheck (5 s)
+ok   Openmath.Proofs.QB5.CoverCheck1 (21 s)
+ok   Openmath.Proofs.QB5.CoverCheck2 (17 s)
+ok   Openmath.Proofs.QB5.CoverCheck3 (20 s)
+ok   Openmath.Proofs.QB5.Defs (10 s)
+ok   Openmath.Proofs.QB5.E5 (6 s)
+ok   Openmath.Proofs.QB5.KL1 (6 s)
+ok   Openmath.Proofs.QB5.KL1Merge (6 s)
+ok   Openmath.Proofs.QB5.Main (6 s)
+ok   Openmath.Proofs.QB5.PairCriterion (6 s)
+ok   Openmath.Proofs.QB5.Statement (6 s)
+ok   Openmath.Proofs.RegularFive (19 s)
+ok   Openmath.Proofs.RegularFive18 (8 s)
+ok   Openmath.Proofs.RimDensity (10 s)
+ok   Openmath.Proofs.RimStrip (8 s)
+ok   Openmath.Proofs.SmallExact (7 s)
+ok   Openmath.Proofs.TopFive (7 s)
+ok   Openmath.Proofs.TwoHub (11 s)
+ok   Openmath.Proofs.TwoHubFamily (7 s)
+ok   Openmath.Target (7 s)
+leanchecker: 46/46; imports in Openmath.lean: 46
+== done 2026-10-06 16:21:34 EDT

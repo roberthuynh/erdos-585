@@ -85,7 +85,7 @@ theorem thetaWheel_not_hasTwoEdgeDisjointCyclesSameVertexSet :
     ¬ HasTwoEdgeDisjointCyclesSameVertexSet thetaWheel :=
   fun h => theta_not_hasPair ((hasPairF_iff _).2 h)
 
-/-- For $n \geq 3$, adding a vertex of degree three to a maximiser gives
+/-- For $n \geq 3$, adding a vertex of degree three to a maximizer gives
 $\mathrm{maxEdges}(n + 1) \geq \mathrm{maxEdges}(n) + 3$. -/
 theorem maxEdges_succ_ge (n : ℕ) (hn : 3 ≤ n) : maxEdges n + 3 ≤ maxEdges (n + 1) :=
   le_maxEdges_of_mem (mem_edgeCounts_succ hn (maxEdges_mem_edgeCounts n))

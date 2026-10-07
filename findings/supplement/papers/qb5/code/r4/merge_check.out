@@ -1,0 +1,4 @@
+blocks 1753  multisets 165610 (covering 89438)
+pairs of maximal overloaded sets: disjoint 332806, one vertex 0, two vertices 0, >= 3 9612
+I_X empty: covering 0, non-covering 9612; minimal subcovers checked 9612 (hub-free 0, no w=3 petal 0)
+viol F1 0 F2 0 F3 0 F4 0 F5a 0 F5b 0

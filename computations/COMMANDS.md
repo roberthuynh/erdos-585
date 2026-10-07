@@ -10,7 +10,7 @@ reports to files that git ignores (`*.out.md`, `585-verify.md`, `585-n9.md`, `*s
 
 For each n the program finds f(n) and every extremal class, then counts the pair-free graphs again,
 one edge at a time up to isomorphism, and prints `match=True` when the two agree. At n = 8 the second
-count gives 12 extremal classes (175,560 labelled graphs) and 10,512 pair-free graphs in all,
+count gives 12 extremal classes (175,560 labeled graphs) and 10,512 pair-free graphs in all,
 counting the empty graph: the number the census pair test `census/programs/pairc.c` also finds.
 
 ## f(7) and f(8): an independent checker (a few seconds)
@@ -36,7 +36,7 @@ up to isomorphism match OEIS A008406.
   12 edges and 10,120 with 13 (both OEIS A008406).
 - `comp --k 12`: every 24-edge graph on 9 vertices is the complement of a 12-edge graph, and all 5,995
   complements have a pair, each with a re-checked witness. So f(9) ≤ 23.
-- `comp --k 13`: exactly 8 classes of 23-edge graphs have no pair (997,920 labelled graphs). So
+- `comp --k 13`: exactly 8 classes of 23-edge graphs have no pair (997,920 labeled graphs). So
   f(9) = 23, with 8 extremal classes.
 - `ext10` adds a tenth vertex to each of the 8 classes. Joined to 4 vertices it gives 27-edge graphs,
   28 of them without a pair (7 classes), so f(10) ≥ 27. Joined to 5 vertices it gives 1,008 graphs

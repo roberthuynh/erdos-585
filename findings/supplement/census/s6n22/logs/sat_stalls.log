@@ -1,0 +1,2 @@
+lines=333908 SPAN=333908 NOSPAN=0 TIMEOUT=0 witness_fail=0 candidate_failure=0 sec=542.5
+slices=10000 gen=156473848 tests=10327273770 solved=10327273770 survivors=0 sat=0 candidate_failure=0 verify_fail=0 stall_lines=333908

@@ -1,0 +1,27 @@
+{
+ "S_size_hist": {
+  "12": 17,
+  "13": 52,
+  "14": 187,
+  "15": 49,
+  "16": 82,
+  "8": 1
+ },
+ "clauses_per_n": {
+  "16": 24105
+ },
+ "cpu_seconds": 1.1,
+ "decode_mismatch": 0,
+ "degree_mismatch": 0,
+ "graphs": 388,
+ "input": "trianglefree.g6",
+ "n_hist": {
+  "16": 388
+ },
+ "nopair": 0,
+ "pair": 388,
+ "phase_x": false,
+ "seconds": 1.09,
+ "solver": "cd19",
+ "verify_fail": 0
+}

@@ -1,0 +1,1 @@
+{"seed": 2, "stats": {"built": 7, "random": 4594, "nonempty": 7}, "checks": {"xcheck: min-cut P == brute-force P (sparse)": 4601, "chain: enumerated cut has slack -1": 51}, "failures": 0, "seconds": 150.0}

@@ -1,0 +1,8 @@
+start Mon Oct  5 00:00:00 EDT 2026
+cmd: [local path] -b -d4 -D6 14 30:42 r/8 (r = 0..7)
+8b4d578371464cf7b32d1d02a1f0da45e2ce2c96c3651d88139259b3ea0f0656  [local path]
+end Mon Oct  5 00:00:00 EDT 2026
+TAG=selftest MOD=8 finished=8/8 graphs=290 found_lines=290 user_cpu_s=0.18
+!!! 290 graph(s) with no 4-regular subgraph reported: re-deciding with validate_sat.py --expect-unsat
+[local path] SAT(has 4-regular subgraph) 0  UNSAT(none) 290
+validate_sat exit 0

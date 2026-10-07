@@ -1,0 +1,30 @@
+== lake build Openmath.Proofs.Final (leanprover/lean4:v4.33.1)
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Openmath/Proofs/LatinIncidence.lean:112:0: automatically included section variable(s) unused in theorem `Erdos585.LatinIncidence.bipartite`:
+  [DecidableEq L]
+  [DecidableEq P]
+  [DecidableRel r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq L] [DecidableEq P] [DecidableRel r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Openmath/Proofs/LatinIncidence.lean:148:0: automatically included section variable(s) unused in theorem `Erdos585.LatinIncidence.triple_linear`:
+  [Fintype A]
+  [DecidableEq A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [DecidableEq A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Openmath/Proofs/LatinIncidence.lean:171:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (8953 jobs).
+== sorry in Openmath/Proofs/Final.lean, comments ignored: 0
+== axioms
+'Erdos585.thirty_one_le_maxEdges_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

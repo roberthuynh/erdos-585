@@ -1,0 +1,30 @@
+== lake build Openmath.Proofs.TwoHubFamily (leanprover/lean4:v4.33.1)
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Openmath/Proofs/TwoHubFamily.lean:64:0: automatically included section variable(s) unused in theorem `Erdos585.TwoHubFamily.rim_neighbor_count`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Openmath/Proofs/TwoHubFamily.lean:100:0: automatically included section variable(s) unused in theorem `Erdos585.TwoHubFamily.rim_degree`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Openmath/Proofs/TwoHubFamily.lean:107:0: automatically included section variable(s) unused in theorem `Erdos585.TwoHubFamily.hub_degree`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (8948 jobs).
+== sorry in Openmath/Proofs/TwoHubFamily.lean, comments ignored: 0
+== axioms
+'Erdos585.TwoHubFamily.four_mul_sub_thirteen_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

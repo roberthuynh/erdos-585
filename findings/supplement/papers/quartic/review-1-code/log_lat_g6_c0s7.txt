@@ -1,0 +1,21 @@
+{
+ "tag": "g6_s7",
+ "summary": {
+  "instances": 11,
+  "sparse": 11,
+  "sparse_DU1": 0,
+  "sparse_DU0": 11,
+  "sparse_with_P_ge2": 0,
+  "max_P": 0,
+  "sparse_with_bad": 0,
+  "pairs_tested": 0
+ },
+ "checks": {
+  "brute min proper g agrees with flow-based min_proper_g (capped at 10)": 11,
+  "L4.4 sparse C0: no bad port": 11,
+  "sparse C0 => W-degrees >= 5 (a G110 gadget)": 11
+ },
+ "failures": 0,
+ "examples": {},
+ "seconds": 1.1
+}

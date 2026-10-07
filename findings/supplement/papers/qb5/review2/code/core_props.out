@@ -1,0 +1,3 @@
+instances=875 cores (p, A1) found=76 failing Prop 5.1 conditions=0
+Remark 5.4: dem <= c(A1)+1 for all A1: True ; dem <= c(A1) for proper A1 (unique violation): True
+timeout 600 /usr/bin/python3 core_props.py cert_n28.g6 core28.g6 e5_n22.g6    29.20s user 0.06s system 99% cpu 29.376 total

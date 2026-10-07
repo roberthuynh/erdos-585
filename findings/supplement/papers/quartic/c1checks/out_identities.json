@@ -1,0 +1,27 @@
+{
+ "instances": 159,
+ "cuts_I1_I2_I3": 6158304,
+ "ports_I4": 663,
+ "violations": 100,
+ "violations_g_ge_10": 17,
+ "violations_g_ge_10_forced_ok": 17,
+ "pairs_J1": 47700,
+ "sets_J2": 95400,
+ "sets_J3": 95400,
+ "pairs_J3_submod": 47700,
+ "sets_J4": 644046,
+ "J5": 2149,
+ "sets_J6": 95379,
+ "sample_I1_explicit": 23220,
+ "violation_profile_(k,sigma,gQ,D(C))": {
+  "(2, -1, 10, 0)": 17,
+  "(1, -1, 8, 0)": 41,
+  "(2, -2, 8, 0)": 3,
+  "(2, -1, 8, 0)": 7,
+  "(1, -1, 6, 0)": 32
+ },
+ "seconds": 24.3,
+ "failures": [],
+ "n_failures": 0,
+ "RESULT": "PASS"
+}

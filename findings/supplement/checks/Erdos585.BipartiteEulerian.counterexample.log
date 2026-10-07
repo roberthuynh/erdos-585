@@ -1,0 +1,10 @@
+== lake build Openmath.Proofs.BipartiteEulerian (leanprover/lean4:v4.33.1)
+warning: Openmath/Target.lean:62:8: declaration uses `sorry`
+warning: Openmath/Target.lean:70:8: declaration uses `sorry`
+warning: Openmath/Target.lean:81:8: declaration uses `sorry`
+warning: Openmath/Target.lean:97:8: declaration uses `sorry`
+Build completed successfully (8939 jobs).
+== sorry in Openmath/Proofs/BipartiteEulerian.lean, comments ignored: 0
+== axioms
+'Erdos585.BipartiteEulerian.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

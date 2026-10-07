@@ -1,0 +1,33 @@
+{
+ "tag": "check2",
+ "n": "8",
+ "totals": {
+  "shards": 1,
+  "covered": 1,
+  "graphs": 3,
+  "pair": 3,
+  "nopair": 0,
+  "verify_fail": 0,
+  "decode_mismatch": 0,
+  "degree_mismatch": 0,
+  "cpu_seconds": 0.1,
+  "geng_s": 0,
+  "decide_s": 0
+ },
+ "cycle_length_hist": {
+  "7": 1,
+  "8": 2
+ },
+ "not_covered": [],
+ "nopair_files": [],
+ "shards": [
+  {
+   "n": "8",
+   "res": 0,
+   "mod": 1,
+   "graphs": 3,
+   "pair": 3,
+   "nopair": 0
+  }
+ ]
+}

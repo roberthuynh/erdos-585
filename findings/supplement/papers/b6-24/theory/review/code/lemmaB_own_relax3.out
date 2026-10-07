@@ -1,0 +1,93 @@
+mode relax3
+K44 n=20 HA=[] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=20 HA=[] sat=True iters=1 cuts=0 verify={'hcount': 6, 'one_crossing': False}
+alpha n=20 HA=[('p1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=20 HA=[('p1', 'y1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=20 HA=[('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=20 HA=[('x2', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=20 HA=[('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=20 HA=[('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=20 HA=[('p1', 'q1'), ('p1', 'y1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=20 HA=[('p1', 'q1'), ('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=20 HA=[('p1', 'q1'), ('x2', 'y2')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('p1', 'q1'), ('x3', 'y3')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('p1', 'q1'), ('x4', 'y4')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('p1', 'y1'), ('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=20 HA=[('p1', 'y1'), ('x2', 'y2')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('p1', 'y1'), ('x3', 'y3')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('p1', 'y1'), ('x4', 'y4')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('x1', 'q1'), ('x2', 'y2')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('x1', 'q1'), ('x3', 'y3')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('x1', 'q1'), ('x4', 'y4')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('x2', 'y2'), ('x3', 'y3')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('x2', 'y2'), ('x4', 'y4')] sat=False iters=1 cuts=0
+alpha n=20 HA=[('x3', 'y3'), ('x4', 'y4')] sat=False iters=1 cuts=0
+beta n=20 HA=[] sat=True iters=1 cuts=0 verify={'hcount': 6, 'one_crossing': False}
+beta n=20 HA=[('p1', 'y1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=20 HA=[('p1', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=20 HA=[('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=20 HA=[('x2', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=20 HA=[('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=20 HA=[('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=20 HA=[('p1', 'y1'), ('p1', 'y2')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y1'), ('x1', 'q1')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y1'), ('x2', 'q1')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y1'), ('x3', 'y3')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y1'), ('x4', 'y4')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y2'), ('x1', 'q1')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y2'), ('x2', 'q1')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y2'), ('x3', 'y3')] sat=False iters=1 cuts=0
+beta n=20 HA=[('p1', 'y2'), ('x4', 'y4')] sat=False iters=1 cuts=0
+beta n=20 HA=[('x1', 'q1'), ('x2', 'q1')] sat=False iters=1 cuts=0
+beta n=20 HA=[('x1', 'q1'), ('x3', 'y3')] sat=False iters=1 cuts=0
+beta n=20 HA=[('x1', 'q1'), ('x4', 'y4')] sat=False iters=1 cuts=0
+beta n=20 HA=[('x2', 'q1'), ('x3', 'y3')] sat=False iters=1 cuts=0
+beta n=20 HA=[('x2', 'q1'), ('x4', 'y4')] sat=False iters=1 cuts=0
+beta n=20 HA=[('x3', 'y3'), ('x4', 'y4')] sat=False iters=1 cuts=0
+K44 n=22 HA=[] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=22 HA=[] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'y1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=22 HA=[('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=22 HA=[('x2', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=22 HA=[('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'q1'), ('p1', 'y1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'q1'), ('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'q1'), ('x2', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'q1'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'q1'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'y1'), ('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'y1'), ('x2', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'y1'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('p1', 'y1'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+alpha n=22 HA=[('x1', 'q1'), ('x2', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('x1', 'q1'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('x1', 'q1'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('x2', 'y2'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('x2', 'y2'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+alpha n=22 HA=[('x3', 'y3'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[] sat=True iters=1 cuts=0 verify={'hcount': 6, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=22 HA=[('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=22 HA=[('x2', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=22 HA=[('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=22 HA=[('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 7, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y1'), ('p1', 'y2')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y1'), ('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y1'), ('x2', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y1'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y1'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y2'), ('x1', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y2'), ('x2', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y2'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('p1', 'y2'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('x1', 'q1'), ('x2', 'q1')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('x1', 'q1'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('x1', 'q1'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 8, 'one_crossing': False}
+beta n=22 HA=[('x2', 'q1'), ('x3', 'y3')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[('x2', 'q1'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+beta n=22 HA=[('x3', 'y3'), ('x4', 'y4')] sat=True iters=1 cuts=0 verify={'hcount': 9, 'one_crossing': False}
+TOTAL {'sat': 63, 'unsat': 27, 'unknown': 0}
+exit 0

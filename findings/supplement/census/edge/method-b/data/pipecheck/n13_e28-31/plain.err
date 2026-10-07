@@ -1,0 +1,13 @@
+>A [local path] -bd4D6 n=13 e=28-31
+>Z 443 graphs generated in 0.03 sec
+real 0.03
+user 0.03
+sys 0.00
+>T total 443 with_H 319 without_H 124 nonbip 0 nodes 1697
+>S e=30 sides=6+7 mindeg=4 maxdeg=6 conn=1 count=158 without_H=37
+>S e=29 sides=6+7 mindeg=4 maxdeg=6 conn=1 count=77 without_H=50
+>S e=31 sides=6+7 mindeg=4 maxdeg=6 conn=1 count=150 without_H=9
+>S e=28 sides=6+7 mindeg=4 maxdeg=5 conn=1 count=14 without_H=3
+>S e=28 sides=6+7 mindeg=4 maxdeg=6 conn=1 count=25 without_H=25
+>S e=29 sides=6+7 mindeg=4 maxdeg=5 conn=1 count=12 without_H=0
+>S e=30 sides=6+7 mindeg=4 maxdeg=5 conn=1 count=7 without_H=0

@@ -1,0 +1,47 @@
+{
+ "tested": 3,
+ "sparse": 3,
+ "sparse_bad_ports": {
+  "2": 1,
+  "1": 2
+ },
+ "min_g": {
+  "10": 3
+ },
+ "pairs": 1,
+ "examples": [
+  {
+   "c": 6,
+   "t": 9,
+   "eps": 0,
+   "variant": "y55",
+   "min_g": 10,
+   "bad": 2,
+   "bad_def": 2,
+   "distinct_petals": 1
+  },
+  {
+   "c": 5,
+   "t": 9,
+   "eps": 1,
+   "variant": "e1",
+   "min_g": 10,
+   "bad": 1,
+   "bad_def": 1,
+   "distinct_petals": 1
+  },
+  {
+   "c": 6,
+   "t": 9,
+   "eps": 0,
+   "variant": "y4",
+   "min_g": 10,
+   "bad": 1,
+   "bad_def": 2,
+   "distinct_petals": 1
+  }
+ ],
+ "seconds": 18.6,
+ "failures": [],
+ "RESULT": "PASS"
+}

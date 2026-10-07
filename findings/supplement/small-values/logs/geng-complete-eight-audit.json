@@ -1,0 +1,8 @@
+{
+  "order": 8,
+  "all_isomorphism_classes": 12346,
+  "pairfree_isomorphism_classes": 10512,
+  "status": "exact canonical graph6 output agrees with both independent Python checkers on every graph",
+  "seconds": 2.8500047079869546,
+  "limitation": "Computational audit of the generator and prune rule, not a Lean proof."
+}

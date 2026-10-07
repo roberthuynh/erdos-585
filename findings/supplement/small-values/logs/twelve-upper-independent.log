@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "conclusion": "computational f(12)=36",
+  "ten_vertex_parents": 828,
+  "eleven_tests": 2367,
+  "eleven_survivors": 0,
+  "twelve_tests": 0,
+  "twelve_survivors": 0,
+  "source_counts": {
+    "8": {
+      "16": 1138,
+      "17": 695,
+      "18": 270,
+      "19": 12
+    },
+    "9": {
+      "20": 17745,
+      "21": 7168,
+      "22": 477,
+      "23": 8,
+      "24": 0
+    },
+    "10": {
+      "25": 29144,
+      "26": 828,
+      "27": 7,
+      "28": 0
+    }
+  },
+  "completeness": "Second complete exclusion of 37 edges at order twelve, using vertex deletion.\n\nThe independently established f(11)=31 implies minimum degree >=6 in a\n12-vertex, 37-edge counterexample. Its average degree is <7, so deleting a\ndegree-six vertex gives an 11-vertex graph with 31 edges and minimum degree\n>=5. Delete a degree-five vertex there (average degree <6): its parent has\n10 vertices, 26 edges and minimum degree >=4. The separately completed Python\ncatalogue supplies EVERY such ten-vertex parent. No nauty or C detector is used.\n",
+  "limitation": "no Lean upper-bound theorem; extremal uniqueness not checked by this method"
+}

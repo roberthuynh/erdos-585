@@ -1,0 +1,1 @@
+{"seed": 42, "stats": {"inst": 4143, "sparse": 423, "with_bad": 0, "all_bad": 0, "sparse_with_bad": 0, "by_DU": {"0": 2094, "1": 2049}}, "checks": {}, "failures": 0, "seconds": 180.2}

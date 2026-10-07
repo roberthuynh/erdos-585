@@ -1,0 +1,6 @@
+selftest_q4 0
+selftest_q4 1
+selftest_q4 2
+selftest_q4 3
+selftest_sat 0
+selftest_sat 1

@@ -1,0 +1,20 @@
+{
+ "S_size_hist": {},
+ "clauses_per_n": {
+  "18": 37864
+ },
+ "cpu_seconds": 19.77,
+ "decode_mismatch": 0,
+ "degree_mismatch": 0,
+ "graphs": 120,
+ "input": "data/glue18-classes.input.g6",
+ "n_hist": {
+  "18": 120
+ },
+ "nopair": 120,
+ "pair": 0,
+ "phase_x": false,
+ "seconds": 25.37,
+ "solver": "m22",
+ "verify_fail": 0
+}

@@ -1,0 +1,15 @@
+>A [temporary path] -X0x1600d5D11 n=12 e=36 class=14/32
+585 summary outputs=0 cpu=22.685 red_trials=48779285
+585 n=1 calls=1 rejected=0
+585 n=2 calls=1 rejected=0
+585 n=3 calls=2 rejected=0
+585 n=4 calls=4 rejected=0
+585 n=5 calls=13 rejected=0
+585 n=6 calls=60 rejected=0
+585 n=7 calls=451 rejected=0
+585 n=8 calls=1720 rejected=0
+585 n=9 calls=3047 rejected=57
+585 n=10 calls=62831 rejected=12270
+585 n=11 calls=1221939 rejected=1154513
+585 n=12 calls=352590 rejected=352590
+>Z 0 graphs generated in 22.69 sec

@@ -1,0 +1,1 @@
+# shape=n23k44 mode=free star=True f2=True levels=('k44w', 'r12', 'symG', 'case=y1b1') solver=cadical195 jobs=1

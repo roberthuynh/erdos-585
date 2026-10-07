@@ -1,0 +1,5 @@
+shape=n19k44 random configs=300: without one-crossing 1; agree 300 disagree 0
+shape=n21k44 random configs=300: without one-crossing 4; agree 300 disagree 0
+shape=n21_55 random configs=300: without one-crossing 2; agree 300 disagree 0
+shape=n23_55 random configs=300: without one-crossing 4; agree 300 disagree 0
+shape=n23k44 random configs=300: without one-crossing 2; agree 300 disagree 0

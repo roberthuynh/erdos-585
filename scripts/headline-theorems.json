@@ -114,6 +114,30 @@
     "type": "∃ G, (∀ (v : Fin 104), (G.neighborSet v).ncard = 5) ∧ G.Colorable 2 ∧ ¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet G"
   },
   {
+    "module": "Openmath.Proofs.RegularFive18",
+    "declaration": "Erdos585.RegularFive18.exists_five_regular_pairfree",
+    "oracle": true,
+    "type": "∃ G, (∀ (v : Fin 18), (G.neighborSet v).ncard = 5) ∧ ¬Erdos585.HasTwoEdgeDisjointCyclesSameVertexSet G"
+  },
+  {
+    "module": "Openmath.Proofs.QB5.Statement",
+    "declaration": "Erdos585.qb5",
+    "oracle": true,
+    "type": "∀ {V : Type u_1} [inst : Fintype V] (G : SimpleGraph V) [inst_1 : DecidableRel G.Adj], G.IsBipartite → G.maxDegree ≤ 6 → 3 ≤ Fintype.card V → 3 * Fintype.card V ≤ G.edgeSet.ncard + 5 → ∃ H, H.verts.Nonempty ∧ H.coe.IsRegularOfDegree 4"
+  },
+  {
+    "module": "Openmath.Proofs.QB4.Statement",
+    "declaration": "Erdos585.qb4",
+    "oracle": true,
+    "type": "∀ {V : Type u_1} [inst : Fintype V] (G : SimpleGraph V) [inst_1 : DecidableRel G.Adj], G.IsBipartite → G.maxDegree ≤ 6 → 2 ≤ Fintype.card V → 3 * Fintype.card V ≤ G.edgeSet.ncard + 4 → ∃ H, H.verts.Nonempty ∧ H.coe.IsRegularOfDegree 4"
+  },
+  {
+    "module": "Openmath.Proofs.QB4.Statement",
+    "declaration": "Erdos585.exists_four_regular_avoiding_of_bipartite_six_regular",
+    "oracle": true,
+    "type": "∀ {V : Type u_1} [inst : Fintype V] (B : SimpleGraph V) [inst_1 : DecidableRel B.Adj], B.IsBipartite → B.IsRegularOfDegree 6 → ∀ (o : V), ∃ H, H.verts.Nonempty ∧ o ∉ H.verts ∧ H.coe.IsRegularOfDegree 4"
+  },
+  {
     "module": "Openmath.Proofs.TopFive",
     "declaration": "Erdos585.hasPair_top_five",
     "oracle": true,

@@ -1,0 +1,27 @@
+{
+ "seed": 2,
+ "built": 18,
+ "sparse": 18,
+ "fails": 0,
+ "first_fails": [],
+ "seconds": 159.6
+}
+{'c': 4, 't': 6, 'eps': 1, 's': 10, 'n': 21, 'min_g': 10, 'bad_ports': 1, 'bad_def': 1, 'P_size': 1, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {19: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {18: 1, 20: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {18: 1, 22: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 2, 'P_size': 2, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1}}
+{'c': 4, 't': 7, 'eps': 1, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 1, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {18: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 2, 'P_size': 2, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1}}
+{'c': 4, 't': 6, 'eps': 0, 's': 10, 'n': 21, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {16: 1, 18: 1}}
+{'c': 4, 't': 7, 'eps': 1, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 1, 'P_size': 1, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {19: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1, 20: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 2, 'P_size': 2, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {18: 1, 21: 1}}
+{'c': 4, 't': 6, 'eps': 1, 's': 10, 'n': 21, 'min_g': 10, 'bad_ports': 1, 'bad_def': 1, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {20: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 2, 'P_size': 2, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {19: 1, 22: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1, 21: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 1, 'bad_def': 2, 'P_size': 2, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 6, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1, 20: 1}}
+{'c': 4, 't': 7, 'eps': 0, 's': 11, 'n': 23, 'min_g': 10, 'bad_ports': 2, 'bad_def': 2, 'P_size': 1, 'ports': 5, 'incomparable_pairs': 0, 'petals_per_bad_port': {17: 1, 20: 1}}
+RESULT: PASS

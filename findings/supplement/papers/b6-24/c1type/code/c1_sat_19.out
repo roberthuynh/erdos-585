@@ -1,0 +1,3 @@
+n=19 A=K44-e B=5+5 deg y=4: (star) with constraints none/side/y: UNSAT/UNSAT/UNSAT; control (no star, level y): SAT  [0.1s]
+n=19 A=K44-e B=5+5 deg y=5: (star) with constraints none/side/y: UNSAT/UNSAT/UNSAT; control (no star, level y): SAT  [0.1s]
+configurations 2 SAT at level y 0

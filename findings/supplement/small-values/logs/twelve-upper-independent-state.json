@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "ten_vertex_parents": 828,
+  "11": {
+    "next_parent": 828,
+    "kept": {},
+    "tests": 2367,
+    "rejections": 2367,
+    "complete": true
+  },
+  "12": {
+    "next_parent": 0,
+    "kept": {},
+    "tests": 0,
+    "rejections": 0,
+    "complete": true
+  },
+  "conclusion": "computational f(12)=36",
+  "limitation": "no Lean upper-bound theorem; extremal uniqueness not checked by this method"
+}

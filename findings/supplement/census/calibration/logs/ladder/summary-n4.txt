@@ -1,0 +1,6 @@
+n=4 e=10 level=0.0 shards=1 graphs=0 with_pair=0 pair_free=0 user_s=0.0 wall_s=0
+n=4 e=9 level=-1.0 shards=1 graphs=0 with_pair=0 pair_free=0 user_s=0.0 wall_s=0
+n=4 e=8 level=-2.0 shards=1 graphs=0 with_pair=0 pair_free=0 user_s=0.0 wall_s=0
+n=4 e=7 level=-3.0 shards=1 graphs=0 with_pair=0 pair_free=0 user_s=0.0 wall_s=0
+n=4 e=6 level=-4.0 shards=1 graphs=1 with_pair=0 pair_free=1 user_s=0.0 wall_s=0
+n=4 FIRST pair-free at e=6 level=-4.0 count=1

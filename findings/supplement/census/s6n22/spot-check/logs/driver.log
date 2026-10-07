@@ -1,0 +1,4 @@
+2026-10-06 09:53:28 driver start pid=98838 W=4 STOP_EPOCH=1791300300 KILL_EPOCH=1791301200
+2026-10-06 10:52:26 workers finished (xargs exit 0)
+collect: slices_full=50 graphs=588094 e10=588094 tests=38814204 span=38814204 no=0 witness_fail=0 special=3 mismatched_rows=0 fraction=0.003758
+2026-10-06 10:52:26 driver end

@@ -1,0 +1,21 @@
+== lake build Openmath.Proofs.RimDensity (leanprover/lean4:v4.33.1)
+warning: Openmath/Target.lean:62:8: declaration uses `sorry`
+warning: Openmath/Target.lean:70:8: declaration uses `sorry`
+warning: Openmath/Target.lean:81:8: declaration uses `sorry`
+warning: Openmath/Target.lean:97:8: declaration uses `sorry`
+warning: Openmath/Proofs/BipartiteBalance.lean:28:12: please avoid 'open (scoped) Classical' statements: this can hide theorem statements which would be better stated with explicit decidability statements.
+Instead, use `open Classical in` for definitions or instances, the `classical` tactic for proofs.
+For theorem statements, either add missing decidability assumptions or use `open Classical in`.
+
+Note: This linter can be disabled with `set_option linter.style.openClassical false`
+warning: Openmath/Proofs/RimDensity.lean:182:0: automatically included section variable(s) unused in theorem `Erdos585.RimDensity.four_low_degree`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (8946 jobs).
+== sorry in Openmath/Proofs/RimDensity.lean, comments ignored: 0
+== axioms
+'Erdos585.RimDensity.four_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

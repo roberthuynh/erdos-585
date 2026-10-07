@@ -1,0 +1,4 @@
+idx=45 K44 n=22 HA=[] mode=nobside solver=cd15 assume=('y1', 'pp') sat=False iters=1 cuts=0
+idx=45 K44 n=22 HA=[] mode=nobside solver=cd15 assume=('y1', 'u1') sat=False iters=1 cuts=0
+idx=45 K44 n=22 HA=[] mode=full_reach solver=cd15 assume=('y1', 'pp') sat=False iters=1 cuts=0
+idx=45 K44 n=22 HA=[] mode=full_reach solver=cd15 assume=('y1', 'u1') sat=False iters=1 cuts=0

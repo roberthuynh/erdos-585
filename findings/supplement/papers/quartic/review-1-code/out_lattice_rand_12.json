@@ -1,0 +1,22 @@
+{
+ "tag": "rand_12",
+ "summary": {
+  "instances": 400,
+  "sparse": 400,
+  "sparse_DU1": 400,
+  "sparse_DU0": 0,
+  "sparse_with_P_ge2": 0,
+  "max_P": 0,
+  "sparse_with_bad": 0,
+  "pairs_tested": 0
+ },
+ "checks": {
+  "brute min proper g agrees with flow-based min_proper_g (capped at 10)": 400,
+  "sparse C1 => W-degrees >= 4": 400,
+  "L4.4 bad ports = ports lying in a member of P": 400,
+  "L4.4 bad-port deficiency <= 2": 400
+ },
+ "failures": 0,
+ "examples": {},
+ "seconds": 56.2
+}

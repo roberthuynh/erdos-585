@@ -1,0 +1,30 @@
+# shape=n21k44 mode=enum star=True f2=True levels=('k44w', 'c55') solver=cadical195 jobs=28
+n21k44 0 K44-e 0 4 False 1 0 0.01 None
+n21k44 0 K44-e 1 4 False 1 0 0.01 None
+n21k44 0 K44-e 0 5 False 1 0 0.03 None
+n21k44 0 K44-e 2 4 False 1 0 0.01 None
+n21k44 0 K44-e 3 4 False 1 0 0.01 None
+n21k44 0 K44-e 1 5 False 1 0 0.06 None
+n21k44 0 K44-e 2 5 False 1 0 0.06 None
+n21k44 0 K44-e 4 4 False 1 0 0.02 None
+n21k44 0 K44-e 5 4 False 1 0 0.01 None
+n21k44 0 K44-e 3 5 False 1 0 0.06 None
+n21k44 0 K44-e 6 4 False 1 0 0.01 None
+n21k44 0 K44-e 4 5 False 1 0 0.06 None
+n21k44 0 K44-e 5 5 False 1 0 0.04 None
+n21k44 0 K44-e 7 4 False 1 0 0.01 None
+n21k44 0 K44-e 6 5 False 1 0 0.04 None
+n21k44 0 K44-e 8 4 False 1 0 0.01 None
+n21k44 0 K44-e 9 4 False 1 0 0.02 None
+n21k44 0 K44-e 7 5 False 1 0 0.06 None
+n21k44 0 K44-e 9 5 False 1 0 0.03 None
+n21k44 0 K44-e 8 5 False 1 0 0.05 None
+n21k44 0 K44-e 10 4 False 1 0 0.01 None
+n21k44 0 K44-e 11 4 False 1 0 0.01 None
+n21k44 0 K44-e 12 4 False 1 0 0.01 None
+n21k44 0 K44-e 10 5 False 1 0 0.03 None
+n21k44 0 K44-e 13 4 False 1 0 0.01 None
+n21k44 0 K44-e 12 5 False 1 0 0.03 None
+n21k44 0 K44-e 11 5 False 1 0 0.06 None
+n21k44 0 K44-e 13 5 False 1 0 0.05 None
+# SUMMARY shape=n21k44 mode=enum star=True f2=True: UNSAT 28 SAT 0 UNKNOWN 0 (SAT with one-crossing 0) wall 0.4 s

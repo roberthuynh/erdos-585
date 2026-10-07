@@ -82,7 +82,7 @@ def good3(ctx, m):
 
 
 def sub_mask(ctx_big, m, keep):
-    """Induced subgraph on the vertex list `keep`, relabelled 0..len(keep)-1."""
+    """Induced subgraph on the vertex list `keep`, relabeled 0..len(keep)-1."""
     small = ctx_of(len(keep))
     idx = {v: i for i, v in enumerate(keep)}
     f = 0
@@ -521,11 +521,11 @@ def step_levels(args, state):
         lv[str(k + 1)] = sorted([f, a] for f, a in forms.items())
         state['partial'] = None
         save_state(args.state, state)
-        labelled = sum(fact // a for _, a in lv[str(k + 1)])
+        labeled = sum(fact // a for _, a in lv[str(k + 1)])
         want = A008406.get((n, k + 1))
         line = ('- n = %d, level %d edges: %d classes from %d parents (OEIS A008406: %s); sum %d!/|Aut| = %d vs C(%d,%d) = %d (%s); %.1f s on %d processes'
-                % (n, k + 1, len(forms), len(parents), want if want is not None else 'n/a', n, labelled, ctx.N, k + 1,
-                   math.comb(ctx.N, k + 1), 'match' if labelled == math.comb(ctx.N, k + 1) else 'MISMATCH', secs, args.procs))
+                % (n, k + 1, len(forms), len(parents), want if want is not None else 'n/a', n, labeled, ctx.N, k + 1,
+                   math.comb(ctx.N, k + 1), 'match' if labeled == math.comb(ctx.N, k + 1) else 'MISMATCH', secs, args.procs))
         append(line)
         print(line, flush=True)
         if time.time() > deadline:
@@ -599,7 +599,7 @@ def step_comp(args, state):
     lab_good = sum(fact // a for _, a in st['good'])
     goods = sorted(st['good'])
     line = ('- complements of the %d classes of %d-edge graphs on %d vertices (%d edges each): bad %d (witness verified %d), good %d '
-            '(%d labelled); witness vertex-set sizes %s; bad complements by min degree %s; %.1f s on %d processes'
+            '(%d labeled); witness vertex-set sizes %s; bad complements by min degree %s; %.1f s on %d processes'
             % (len(reps), k, n, ctx.N - k, st['bad'], st['badw'], len(goods), lab_good,
                json.dumps(dict(sorted(st['sizes'].items()))), json.dumps(dict(sorted(st['mindeg'].items()))),
                st['seconds'], args.procs))

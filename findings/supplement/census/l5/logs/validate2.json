@@ -1,0 +1,92 @@
+{
+ "bad": 0,
+ "brute_files": {
+  "data/validation/bip12_e30_d3.g6": {
+   "agree": 42,
+   "free": 0,
+   "graphs": 42,
+   "pair": 42
+  },
+  "data/validation/bip12_e31_d3.g6": {
+   "agree": 17,
+   "free": 0,
+   "graphs": 17,
+   "pair": 17
+  },
+  "data/validation/bip13_e33_d3.g6": {
+   "agree": 209,
+   "free": 0,
+   "graphs": 209,
+   "pair": 209
+  },
+  "data/validation/bip13_e34_d3.g6": {
+   "agree": 71,
+   "free": 0,
+   "graphs": 71,
+   "pair": 71
+  },
+  "data/validation/class12.g6": {
+   "agree": 9,
+   "free": 0,
+   "graphs": 9,
+   "pair": 9
+  },
+  "data/validation/class13.g6": {
+   "agree": 29,
+   "free": 0,
+   "graphs": 29,
+   "pair": 29
+  }
+ },
+ "named": {
+  "K33": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K4": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K44": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  },
+  "K44-e": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "K5": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  },
+  "Petersen": {
+   "brute": false,
+   "expected": false,
+   "ok": true,
+   "sat": false
+  },
+  "octahedron": {
+   "brute": true,
+   "expected": true,
+   "ok": true,
+   "sat": true
+  }
+ },
+ "pairfree_files": {},
+ "random": {
+  "disagree": 0,
+  "free": 0,
+  "pair": 0,
+  "tested": 0
+ }
+}

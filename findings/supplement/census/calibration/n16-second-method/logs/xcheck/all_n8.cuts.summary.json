@@ -1,0 +1,9 @@
+{
+ "graphs": 12346,
+ "pair": 1834,
+ "nopair": 10512,
+ "verify_fail": 0,
+ "max_iter": 4,
+ "cuts": 1120,
+ "seconds": 3.75
+}

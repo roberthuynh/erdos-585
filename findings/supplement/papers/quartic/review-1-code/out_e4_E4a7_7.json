@@ -1,0 +1,1 @@
+{"label": "E4a7_7", "graphs": 53, "orientations_without_4factor": 34, "violations": 42, "checks": {"k=1, eps<=1, D_A>=3+eps": 42, "piece1 smaller side C: in-piece deficiency = eps": 42, "piece2 smaller side P-A: in-piece deficiency <= 1": 42, "sizes |C| + |P-A| = a-1, one positive": 42, "min slack = maxflow - 4a": 106}, "failures": 0, "seconds": 4.4}

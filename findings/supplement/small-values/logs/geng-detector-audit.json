@@ -1,0 +1,9 @@
+{
+  "cases": 1654,
+  "positive": 253,
+  "negative": 1401,
+  "scope": "all nonempty atlas graphs through seven vertices; 400 seeded random graphs on 8..11 with at most 35 edges; known eleven-vertex controls",
+  "status": "all native verdicts agree with both independent existing programs",
+  "seconds": 2.6376419590087608,
+  "limitation": "Detector controls only; not an exhaustive result for eleven vertices."
+}

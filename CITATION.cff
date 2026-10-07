@@ -5,8 +5,8 @@ authors:
   - family-names: Huynh
     given-names: Robert
 type: software
-version: "0.2"
-date-released: 2026-10-05
+version: "0.3"
+date-released: 2026-10-06
 repository-code: "https://github.com/roberthuynh/erdos-585"
 license: Apache-2.0
 abstract: "Lean-checked results, computations and a census on Erdős Problem 585 (graphs without two edge-disjoint cycles on the same vertex set), produced with AI agents to see how far AI-assisted research can go."

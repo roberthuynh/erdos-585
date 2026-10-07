@@ -1,0 +1,353 @@
+{
+ "tag": "check2",
+ "n": "14",
+ "totals": {
+  "shards": 40,
+  "covered": 40,
+  "graphs": 3459386,
+  "pair": 3459386,
+  "nopair": 0,
+  "verify_fail": 0,
+  "decode_mismatch": 0,
+  "degree_mismatch": 0,
+  "cpu_seconds": 3136.4,
+  "geng_s": 348,
+  "decide_s": 3782
+ },
+ "cycle_length_hist": {
+  "5": 227,
+  "6": 134,
+  "7": 131,
+  "8": 255,
+  "9": 483,
+  "10": 3263,
+  "11": 32408,
+  "12": 340471,
+  "13": 1934694,
+  "14": 1147320
+ },
+ "not_covered": [],
+ "nopair_files": [],
+ "shards": [
+  {
+   "n": "14",
+   "res": 0,
+   "mod": 40,
+   "graphs": 77644,
+   "pair": 77644,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 10,
+   "mod": 40,
+   "graphs": 59184,
+   "pair": 59184,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 11,
+   "mod": 40,
+   "graphs": 86733,
+   "pair": 86733,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 12,
+   "mod": 40,
+   "graphs": 67164,
+   "pair": 67164,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 13,
+   "mod": 40,
+   "graphs": 83706,
+   "pair": 83706,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 14,
+   "mod": 40,
+   "graphs": 56451,
+   "pair": 56451,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 15,
+   "mod": 40,
+   "graphs": 97447,
+   "pair": 97447,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 16,
+   "mod": 40,
+   "graphs": 121139,
+   "pair": 121139,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 17,
+   "mod": 40,
+   "graphs": 70189,
+   "pair": 70189,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 18,
+   "mod": 40,
+   "graphs": 60319,
+   "pair": 60319,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 19,
+   "mod": 40,
+   "graphs": 79317,
+   "pair": 79317,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 1,
+   "mod": 40,
+   "graphs": 82106,
+   "pair": 82106,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 20,
+   "mod": 40,
+   "graphs": 96006,
+   "pair": 96006,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 21,
+   "mod": 40,
+   "graphs": 92538,
+   "pair": 92538,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 22,
+   "mod": 40,
+   "graphs": 100837,
+   "pair": 100837,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 23,
+   "mod": 40,
+   "graphs": 60925,
+   "pair": 60925,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 24,
+   "mod": 40,
+   "graphs": 55099,
+   "pair": 55099,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 25,
+   "mod": 40,
+   "graphs": 79956,
+   "pair": 79956,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 26,
+   "mod": 40,
+   "graphs": 69547,
+   "pair": 69547,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 27,
+   "mod": 40,
+   "graphs": 69076,
+   "pair": 69076,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 28,
+   "mod": 40,
+   "graphs": 64229,
+   "pair": 64229,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 29,
+   "mod": 40,
+   "graphs": 70066,
+   "pair": 70066,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 2,
+   "mod": 40,
+   "graphs": 84582,
+   "pair": 84582,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 30,
+   "mod": 40,
+   "graphs": 78481,
+   "pair": 78481,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 31,
+   "mod": 40,
+   "graphs": 142006,
+   "pair": 142006,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 32,
+   "mod": 40,
+   "graphs": 192026,
+   "pair": 192026,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 33,
+   "mod": 40,
+   "graphs": 92446,
+   "pair": 92446,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 34,
+   "mod": 40,
+   "graphs": 109013,
+   "pair": 109013,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 35,
+   "mod": 40,
+   "graphs": 79114,
+   "pair": 79114,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 36,
+   "mod": 40,
+   "graphs": 135637,
+   "pair": 135637,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 37,
+   "mod": 40,
+   "graphs": 81890,
+   "pair": 81890,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 38,
+   "mod": 40,
+   "graphs": 81107,
+   "pair": 81107,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 39,
+   "mod": 40,
+   "graphs": 72169,
+   "pair": 72169,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 3,
+   "mod": 40,
+   "graphs": 68515,
+   "pair": 68515,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 4,
+   "mod": 40,
+   "graphs": 111931,
+   "pair": 111931,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 5,
+   "mod": 40,
+   "graphs": 142172,
+   "pair": 142172,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 6,
+   "mod": 40,
+   "graphs": 80797,
+   "pair": 80797,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 7,
+   "mod": 40,
+   "graphs": 71946,
+   "pair": 71946,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 8,
+   "mod": 40,
+   "graphs": 72948,
+   "pair": 72948,
+   "nopair": 0
+  },
+  {
+   "n": "14",
+   "res": 9,
+   "mod": 40,
+   "graphs": 62928,
+   "pair": 62928,
+   "nopair": 0
+  }
+ ]
+}

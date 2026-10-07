@@ -1,0 +1,6 @@
+== lake build Openmath.Proofs.HaarCycle (leanprover/lean4:v4.33.1)
+Build completed successfully (1270 jobs).
+== sorry in Openmath/Proofs/HaarCycle.lean, comments ignored: 0
+== axioms
+'Erdos585.HaarCycle.splice_isCycleOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+RESULT: PASS build=ok sorry=0 axioms=[propext,Classical.choice,Quot.sound] disallowed=[]

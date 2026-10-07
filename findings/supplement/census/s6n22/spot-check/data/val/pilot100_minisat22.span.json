@@ -1,0 +1,30 @@
+{
+ "cuts": 33942,
+ "e10": 100,
+ "fresh_no": 0,
+ "fresh_span": 0,
+ "graphs": 100,
+ "hash_mismatch": 0,
+ "mincut_hist": {
+  "10": 100
+ },
+ "no": 0,
+ "non_e10": 0,
+ "non_e10_graphs": [],
+ "rounds_hist": {
+  "1": 2294,
+  "2": 2682,
+  "3": 1192,
+  "4": 337,
+  "5": 72,
+  "6": 17,
+  "7": 5,
+  "9": 1
+ },
+ "sec_cpu": 1.02,
+ "sec_wall": 1.05,
+ "solver": "minisat22",
+ "span": 6600,
+ "tests": 6600,
+ "witness_fail": 0
+}
