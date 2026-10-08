@@ -26,6 +26,10 @@ two of the remaining coordinates. Consequently the threshold improves to
 3g+r-1. This also follows from the source's Corollary2.2. Section3 gives the
 needed special case by an elementary Boolean polynomial proof.
 
+The zero-sum theorem is due to Olson (John E. Olson, *A combinatorial problem on finite Abelian groups, I*, J. Number Theory 1 (1969), 8–10), as credited in AFK Theorem 2.1. Olson’s original pages have not been checked here; AFK’s own theorem and Alon’s *Tools from Higher Algebra*, Theorem 6.2 and its group-ring proof, provide directly inspected versions.
+
+The Euler/twin lift is an instance of the subdivided-double construction. David Eppstein, *Hamiltonian Cycles in Subdivided Doubles*, arXiv:2510.18359v1, Theorems 1 and 2, proves complementary Hamilton cycles for the subdivided double of every connected 4-regular base multigraph. Its base graph may have loops and parallel edges. The present incidence selection and embedding into the actual capped host require their separate hypotheses; the Euler construction itself is prior mathematics.
+
 The resulting selection is then lifted by the actual Euler/twin construction
 already checked in TWIN-CORE.md and TWIN-REVIEW.md. The algebra selects a smaller
 quotient subgraph, not a formal coloring of cycles. Thus it does not encounter

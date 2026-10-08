@@ -1,5 +1,7 @@
 # V110: balanced deletion at the local BM scale
 
+Current publication status: Proposition V110 and its corollaries are conditional reductions using the unverified main BM/BM-2 input. The dated text and review record below do not establish that input. They do not certify an unconditional Hamiltonicity theorem or a project `check.sh` PASS.
+
 Date: 2026-10-04. Author status: complete and frozen after independent mathematical review; source wording and reference corrections applied.
 
 This is a complete paper derivation from the existing local Lemma F and BM-2. Both are paper inputs, and BM is an unpublished adaptation with a positive manual review. Neither F, BM, nor this derivation has a project `check.sh` PASS. No Lean was written or run. The appropriate scope is a subclass bound, intended rung (b), with a written proof of the implication. It is not a degree-six theorem, a general growth improvement, or a historical novelty claim.

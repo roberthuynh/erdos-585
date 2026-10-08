@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-07T22:45:42.272013-04:00",
+  "verifier_source_sha256": "813542f15e54bd7900e02da018b0bec5acf0a0d3ef3579638bba5c3e8675921d",
+  "checks": [
+    {
+      "label": "parent-n10-e26",
+      "graphs": 203469,
+      "literal_cycle_pairs_verified": 202969,
+      "survivors": 500,
+      "exact_survivor_subsequence": true,
+      "wall_seconds": 1.9743539999471977,
+      "all_graphs_sha256": "2b97ff848c3fdced4099b4d12279709c2df25fc7f73d805f0b25600ea0189156",
+      "cycle_certificates_sha256": "6cb1285276ef1b6de8ff8521aa1a1a2abc60450794a06a20ee4787ccb2d17ed5",
+      "free_catalogue_sha256": "4174222606e3dec0329fdfb62b29459cba33c1c59a2de3a8c748319f2602aea3"
+    },
+    {
+      "label": "parent-n10-e27",
+      "graphs": 217596,
+      "literal_cycle_pairs_verified": 217589,
+      "survivors": 7,
+      "exact_survivor_subsequence": true,
+      "wall_seconds": 2.053891959018074,
+      "all_graphs_sha256": "a4591c2035559a093675094b50cc750f08497617a7be51dd3d62c91becd4d37e",
+      "cycle_certificates_sha256": "68c6159a3575932b3c203bca8db72fb31d7bbb54b78084bd0c35a39b6ac286a5",
+      "free_catalogue_sha256": "a51d26d57e16b498ac8ce5b0f2a2a0b8a1d35a0812e55ec568200ffbdc505f80"
+    },
+    {
+      "label": "baseline-n10-e28",
+      "graphs": 395166,
+      "literal_cycle_pairs_verified": 395166,
+      "survivors": 0,
+      "exact_survivor_subsequence": true,
+      "wall_seconds": 3.616072457982227,
+      "all_graphs_sha256": "5f9b6b0fa02647e50b836110d69e01c68905d89b9745d0f6fcd4ad781bb6ab66",
+      "cycle_certificates_sha256": "21cdfa5773f3f24fe91cebce1903d23d8545715132b9f5adfdbc9d271d40aeed",
+      "free_catalogue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "total_graphs": 816231,
+  "total_positive_rejections_checked": 815724,
+  "complete": true
+}

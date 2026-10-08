@@ -30,11 +30,15 @@ section 7 names the models; not yet checked by a mathematician, making each one 
    bipartite one on 104 vertices. No 5-regular graph on at most 16 vertices is pair-free
    (**computed**), so the 18-vertex one is the smallest. Degree 5 does not force a pair, even in
    bipartite graphs, and degree 6 is the first open case as far as I know.
-3. **Exact values, bounds and a census**: f(n) for n ≤ 12 (**Lean-proved** for n ≤ 7; **computed**
-   by two or more separately written methods for 8 ≤ n ≤ 12), linear lower bounds (**Lean-proved**),
-   and a census: maximum degree at most 6 and at least 3n − 4 edges force a pair through 14 vertices,
-   and through 18 in bipartite graphs (**computed**). A calibration at degree 5 shows why the
-   regular-graph part of this census is weak evidence (section 4.4).
+3. **Exact values, bounds and a census**: the values through n = 10 reproduce the
+   [Erdős Problem a Day report](https://erdosproblemaday.com/report/585)
+   (July 28, 2026; read October 8, 2026). The new computational entries beyond that report
+   are f(11) = 31 and f(12) = 36. Values through n = 7 are **Lean-proved**;
+   the larger upper bounds are **computed**. The linear lower bounds are **Lean-proved**,
+   and a census finds that maximum degree at most 6 and at least 3n − 4 edges force a pair
+   through 14 vertices, and through 18 in bipartite graphs (**computed**).
+   A calibration at degree 5 shows why the regular-graph part of this census is weak evidence
+   (section 4.4).
 4. **What B6 would give** (**written proof**): if every bipartite 6-regular graph has a pair (B6), then
    f(n) = Θ(n log log n), an immediate consequence of [PRS95] and [JS23], checked against those papers.
 5. **Two steps toward B6**: B6 is equivalent to its vertex-deleted form, by a substitution theorem
@@ -294,6 +298,8 @@ subgraph avoiding o, but not the split. So a pair-free bipartite 6-regular graph
 
 ### 4.2 Three pair-free 5-regular graphs (Lean-proved)
 
+Prior context: Read and Wilson, *An Atlas of Graphs* (Oxford University Press, 1998), Chapter 5, p.155, already record that a 5-regular graph need not contain a 4-regular subgraph. Such a graph has no cycle pair. Thus generic existence at degree five is not a new claim here. That passage does not establish the exact 18-vertex minimum or the 104-vertex bipartite construction; those require their own certificates and priority comparison.
+
 **A 5-regular graph on 18 vertices** (`Erdos585.RegularFive18.exists_five_regular_pairfree`). The
 9-vertex block has a triangle 0, 1, 2 joined to each of 3, 4, 5, and a triangle 6, 7, 8 with 6
 adjacent to 3, 4 and 5, 7 adjacent to 3 and 4, and 8 adjacent to 5 (21 edges; vertices 7 and 8 have
@@ -365,9 +371,18 @@ pair (`Erdos585.TwinNoSingleton.hasPair_of_no_singleton_twins`; a grouped form i
 
 ### 4.4 Computations (computed)
 
-**Exact values.** f(1), …, f(12) = 0, 1, 3, 6, 9, 12, 16, 19, 23, 27, 31, 36. Each value from f(8)
-on was computed by at least two methods with different code; appendix C lists them. The sequence is
-not in OEIS (searched October 6, 2026).
+**Exact values.** f(1), …, f(12) = 0, 1, 3, 6, 9, 12, 16, 19, 23, 27, 31, 36.
+Values through n = 10 were reported by [Erdős Problem a Day](https://erdosproblemaday.com/report/585)
+(July 28, 2026; read October 8, 2026). This repository reproduces them; only f(11) and f(12)
+are new entries relative to that report. Appendix C lists the programs, counts and replication scope.
+The sequence was not found in OEIS in the dated search (October 6, 2026).
+
+**Saved upper certificates at 11 and 12.** The [certificate packet](supplement/small-values/certificates/README.md)
+supports the existing computational values f(11)=31 and f(12)=36. Its complete
+ten-vertex streams contain 816,231 graphs, with 815,724 positive cycle-pair
+certificates and 507 retained parents. A separate checker verifies all 2,504
+admissible extensions. Canonical generation still uses nauty; separate search
+and certificate checks are not independent canonical generators or Lean upper proofs.
 
 **Census.** nauty `geng` 2.9.3 generates one graph per isomorphism class, and `pairc.c` tests each
 for a pair (validated on all 12,346 graphs on 8 vertices, where it finds 10,512 pair-free ones, the
@@ -396,8 +411,10 @@ decider on plain `geng` output, every pair checked). A census of all 5-regular g
 (`geng` with a pair-pruning hook, in 20,000 shards) finds none pair-free either. A second method,
 with separate code, finds a checked pair in each of the 388 triangle-free and the 41 bipartite ones
 and in each of the 3,612,814 graphs of a random 0.14% of the shards. Pair-free 5-regular graphs
-exist on 18 vertices (section 4.2), so 18 is the smallest order. The census at 16 is one complete
-method and unreviewed (`supplement/census/calibration/n16/`; the second method in
+exist on 18 vertices (section 4.2), giving least order 18 subject to the reported complete
+16-vertex census. The tag retains the completed-shard index and aggregate records,
+but omits the raw per-shard logs and empty outputs. A complete independent replication
+is not established here (`supplement/census/calibration/n16/`; the second method in
 `supplement/census/calibration/n16-second-method/`). So at degree 5 a census of regular graphs through 14 vertices
 would have looked as clean as the degree-6 census does, and the regular-graph rows above say little on
 their own about larger 6-regular graphs. What the degree-6 record does show is narrower. The least
@@ -469,16 +486,20 @@ formalized:
 |---|---|---|
 | 1 | E110 (avoidance-conditioned balanced extraction) | open; one attempt reviewed as a correct failure analysis |
 | 2 | Lemma F: a balanced near-regular expander has a spanning regular factor (proof in appendix D) | reviewed, accepted |
-| 3 | BM-2: a bipartite d-regular expander with d ≥ C γ⁻¹⁰ (log n)³ has two edge-disjoint Hamilton cycles (γ⁻¹² under the review's conservative reading) | reviewed once, accepted; an unpublished bipartite adaptation of [Mü26], not attributable to it |
+| 3 | BM-2 quantitative candidate: a bipartite d-regular expander with d ≥ C γ⁻¹⁰ (log n)³ would have two edge-disjoint Hamilton cycles (γ⁻¹² in the conservative route) | unverified main Hamiltonicity input; an earlier written AI review accepted it, but supporting lemmas do not constitute a complete proof; not attributable to [Mü26] |
 | 4 | [CJMM-reg, Theorem 1.5]: for r ≤ n/2, average degree C·r log(n/r) forces an r-regular subgraph | published; quote checked |
 
-E110, Lemma F and BM-2 together would give B(polylog), and with it f(n) = O(n (log n)⁴). A reviewed
-consequence, V110, meets the vertex-deleted demand of Corollary B at growing degree: a bipartite
-r-regular expander with r ≥ C_V γ⁻¹⁰ (log 2N)³ keeps two edge-disjoint Hamilton cycles after deleting
-up to ⌊γ²r/32⌋ vertices from each side. It does not reach degree 6, and no novelty is claimed for it.
+E110, Lemma F and BM-2 together would give B(polylog), and with it f(n) = O(n (log n)⁴).
+The V110 vertex-deletion reduction is conditional on the unverified main BM/BM-2 input.
+Under that input, a bipartite r-regular expander with r ≥ C_V γ⁻¹⁰ (log 2N)³ would retain
+two edge-disjoint Hamilton cycles after deleting up to ⌊γ²r/32⌋ vertices from each side.
+The earlier written review does not complete that input. The conditional reduction does not
+reach degree 6, and no novelty is claimed for it.
 Papers and reviews: `supplement/papers/`.
 
 ### 4.8 A method barrier (Lean-proved; written argument)
+
+The parabola palette is prior Sidon/2-cap geometry. Huang, Tait and Won, *Sidon sets and 2-caps in F_3^n*, Involve 12(6) (2019), 995–1003, Theorem 3.2 proves the equivalence, and the proof of Theorem 3.4 credits the parabola Sidon construction to Cilleruelo’s Example 1 (*Combinatorial problems in finite fields and Sidon sets*, Combinatorica 32 (2012), 497–511). The candidate contribution here is the stated recoloring-detector obstruction, not that geometry.
 
 The barrier concerns explicit hosts that do contain pairs (by [CJMM24], for large parameters; this is
 not Lean-proved). It rules out one proof method, not the existence of pair-free graphs.
@@ -598,6 +619,9 @@ not Lean-proved). It rules out one proof method, not the existence of pair-free 
 
 ## 6. Audit requests, in detail
 
+The [literature comparisons](../literature/README.md) record prior methods, exact source locations
+and access limits.
+
 1. **Statement.** Do the definitions in section 2 say what the problem says (cycles in Mathlib's
    sense, equal vertex sets, edge-disjoint, labeled vertices, supremum attained)?
 2. **Lean results.** Re-run `check.sh` on the rows of section 1 and check that each statement says
@@ -605,9 +629,10 @@ not Lean-proved). It rules out one proof method, not the existence of pair-free 
    statements, and in the two QB(4) statements the edge inequality, the decidability instances, and
    what `H.coe.IsRegularOfDegree 4` says about a `Subgraph`).
 3. **The three graphs.** From the edge lists alone, confirm that all three are 5-regular and pair-free
-   and that the largest is bipartite. Are pair-free 5-regular graphs known? A bounded literature search
-   found none. (Degree 4 is classical: a connected 4-regular graph without a Hamilton decomposition is
-   pair-free.)
+   and that the largest is bipartite. Read and Wilson already record generic five-regular graphs
+   without a quartic (section 4.2). The comparisons needed here concern exact orders, the bipartite
+   restriction and the minimum-order census. (A connected 4-regular graph without a Hamilton
+   decomposition is pair-free.)
 4. **The census.** Replicate the single-program claims (n = 14, and bipartite graphs through 18).
    Check that `pairc.c` is complete and sound: the runs saved no witnesses, so re-run a sample with
    `./pairc w` and check the printed pairs independently.
@@ -1509,8 +1534,9 @@ them changes the bounds above. `supplement/lean/DECLARATIONS.md` lists each with
 
 ## Appendix F. Supplement contents
 
-`supplement/MANIFEST.md` lists every file with its size and SHA-256, and `supplement/PROVENANCE.json`
-gives each file's source path in the author's private working repository and every edit.
+`supplement/MANIFEST.md` lists the current files, sizes and SHA-256 values, including the corrections
+and added small-value certificates. `supplement/PROVENANCE.json` preserves the original v0.3
+export's source paths, hashes and edits; it is historical, not the current release inventory.
 
 - `lean/Openmath/Proofs/`: 58 Lean files outside the repository's Lean build (twin-core,
   R1-plus, the declarations of `lean/DECLARATIONS.md`, and their imports).

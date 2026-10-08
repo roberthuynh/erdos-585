@@ -1,0 +1,11 @@
+{
+  "label": "baseline-n10-e28",
+  "graphs": 395166,
+  "literal_cycle_pairs_verified": 395166,
+  "survivors": 0,
+  "exact_survivor_subsequence": true,
+  "wall_seconds": 3.616072457982227,
+  "all_graphs_sha256": "5f9b6b0fa02647e50b836110d69e01c68905d89b9745d0f6fcd4ad781bb6ab66",
+  "cycle_certificates_sha256": "21cdfa5773f3f24fe91cebce1903d23d8545715132b9f5adfdbc9d271d40aeed",
+  "free_catalogue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

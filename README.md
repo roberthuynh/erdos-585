@@ -70,21 +70,30 @@ lower bound of order n log log n.
 
 ## Computations
 
-Exact values f(1), …, f(10) = 0, 1, 3, 6, 9, 12, 16, 19, 23, 27, by exhaustive search. Programs and
-results are in `computations/`, and `computations/COMMANDS.md` gives the commands, their outputs,
-and the argument for the upper bounds (a short written argument whose cases are checked by
-computer). f(11) = 31 and f(12) = 36 were also computed, each two ways; the programs and logs are in
-`findings/supplement/small-values/`.
+Exact values f(1), …, f(10) = 0, 1, 3, 6, 9, 12, 16, 19, 23, 27 were reported by
+[Erdős Problem a Day](https://erdosproblemaday.com/report/585) on July 28, 2026
+(read October 8, 2026). This repository reproduces those values. Programs and results are in
+`computations/`; `computations/COMMANDS.md` gives the commands, outputs and upper-bound case checks.
+The new computational entries beyond that report are f(11) = 31 and f(12) = 36;
+the programs and logs are in `findings/supplement/small-values/`. The [saved upper certificates](findings/supplement/small-values/certificates/README.md)
+now let a separate checker verify every positive rejection and every admissible extension.
+The upper exclusions remain computational and share nauty's canonical generation;
+separate certificate checking is not an independent graph census.
 
 ## Census
 
 The three 5-regular graphs above show that being 5-regular does not force a pair, and the 18-vertex
-one is the smallest possible: no 5-regular graph on 16 or fewer vertices is pair-free (through 14
-vertices by two separately written programs; at 16 by one complete search that no separate agent
-reviewed, with a second program on part of it). The programs and logs are in
-`findings/supplement/census/`. Minimum degree alone never forces a pair: the Pyber, Rödl and
-Szemerédi graphs have no k-regular subgraph for any k ≥ 3, and they contain subgraphs of arbitrarily
-large minimum degree. I know of no result either way on whether every 6-regular graph has a pair.
+one has the least order according to the reported complete census: no 5-regular graph on 16 or
+fewer vertices is pair-free (through 14 by two separately written programs; at 16 by one complete
+pruned search, with a second program on part of it). The tag includes the 20,000 completed shard
+indices and aggregate records, but omits the raw per-shard logs and empty outputs. The complete
+16-vertex exclusion has not had a complete independent replication. Its evidence is computational;
+the 18-vertex witness itself is Lean verified. See `findings/supplement/census/`. Minimum degree alone never forces a pair: the Pyber, Rödl and
+Szemerédi construction has no 3-regular subgraph and has order n log log n edges. It is pair-free:
+a pair would give a 4-regular graph, and every 4-regular simple graph contains a 3-regular subgraph
+(Read and Wilson, *An Atlas of Graphs*, Chapter 5, Theorem 11). Its growing average degree also
+gives subgraphs of arbitrarily large minimum degree by repeatedly deleting vertices below half
+the original average degree. I know of no result either way on whether every 6-regular graph has a pair.
 The `census/` folder holds a computer search aimed at that case. Every graph with maximum degree at
 most 6, minimum degree at least 4 and at least 3n − 4 edges was checked on 11 and 12 vertices, every
 bipartite one on 13 to 18 vertices, and every 6-regular graph on 13 and 14 vertices. This was done
@@ -171,6 +180,9 @@ I'm an MBA candidate at Harvard Business School, not in a mathematics program, a
 the mathematics myself. I take full responsibility for any errors. No mathematician has reviewed the
 mathematics yet, although I am looking for help: if you find an error or know of prior work, or are
 willing to help, please open an issue and I'd love to get in contact with you.
+
+The [literature comparisons](literature/README.md) identify earlier mathematics behind
+the existing results and credit Alejandro Zarzuelo Urdiales's dated public literature and proof-coverage review.
 
 ## Build
 

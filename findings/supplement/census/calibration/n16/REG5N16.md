@@ -5,7 +5,7 @@ A pair is two edge-disjoint cycles on the same vertex set.
 
 ## Verdict
 
-NONE AT ALL: the census completed (all 20000 shards) and no 5-regular graph on 16 vertices is pair-free. So the least order of a 5-regular pair-free graph is 18.
+The collector reports completion of all 20000 shards and zero pair-free 5-regular outputs. Together with the smaller-order exclusions and the verified 18-vertex witness, this implies least order 18, subject to the reported census coverage. This tag preserves the completed-shard index and aggregate records, but not the underlying per-shard logs and empty outputs. The complete 16-vertex exclusion has not been independently replicated in full.
 
 ## Method
 
@@ -58,5 +58,6 @@ NONE AT ALL: the census completed (all 20000 shards) and no 5-regular graph on 1
 ## Files
 
 - `code/`: pairprune.c, build.sh, driver.sh, worker.sh, collect.sh, validate_prune.sh.
-- `logs/shards/`: per-shard stderr (geng >Z, >S and per-level >L lines) and .done markers.
-- `data/out/<r>.g6`: per-shard output (empty when nothing was found).
+- `logs/shards/`: original run’s per-shard stderr and .done markers; not included in this tag.
+- `data/out/<r>.g6`: original run’s per-shard output; not included in this tag.
+- The aggregate records and `data/done_shards.txt` are included; the supplement README records these archive omissions.

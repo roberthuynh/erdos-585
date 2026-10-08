@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-10-07T22:45:35.844682-04:00",
+  "verifier_source_sha256": "815d2d3038bd91dcc7e4c54e2f7173274787761fec50a63239a29ef14c4a922e",
+  "checked": [
+    {
+      "parent_edges": 26,
+      "parents": 500,
+      "extensions": 2367,
+      "coverage_by_all_neighbor_masks": true,
+      "literal_cycle_pairs_verified": 2367,
+      "cycle_support_size_histogram": {
+        "6": 30,
+        "7": 762,
+        "8": 1433,
+        "9": 138,
+        "11": 4
+      },
+      "input_hashes": {
+        "parent-n10-e26.free.g6": "4174222606e3dec0329fdfb62b29459cba33c1c59a2de3a8c748319f2602aea3",
+        "children-n11-e31.g6": "9fb0a1326ce9bdbd4742cba7df6298355a11377413b70bec257c3ada26648106",
+        "children-n11-e31.jsonl": "f8e8a52ed3c11659affcb6311664641309335cccaecf034b6e283c972f6cc44e",
+        "children-n11-e31.cycles.tsv": "1b08d484f569432d1a1d27eb3b778cce0231deefa361d3fa37ec6bc19caa4e4a"
+      }
+    },
+    {
+      "parent_edges": 27,
+      "parents": 7,
+      "extensions": 137,
+      "coverage_by_all_neighbor_masks": true,
+      "literal_cycle_pairs_verified": 137,
+      "cycle_support_size_histogram": {
+        "6": 8,
+        "7": 104,
+        "8": 21,
+        "11": 4
+      },
+      "input_hashes": {
+        "parent-n10-e27.free.g6": "a51d26d57e16b498ac8ce5b0f2a2a0b8a1d35a0812e55ec568200ffbdc505f80",
+        "children-n11-e32.g6": "c24fabc8b45f986f15baeec96082410dcbe7abc0d2bca2c1bae7904e68788c69",
+        "children-n11-e32.jsonl": "b8a725c751e538367a35b7376f1e21d9696884e80d7d051cafb6cf38ba992130",
+        "children-n11-e32.cycles.tsv": "ada82d5b6b9f69fc53968bedd1e31403bd7268123fe578ff472336bb6ad23244"
+      }
+    }
+  ],
+  "complete": true
+}

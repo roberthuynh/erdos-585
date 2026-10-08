@@ -107,7 +107,8 @@ def main():
     print(f"AXIOMS: PASS ({len(expected)} proved declarations)")
     # Freeze the headline statements: each `#check @name` must print the type recorded in the list.
     imports = sorted({entry["module"] for entry in entries})
-    checks = "".join(f"import {m}\n" for m in imports) + "set_option linter.style.moduleDocstring false\n"
+    checks = "".join(f"import {m}\n" for m in imports)
+    checks += "\n/-! Audit of the frozen headline theorem statements. -/\n"
     checks += "".join(f"#check @{entry['declaration']}\n" for entry in entries)
     result = subprocess.run(["lake", "env", "lean", "--stdin"], cwd=ROOT,
                             input=checks, capture_output=True, text=True, timeout=240)

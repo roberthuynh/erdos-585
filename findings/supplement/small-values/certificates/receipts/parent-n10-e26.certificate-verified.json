@@ -1,0 +1,11 @@
+{
+  "label": "parent-n10-e26",
+  "graphs": 203469,
+  "literal_cycle_pairs_verified": 202969,
+  "survivors": 500,
+  "exact_survivor_subsequence": true,
+  "wall_seconds": 1.9743539999471977,
+  "all_graphs_sha256": "2b97ff848c3fdced4099b4d12279709c2df25fc7f73d805f0b25600ea0189156",
+  "cycle_certificates_sha256": "6cb1285276ef1b6de8ff8521aa1a1a2abc60450794a06a20ee4787ccb2d17ed5",
+  "free_catalogue_sha256": "4174222606e3dec0329fdfb62b29459cba33c1c59a2de3a8c748319f2602aea3"
+}

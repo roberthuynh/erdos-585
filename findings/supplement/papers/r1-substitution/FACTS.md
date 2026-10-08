@@ -114,5 +114,8 @@ graphs the census finds none above 3n − 5. This plays no role for 6-regular gr
 have 4-regular subgraphs by Petersen's 2-factor theorem.
 
 **P6. (c) Literature, not re-proved here.** Connected 4-regular Cayley graphs on abelian groups have
-Hamilton decompositions (Bermond, Favaron and Maheo 1989); random 2k-regular graphs do with high
-probability (Kim and Wormald 2001). To be checked against the papers before any use.
+Hamilton decompositions (Bermond, Favaron and Mahéo, JCTB 46 (1989), 142–153, Main Theorem).
+Kim and Wormald, *Random matchings which induce Hamilton cycles, and Hamiltonian decompositions
+of random regular graphs*, JCTB 81 (2001), 20–44, prove the random-regular conclusion for each
+fixed even degree 2k >= 4 as the order tends to infinity. This does not claim the conclusion for
+k = 1 or for arbitrary growing degree.

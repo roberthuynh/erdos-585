@@ -1,4 +1,6 @@
-# Bipartite-hamilton lane: Lemma BM (bipartite Müyesser) written out in full
+# Bipartite Hamiltonicity: written quantitative candidate
+
+Current publication status: the old review verdicts below are historical records. Main BM and its power-five/power-six Hamiltonicity claims are unverified candidates. The supporting lemmas and earlier written AI reviews do not constitute a complete proof of the router and main Hamiltonicity theorem. Positive degree, even order n >= 4, and the sufficiently-large-order convention belong to the intended application. Lemma Ch also needs the positive-degree correction below. Every application of main BM in this dossier is conditional on completing and independently reviewing that theorem.
 
 > **Review status (added by the lane lead, 2026-10-04).** Heavy independent review:
 > `BM-REVIEW.md` (FINAL). **No gap found: Theorem BM holds at c = 5, and at c = 6
@@ -103,7 +105,7 @@ read the statements used and Section 3.1).
 ## 2. Statements proved here
 
 Notation. log is the natural logarithm, L := log n. For a graph G, λ2(G) is the second largest
-adjacency eigenvalue. A d-regular bipartite G with parts P, Q has |P| = |Q| =: N = n/2 (count the
+adjacency eigenvalue. In this notation assume d > 0 and even n >= 4. A d-regular bipartite G with parts P, Q then has |P| = |Q| =: N = n/2 (count the
 edges from each side). Let W in {0,1}^(P x Q) be its biadjacency matrix. The adjacency spectrum is
 {±s_i(W)}, so λ1 = d = s1(W), λ2(G) = s2(W) and λn = -d. The one-sided condition
 λ2(G) <= (1-δ)d therefore puts all eigenvalues other than ±d in [-(1-δ)d, (1-δ)d]; it implies that
@@ -413,12 +415,12 @@ A ∪ B ⊆ V(S) ⊆ A ∪ B ∪ C ∪ U ∪ V = A ∪ B ∪ R. ∎
 
 ### 5.5 Lemma Ch (disjoint cherries)
 
-> **Lemma Ch.** Let H be a graph of maximum degree at most d, F_P and F_Q disjoint vertex sets,
+> **Lemma Ch.** Let H be a graph of maximum degree at most d > 0, F_P and F_Q disjoint vertex sets,
 > r >= 0 an integer. Suppose every vertex of F_Q has at least θ >= 2 neighbors in F_P and
 > (θ - 1)|F_Q| >= 3rd. Then H contains r vertex-disjoint paths x_j y_j x'_j (1 <= j <= r) with
 > y_j in F_Q and x_j, x'_j in F_P.
 
-*Proof.* Greedy. Suppose j < r such paths have been chosen, with vertex set U_j
+*Proof.* If r = 0 there is nothing to prove. If r > 0, the inequality and d > 0 force F_Q to be nonempty, so θ <= d. Greedy. Suppose j < r such paths have been chosen, with vertex set U_j
 (2j vertices in F_P, j in F_Q). The number of edges between F_Q \ U_j and F_P \ U_j is at least
 θ|F_Q \ U_j| - 2jd. Since j(θ - 1 + 2d) < 3rd <= (θ - 1)|F_Q|, we get
 (θ - 1)|F_Q \ U_j| >= (θ - 1)(|F_Q| - j) > 2jd, so that number exceeds |F_Q \ U_j|. Some
