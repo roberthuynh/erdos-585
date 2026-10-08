@@ -1,0 +1,111 @@
+[
+  {
+    "id": "C01",
+    "authors": "Noga Alon, Shmuel Friedland, Gil Kalai",
+    "title": "Regular subgraphs of almost regular graphs",
+    "publication": "JCTB 37 (1984), 79–91",
+    "location": "Theorem 2.1 (Olson); Corollary 2.2; Theorem 3.1; Remark 3.6",
+    "url": "https://web.math.princeton.edu/~nalon/PDFS/Publications/Regular%20subgraphs%20of%20almost%20regular%20graphs.pdf"
+  },
+  {
+    "id": "C02",
+    "authors": "Debsoumya Chakraborti, Oliver Janzer, Abhishek Methuku, Richard Montgomery",
+    "title": "Edge-disjoint cycles with the same vertex set",
+    "publication": "Advances in Mathematics 469 (2025), 110228",
+    "location": "Theorems 1 and 2",
+    "url": "https://arxiv.org/abs/2404.07190"
+  },
+  {
+    "id": "C04",
+    "authors": "Oliver Janzer, Benny Sudakov",
+    "title": "Resolution of the Erdős–Sauer problem on regular subgraphs",
+    "publication": "Forum of Mathematics, Pi 11 (2023), e19",
+    "location": "Main fixed-degree theorem",
+    "url": "https://arxiv.org/abs/2204.12455"
+  },
+  {
+    "id": "C06",
+    "authors": "Jean-Claude Bermond, Odile Favaron, Maryvonne Mahéo",
+    "title": "Hamiltonian decomposition of Cayley graphs of degree 4",
+    "publication": "JCTB 46(2) (1989), 142–153",
+    "location": "Unnumbered Main Theorem",
+    "url": "https://hal.inria.fr/hal-02500476/file/67-BFM89-hamilton-cayley-degree4.pdf"
+  },
+  {
+    "id": "C07",
+    "authors": "Yixuan Huang, Michael Tait, Robert Won",
+    "title": "Sidon sets and 2-caps in F_3^n",
+    "publication": "Involve 12(6) (2019), 995–1003",
+    "location": "Theorems 3.2 and 3.4; following parabola claim",
+    "url": "https://msp.org/involve/2019/12-6/involve-v12-n6-p06-p.pdf"
+  },
+  {
+    "id": "C08",
+    "authors": "David Eppstein",
+    "title": "Hamiltonian Cycles in Subdivided Doubles",
+    "publication": "Ars Mathematica Contemporanea 26 (4.02) (2026), 1–9; arXiv:2510.18359v1 (2025)",
+    "location": "Definitions 1–2; Theorems 1 and 2",
+    "url": "https://arxiv.org/abs/2510.18359"
+  },
+  {
+    "id": "C09",
+    "authors": "Ronald C. Read, Robin J. Wilson",
+    "title": "An Atlas of Graphs",
+    "publication": "Oxford University Press (1998)",
+    "location": "Chapter 5, printed p.155; Theorem 11",
+    "url": "https://oeis.org/A000088/a000088_14.pdf"
+  },
+  {
+    "id": "C13",
+    "authors": "John E. Olson",
+    "title": "A combinatorial problem on finite Abelian groups, I",
+    "publication": "Journal of Number Theory 1(1) (1969), 8–10",
+    "location": "Original theorem number unverified",
+    "url": "https://doi.org/10.1016/0022-314X(69)90021-3",
+    "access_note": "The original full text was unavailable for this comparison. AFK Theorem 2.1 credits Olson; Alon's Tools from Higher Algebra, Theorem 6.2, gives the inspected statement and proof."
+  },
+  {
+    "id": "C15",
+    "authors": "Hui Zhou, Liufeng Xu, Yang Cui, Qi Ding, Yanfeng Luo, Xing Gao, Dong Yang",
+    "title": "Hamiltonian decomposition of the Cayley graph on the dihedral group D_{2p} where p is a prime",
+    "publication": "arXiv:1810.07866v1 (18 October 2018)",
+    "location": "Theorem 3; Lemma 5",
+    "url": "https://arxiv.org/abs/1810.07866v1"
+  },
+  {
+    "id": "C14",
+    "authors": "Noga Alon",
+    "title": "Tools from Higher Algebra",
+    "publication": "Author-hosted chapter; publication year and venue unverified in this comparison",
+    "location": "Theorem 6.2 and its full group-ring proof",
+    "url": "https://web.math.princeton.edu/~nalon/PDFS/tools1.pdf",
+    "access_note": "The citation identifies the author-hosted chapter; its publication year and venue have not been established in this comparison."
+  },
+  {
+    "id": "C12",
+    "authors": "Debsoumya Chakraborti, Oliver Janzer, Abhishek Methuku, Richard Montgomery",
+    "title": "Regular subgraphs at every density",
+    "publication": "Transactions of the AMS 379 (2026), 8069–8090; DOI 10.1090/tran/9694",
+    "location": "Preprint v2 Theorems 1.4, 1.5 and 1.13",
+    "url": "https://doi.org/10.1090/tran/9694",
+    "edition_note": "The listed theorem numbers refer to preprint v2; published numbering has not been independently compared."
+  },
+  {
+    "id": "CILL11",
+    "authors": "Javier Cilleruelo",
+    "title": "Combinatorial problems in finite fields and Sidon sets",
+    "publication": "Inspected preprint arXiv:1003.3576v2 (2011)",
+    "location": "Example 1",
+    "url": "https://arxiv.org/abs/1003.3576"
+  },
+  {
+    "id": "EPAD585",
+    "authors": "Patrick White; site discloses Claude (Anthropic) assistance",
+    "title": "Erdős problem #585: live audit and exact small cases",
+    "publication": "Erdős Problem a Day working report, July 28, 2026",
+    "location": "Section 3, table through n = 10",
+    "url": "https://erdosproblemaday.com/report/585",
+    "read_date": "2026-10-08",
+    "source_type": "Working report; not a Lean proof or independent human review."
+  }
+]

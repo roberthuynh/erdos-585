@@ -1,6 +1,6 @@
 #!/bin/bash
 # Checks one declaration. Usage: ./check.sh <file.lean> <declaration>
-# PASS requires: lake build exit 0, zero `sorry` in the file (comments ignored), axioms within the allowlist.
+# PASS requires successful build and axiom query, zero sorry tokens, and allowed axioms.
 set -u -o pipefail
 cd "$(dirname "$0")" || exit 2
 if [ "$#" -ne 2 ]; then
@@ -19,9 +19,10 @@ SORRIES=missing
 if [ -f "$FILE" ]; then
   SORRIES=$(python3 - "$FILE" <<'PY'
 import re, sys
-s = open(sys.argv[1], encoding="utf-8").read()
-s = re.sub(r"/-.*?-/", "", s, flags=re.S)   # block comments and docstrings
-s = re.sub(r"--[^\n]*", "", s)              # line comments
+from pathlib import Path
+sys.path.insert(0, str(Path("scripts").resolve()))
+from check_axioms import lean_code
+s = lean_code(Path(sys.argv[1]).read_text(encoding="utf-8"))
 print(len(re.findall(r"\bsorry\b", s)))
 PY
   )
@@ -30,10 +31,14 @@ else
   echo "== $FILE missing"
 fi
 
-AXIOMS="n/a"; BAD=""
+AXIOMS="n/a"; BAD=""; AXIOM_QUERY=not_run
 if [ "$BUILD" = ok ] && [ -f "$FILE" ]; then
   MOD="${FILE%.lean}"; MOD="${MOD//\//.}"
-  OUT=$(printf 'import %s\nset_option linter.style.moduleDocstring false\n#print axioms %s\n' "$MOD" "$DECL" | lake env lean --stdin 2>&1)
+  if OUT=$(printf 'import %s\n\n/-! Axiom audit of the requested declaration. -/\n#print axioms %s\n' "$MOD" "$DECL" | lake env lean --stdin 2>&1); then
+    AXIOM_QUERY=ok
+  else
+    AXIOM_QUERY=fail
+  fi
   echo "== axioms"; echo "$OUT"
   # `#print axioms` wraps long output across lines; flatten before matching.
   FLAT=$(echo "$OUT" | tr '\n' ' ')
@@ -46,6 +51,6 @@ if [ "$BUILD" = ok ] && [ -f "$FILE" ]; then
 fi
 
 VERDICT=FAIL
-if [ "$BUILD" = ok ] && [ "$SORRIES" = 0 ] && [ -z "$BAD" ] && [ "$AXIOMS" != "n/a" ] && [ -n "$AXIOMS" ]; then VERDICT=PASS; fi
-echo "RESULT: $VERDICT build=$BUILD sorry=$SORRIES axioms=[${AXIOMS}] disallowed=[${BAD# }]"
+if [ "$BUILD" = ok ] && [ "$AXIOM_QUERY" = ok ] && [ "$SORRIES" = 0 ] && [ -z "$BAD" ] && [ "$AXIOMS" != "n/a" ] && [ -n "$AXIOMS" ]; then VERDICT=PASS; fi
+echo "RESULT: $VERDICT build=$BUILD axiom_query=$AXIOM_QUERY sorry=$SORRIES axioms=[${AXIOMS}] disallowed=[${BAD# }]"
 [ "$VERDICT" = PASS ]

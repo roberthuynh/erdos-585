@@ -320,11 +320,14 @@ References checked:
 - Candidates the literature lane found that do not imply it (statements from abstracts or
   secondary sources, not read in full by the review): Katerinis, Discrete Math. 113 (1993)
   (k-regular, (k-1)-edge-connected, even order, delete k - m edges: m-factor; needs connectivity
-  and simplicity of G + uv); Thomassen, J. Graph Theory 5 (1981) ({r, r+1}-graphs have
-  {k, k+1}-factors, not regular factors); Kano and Saito, Discrete Math. 47 (1983) ([a, b]-factors,
-  never regular); Alon, Friedland and Kalai, JCTB 37 (1984) (q-regular subgraphs of almost regular
-  graphs, not spanning, and the hypotheses fail for q = 4 at maximum degree 6); results on regular
-  host graphs (Bäbler, Belck, Gallai, Bollobás-Saito-Wormald, Niessen-Randerath) assume regularity.
+  and simplicity of G + uv). Thomassen, J. Graph Theory 5 (1981), and Kano and Saito,
+  Discrete Math. 47 (1983), are background leads whose original full statements have not
+  been checked here. Withdraw the unverified assertions about which regular-factor cases
+  those statements exclude; Alon, Friedland and Kalai, JCTB 37 (1984), Theorem 3.1 does apply at
+  maximum degree 6: 3n - 1 edges force a nonempty 4-divisible subgraph and hence a nonempty
+  quartic. That conclusion alone is not the spanning-factor conclusion under discussion.
+  Results on regular
+  host-graph leads (Bäbler, Belck, Gallai, Bollobás-Saito-Wormald, Niessen-Randerath) lack exact bibliographic identities in this paragraph; no theorem-scope or novelty clearance follows from that list.
 - Recommendation: say in REPORT.md lines 176-179 that Corollary 3 also follows from Petersen's
   theorem by the one-edge (or loop) trick, and keep the Lemma 2 proof as the route that extends to
   the barrier analysis.

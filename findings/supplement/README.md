@@ -37,6 +37,10 @@ every module, in `checks/v0.3-release-files.txt` with its own timestamps), and `
 module in these files (`checks/leanchecker-supplement-in-v0.3.tsv`). `lean/DECLARATIONS.md` lists the
 declarations beyond those in the findings document.
 
+## Prior context for the Haar declarations
+
+The broad four-color conclusion includes known cases. Bermond, Favaron and Mahéo, *Hamiltonian decomposition of Cayley graphs of degree 4*, J. Combin. Theory Ser. B 46 (1989), 142–153, Main Theorem, decomposes every connected finite 4-regular abelian Cayley graph. It covers the characteristic-two and centrally symmetric abelian cases after the appropriate Haar-to-Cayley identification. Zhou, Xu, Cui, Ding, Luo, Gao and Yang, *Hamiltonian decomposition of the Cayley graph on the dihedral group D_{2p} where p is a prime*, arXiv:1810.07866v1 (2018), Theorem 3, covers the connected prime-line dihedral case. These results do not by themselves give the nonsymmetric odd-characteristic rank-two/rank-three constructions or the specified composite template. Those portions need exact priority review.
+
 ## Graphs (`graphs/`)
 
 One edge per line as `u v`; lines starting with `#` are comments.
@@ -284,7 +288,7 @@ S6 and section 6 are not affected.
 `checks/check_deep.py`), the 11-vertex graph of section 4.1 (`checks/data/qb8_counterexample.g6`) and
 the logs of the n = 13 minimal-counterexample search (`checks/data/spq4_n13_*.err`).
 
-These are the project's working documents, copied verbatim with three kinds of edit: absolute local
+These are the project's working documents. The original v0.3 export applied three kinds of edit: absolute local
 paths are shown as `[local path]`, `[temporary path]` or `[local scratch folder]`, or replaced by
 the supplement path or archive name they stand for, link targets are remapped into this folder or marked "not
 included", and one sentence of `r1-substitution/PROOF-R1.md` about an integer program is corrected
@@ -297,8 +301,10 @@ Markdown working documents that no hash list names and no other file cites by ha
 spellings are changed to American ones.
 One more edit is recorded only in `PROVENANCE.json`: `checks/leanchecker-main-oct4.tsv` omits the row
 of one Lean file that is not part of this release (its other rows include a few scratch
-modules of the project, which are not shipped either). `PROVENANCE.json` lists each file's source
-path in the author's private working repository, its SHA-256 and every edit. Where a report has a correction header, the header
+modules of the project, which are not shipped either). `PROVENANCE.json` preserves the original
+v0.3 export's source paths, SHA-256 values and edits. It does not inventory the current corrections
+or the added small-value certificate packet. `MANIFEST.md` lists the current files and byte hashes.
+Where a report has a correction header, the header
 takes precedence over the body. Line numbers that working documents cite in the findings document or
 in each other refer to the versions current when they were written. The byte-for-byte frozen copies
 (`C1-PAPER.md`, `quartic/PAPER.md`, `pairs/PAPER.md`, `p4-attempt/PAPER.md`, `b6-24/theory/PAPER.md`

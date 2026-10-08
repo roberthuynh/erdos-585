@@ -36,6 +36,8 @@ jobs:
           done
           test "$n" -eq "$(grep -c '^import ' Openmath.lean)"
       - run: timeout 240 python3 scripts/check_axioms.py
+      - name: Check oracle failure paths
+        run: timeout 240 python3 -B scripts/test_check_sh.py
       - name: Check theorem results
         run: |
           python3 - <<'PY'
